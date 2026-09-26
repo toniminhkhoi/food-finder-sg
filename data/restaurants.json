@@ -1935,7 +1935,7 @@
   {
     "id": 92,
     "name": "Phở Gà Bảo Khánh",
-    "branch": "3 Tháng 2",
+    "branch": "2026-02-03T00:00:00.000Z",
     "address": "136 Đường 3 Tháng 2",
     "district": "Quận 10",
     "mainGroup": "Đồ ăn",
@@ -2973,7 +2973,6 @@
   },
   {
     "id": 140,
-    "brandId": "mixue",
     "name": "Mixue",
     "branch": "Nguyễn Ảnh Thủ",
     "address": "18/7 Đ. Nguyễn Ảnh Thủ",
@@ -2991,6 +2990,47 @@
     ],
     "status": "Đã cập nhật",
     "note": "Kem, Trà sữa bá khí",
-    "source": ""
+    "source": "",
+    "brandId": "mixue"
+  },
+  {
+    "id": 141,
+    "name": "Cơm sườn Ba Ghiền",
+    "branch": "",
+    "address": "84 Đ. Đặng Văn Ngữ",
+    "district": "Quận Phú Nhuận",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã cập nhật",
+    "note": "",
+    "source": "",
+    "brandId": "com-suon-ba-ghien"
+  },
+  {
+    "id": 142,
+    "name": "Gogi House",
+    "branch": "Lê Văn Sỹ",
+    "address": "254- 256 Đ. Lê Văn Sỹ",
+    "district": "Quận 3",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nướng"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã cập nhật",
+    "note": "Buffet",
+    "source": "",
+    "brandId": "gogi-house"
   }
 ]
