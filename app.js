@@ -257,38 +257,61 @@
     return brand.mainGroups[0] || "";
   }
 
+  function brandVisual(brand) {
+    const tags = normalize([mainGroupForBrand(brand), ...brand.foodTypes, ...brand.cuisines, ...brand.desserts, ...brand.drinks].join(" "));
+    if (/(tra sua|cafe|ca phe|matcha|tra|nuoc ep|sinh to)/.test(tags)) return { icon: "🧋", tone: "blue", label: "đồ uống" };
+    if (/(ramen|udon|pho|bun|mi cay|do nuoc|banh canh)/.test(tags)) return { icon: "🍜", tone: "coral", label: "món nước" };
+    if (/(sushi|nhat ban)/.test(tags)) return { icon: "🍣", tone: "lilac", label: "món Nhật" };
+    if (/(ga ran|ga |an vat|fast food)/.test(tags)) return { icon: "🍗", tone: "yellow", label: "ăn vui" };
+    if (/(lau|nuong|hai san|oc)/.test(tags)) return { icon: "🍲", tone: "green", label: "đi nhóm" };
+    if (/(banh|kem|trang mieng)/.test(tags)) return { icon: "🍰", tone: "lilac", label: "ngọt ngào" };
+    if (/(pizza|au my|burger)/.test(tags)) return { icon: "🍕", tone: "yellow", label: "đồ Tây" };
+    return { icon: "🍽️", tone: "coral", label: mainGroupForBrand(brand) || "food pick" };
+  }
+
   function brandCardHtml(brand) {
     const allBranches = allBranchesForBrand(brand.brandId);
     const isMulti = allBranches.length > 1;
     const fav = state.favorites.has(brand.brandId);
     const single = brand.branches[0] || allBranches[0];
     const districtLabel = isMulti ? `${brand.branches.length} chi nhánh phù hợp` : (single?.district || "");
+    const visual = brandVisual(brand);
+    const visualDistrict = isMulti ? `${allBranches.length} địa điểm` : (single?.district || "TP.HCM");
 
     return `
       <article class="restaurant-card brand-card" data-brand="${escapeHtml(brand.brandId)}">
-        <div class="card-top">
-          <div class="card-title-wrap">
-            <div class="card-eyebrow">
-              ${districtLabel ? `<span class="district-tag">${escapeHtml(districtLabel)}</span>` : ""}
-              ${mainGroupForBrand(brand) ? `<span class="main-tag">${escapeHtml(mainGroupForBrand(brand))}</span>` : ""}
-            </div>
-            <h4>${escapeHtml(brand.name)}</h4>
-            ${isMulti ? `<p class="branch-name">${allBranches.length} chi nhánh tại TP.HCM</p>` : (single?.branch ? `<p class="branch-name">Chi nhánh ${escapeHtml(single.branch)}</p>` : "")}
+        <div class="card-visual ${visual.tone}">
+          <span class="card-food-icon">${visual.icon}</span>
+          <div class="card-visual-meta">
+            <span>${escapeHtml(visual.label)}</span>
+            <span>${escapeHtml(visualDistrict)}</span>
           </div>
-          <button class="favorite-btn ${fav ? "active" : ""}" type="button" data-favorite-brand="${escapeHtml(brand.brandId)}" aria-label="Yêu thích">${fav ? "♥" : "♡"}</button>
         </div>
+        <div class="card-body">
+          <div class="card-top">
+            <div class="card-title-wrap">
+              <div class="card-eyebrow">
+                ${districtLabel ? `<span class="district-tag">${escapeHtml(districtLabel)}</span>` : ""}
+                ${mainGroupForBrand(brand) ? `<span class="main-tag">${escapeHtml(mainGroupForBrand(brand))}</span>` : ""}
+              </div>
+              <h4>${escapeHtml(brand.name)}</h4>
+              ${isMulti ? `<p class="branch-name">${allBranches.length} chi nhánh tại TP.HCM</p>` : (single?.branch ? `<p class="branch-name">Chi nhánh ${escapeHtml(single.branch)}</p>` : "")}
+            </div>
+            <button class="favorite-btn ${fav ? "active" : ""}" type="button" data-favorite-brand="${escapeHtml(brand.brandId)}" aria-label="Yêu thích">${fav ? "♥" : "♡"}</button>
+          </div>
 
-        ${isMulti
-          ? `<p class="branch-summary">Bấm xem chi nhánh để chọn địa điểm gần bạn.</p>`
-          : `<p class="card-address"><span>●</span>${escapeHtml(single?.address || "Đang cập nhật địa chỉ")}</p>`}
-
-        <div class="card-tags">${brandTags(brand).map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
-        ${!isMulti && single?.note ? `<p class="card-note">${escapeHtml(single.note)}</p>` : ""}
-        <div class="card-footer">
           ${isMulti
-            ? `<button class="branch-open-btn" type="button" data-open-branches="${escapeHtml(brand.brandId)}">Xem ${allBranches.length} chi nhánh →</button>`
-            : `<a class="map-link" href="${mapsLink(single)}" target="_blank" rel="noopener">↗ Google Maps</a>`}
-          <span class="status-dot"><i></i>${isMulti ? "Nhiều chi nhánh" : "Đã lưu"}</span>
+            ? `<p class="branch-summary">Có nhiều địa điểm để chọn. Mở danh sách chi nhánh gần bạn nhất.</p>`
+            : `<p class="card-address"><span>●</span>${escapeHtml(single?.address || "Đang cập nhật địa chỉ")}</p>`}
+
+          <div class="card-tags">${brandTags(brand).map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
+          ${!isMulti && single?.note ? `<p class="card-note">${escapeHtml(single.note)}</p>` : ""}
+          <div class="card-footer">
+            ${isMulti
+              ? `<button class="branch-open-btn" type="button" data-open-branches="${escapeHtml(brand.brandId)}">Xem ${allBranches.length} chi nhánh →</button>`
+              : `<a class="map-link" href="${mapsLink(single)}" target="_blank" rel="noopener">↗ Google Maps</a>`}
+            <span class="status-dot"><i></i>${isMulti ? "Nhiều chi nhánh" : "Có địa chỉ"}</span>
+          </div>
         </div>
       </article>`;
   }
@@ -582,6 +605,11 @@
 
     els.mobileFilterBtn.addEventListener("click", () => { els.filterPanel.classList.add("open"); els.filterBackdrop.classList.add("show"); document.body.classList.add("modal-open"); });
     els.filterBackdrop.addEventListener("click", () => { els.filterPanel.classList.remove("open"); els.filterBackdrop.classList.remove("show"); document.body.classList.remove("modal-open"); });
+
+    document.querySelectorAll("[data-quick-search]").forEach(btn => btn.addEventListener("click", () => {
+      const value = btn.dataset.quickSearch || "";
+      if (value) setSearch(value);
+    }));
 
     [els.chatFab, els.navChatBtn, els.heroChatBtn].forEach(btn => btn.addEventListener("click", openChat));
     els.closeChatBtn.addEventListener("click", closeChat);
