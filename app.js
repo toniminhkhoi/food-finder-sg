@@ -81,6 +81,11 @@
     return normalize([r.name, r.branch, r.address, r.district, r.mainGroup, ...r.foodTypes, ...r.cuisines, ...r.desserts, ...r.drinks, r.note].join(" "));
   }
 
+  function matchesSearch(r, query) {
+    const phrase = normalize(query);
+    return !phrase || (" " + searchableText(r) + " ").includes(" " + phrase + " ");
+  }
+
   function loadJsonp(url) {
     return new Promise((resolve, reject) => {
       const callback = `__foodFinderJsonp_${Date.now()}_${Math.random().toString(36).slice(2)}`;
@@ -216,7 +221,7 @@
     if (!matchesAny(r.cuisines, state.selected.cuisine)) return false;
     if (!matchesAny(r.desserts, state.selected.dessert)) return false;
     if (!matchesAny(r.drinks, state.selected.drink)) return false;
-    if (keyword && !searchableText(r).includes(keyword)) return false;
+    if (keyword && !matchesSearch(r, keyword)) return false;
     return true;
   }
 
@@ -442,7 +447,7 @@
     if (!parsed.district && !parsed.intent && parsed.q) {
       const stop = ["cho toi", "tim", "quan", "giup", "minh", "o", "gan", "muon", "an", "uong", "co", "nao"];
       const terms = parsed.q.split(" ").filter(t => t.length > 1 && !stop.includes(t));
-      if (terms.length) pool = state.restaurants.filter(r => terms.some(t => searchableText(r).includes(t)));
+      if (terms.length) pool = state.restaurants.filter(r => terms.some(t => matchesSearch(r, t)));
     }
     return pool;
   }
