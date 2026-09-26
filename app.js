@@ -559,14 +559,36 @@
     }));
   }
 
-  function updateStats() {
-    const totalBrands = groupRows(state.restaurants).length;
+ function updateStats() {
+  const totalBrands = groupRows(state.restaurants).length;
+
+  if (els.heroCount) {
     els.heroCount.textContent = totalBrands;
-    if (els.plateCount) els.plateCount.textContent = `${totalBrands}+`;
-    els.districtStat.textContent = uniqueSorted(state.restaurants.map(r => r.district)).length;
-    els.cuisineStat.textContent = uniqueSorted(state.restaurants.flatMap(r => r.cuisines)).length;
-    els.favoriteStat.textContent = state.favorites.size;
   }
+
+  if (els.plateCount) {
+    els.plateCount.textContent = `${totalBrands}+`;
+  }
+
+  if (els.districtStat) {
+    els.districtStat.textContent =
+      uniqueSorted(
+        state.restaurants.map(r => r.district)
+      ).length;
+  }
+
+  if (els.cuisineStat) {
+    els.cuisineStat.textContent =
+      uniqueSorted(
+        state.restaurants.flatMap(r => r.cuisines)
+      ).length;
+  }
+
+  if (els.favoriteStat) {
+    els.favoriteStat.textContent =
+      state.favorites.size;
+  }
+}
 
   function toggleFavorite(brandId) {
     if (state.favorites.has(brandId)) { state.favorites.delete(brandId); showToast("Đã bỏ khỏi yêu thích"); }
