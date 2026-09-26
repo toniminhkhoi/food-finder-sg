@@ -23,16 +23,15 @@
     <section class="admin-hero">
       <div>
         <span class="kicker">QUẢN LÝ DATA</span>
-        <h1>Thêm quán mới<br><em>không cần sửa code.</em></h1>
-        <p>Bản quản lý này cho phép thêm/sửa/xóa quán ngay trong trình duyệt và xuất file JSON. Khi dùng Google Sheet làm nguồn dữ liệu, bạn chỉ cần thêm một dòng mới vào Sheet.</p>
+        <h1>Thêm quán mới<br><em>và cập nhật cho mọi người.</em></h1>
+        <p>Khi bật Cloud API, nút Lưu/Sửa/Xóa sẽ ghi trực tiếp vào Google Sheet chung. Người khác mở web sẽ thấy cùng dữ liệu, không còn phụ thuộc Local Storage.</p>
       </div>
       <div class="admin-count"><strong id="adminCount">0</strong><span>địa điểm đang có</span></div>
     </section>
 
-    <div class="admin-notice">
-      <b>Hai cách cập nhật:</b>
-      <span><strong>1.</strong> Dễ nhất cho web online: dùng Google Sheet → web tự đọc dữ liệu mới.</span>
-      <span><strong>2.</strong> Không dùng Google Sheet: chỉnh tại đây → Export JSON → thay file <code>data/restaurants.json</code> trên hosting.</span>
+    <div class="admin-notice" id="cloudNotice">
+      <b id="cloudStatus">Đang kiểm tra nguồn dữ liệu...</b>
+      <span id="cloudDescription">Nếu chưa bật Cloud API, trang quản lý chỉ chạy ở chế độ local.</span>
     </div>
 
     <div class="admin-grid">
@@ -41,6 +40,7 @@
         <form id="restaurantForm" class="restaurant-form">
           <input type="hidden" id="editId" />
           <div class="field full"><label>Tên quán *</label><input id="fName" required placeholder="Ví dụ: Hanuri" /></div>
+          <div class="field"><label>Mã thương hiệu</label><input id="fBrandId" placeholder="Để trống sẽ tự tạo, ví dụ koi-the" /><small>Các chi nhánh cùng mã sẽ gộp thành 1 card.</small></div>
           <div class="field"><label>Chi nhánh</label><input id="fBranch" placeholder="Nguyễn Đình Chiểu" /></div>
           <div class="field"><label>Quận / khu vực *</label><input id="fDistrict" required list="districtList" placeholder="Quận 3" /><datalist id="districtList"></datalist></div>
           <div class="field full"><label>Địa chỉ *</label><input id="fAddress" required placeholder="284A Nguyễn Đình Chiểu" /></div>
@@ -51,33 +51,38 @@
           <div class="field"><label>Đồ uống</label><input id="fDrinks" placeholder="Trà sữa; Cafe" /></div>
           <div class="field full"><label>Ghi chú</label><textarea id="fNote" rows="3" placeholder="Món nổi bật, lưu ý..."></textarea></div>
           <div class="field full"><label>Nguồn / link</label><input id="fSource" type="url" placeholder="https://..." /></div>
-          <div class="form-actions"><button class="save-btn" type="submit">＋ Lưu quán</button><button class="cancel-edit hidden" id="cancelEditBtn" type="button">Hủy sửa</button></div>
+          <div class="form-actions"><button class="save-btn" type="submit">＋ Lưu / cập nhật</button><button class="cancel-edit hidden" id="cancelEditBtn" type="button">Hủy sửa</button></div>
         </form>
       </section>
 
       <aside class="admin-panel tools-panel">
-        <div class="panel-head"><div><span>TOOLS</span><h2>Cập nhật & backup</h2></div></div>
+        <div class="panel-head"><div><span>CLOUD</span><h2>Database chung</h2></div></div>
         <div class="tool-block">
-          <h3>Google Sheet — khuyên dùng</h3>
-          <p>Upload file Excel dataset lên Google Sheets, chọn <b>File → Share → Publish to web</b>, xuất sheet dữ liệu dạng CSV, rồi dán URL vào <code>config.js</code>.</p>
-          <div class="code-box">dataSource: "google-sheet"<br>googleSheetCsvUrl: "URL_CSV_CỦA_BẠN"</div>
+          <h3>Google Apps Script API</h3>
+          <p>Sau khi làm theo file <b>SETUP_CLOUD_DATABASE.md</b>, dán URL Web App vào <code>config.js</code> và đổi <code>dataSource</code> thành <code>"api"</code>.</p>
+          <div class="code-box">dataSource: "api"<br>apiUrl: "https://script.google.com/macros/s/.../exec"</div>
+        </div>
+        <div class="tool-block">
+          <h3>Admin token</h3>
+          <p>Token chỉ lưu trong tab trình duyệt này, không ghi vào GitHub.</p>
+          <div class="token-row"><input id="adminToken" type="password" autocomplete="off" placeholder="Nhập ADMIN_TOKEN" /><button id="saveTokenBtn" type="button">Lưu token</button></div>
+        </div>
+        <div class="tool-block">
+          <h3>Đồng bộ</h3>
+          <p>Tải lại dữ liệu cloud hoặc đẩy toàn bộ data đang mở lên Google Sheet.</p>
+          <div class="tool-actions"><button id="reloadCloudBtn" type="button">↻ Tải lại cloud</button><button id="syncAllBtn" type="button">↑ Ghi toàn bộ lên cloud</button></div>
         </div>
         <div class="tool-block">
           <h3>Backup JSON</h3>
-          <p>Export dữ liệu hiện tại hoặc import file JSON đã chỉnh.</p>
+          <p>Vẫn nên export JSON định kỳ để backup.</p>
           <div class="tool-actions"><button id="exportJsonBtn" type="button">↓ Export JSON</button><label class="file-btn">↑ Import JSON<input id="importJsonInput" type="file" accept="application/json,.json" hidden></label></div>
-        </div>
-        <div class="tool-block">
-          <h3>Dữ liệu trên máy này</h3>
-          <p>Thay đổi trong trang quản lý được lưu bằng Local Storage để bạn xem thử ngay trên trang chính.</p>
-          <button class="danger-lite" id="clearLocalBtn" type="button">Xóa bản chỉnh local</button>
         </div>
       </aside>
     </div>
 
     <section class="admin-panel table-panel">
       <div class="panel-head table-head">
-        <div><span>DATABASE</span><h2>Danh sách quán</h2></div>
+        <div><span>DATABASE</span><h2>Danh sách chi nhánh</h2></div>
         <input id="adminSearch" type="search" placeholder="Tìm tên quán, địa chỉ..." />
       </div>
       <div class="admin-table-wrap">

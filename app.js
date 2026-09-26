@@ -4,7 +4,8 @@
   const CONFIG = window.FOOD_FINDER_CONFIG || {};
   const state = {
     restaurants: [],
-    filtered: [],
+    brands: [],
+    filteredBrands: [],
     visibleCount: 12,
     keyword: "",
     sort: "name",
@@ -16,17 +17,20 @@
       drink: new Set()
     },
     favoritesOnly: false,
-    favorites: new Set(JSON.parse(localStorage.getItem("foodFinderFavorites") || "[]"))
+    favorites: new Set(JSON.parse(localStorage.getItem("foodFinderFavoriteBrands") || "[]")),
+    loadedAt: 0
   };
 
-  const $ = (id) => document.getElementById(id);
+  const $ = id => document.getElementById(id);
   const els = {
-    heroCount: $("heroCount"), districtStat: $("districtStat"), cuisineStat: $("cuisineStat"), favoriteStat: $("favoriteStat"),
+    heroCount: $("heroCount"), plateCount: $("plateCount"), districtStat: $("districtStat"), cuisineStat: $("cuisineStat"), favoriteStat: $("favoriteStat"),
     heroSearchInput: $("heroSearchInput"), heroSearchBtn: $("heroSearchBtn"), searchInput: $("searchInput"),
     districtFilters: $("districtFilters"), foodTypeFilters: $("foodTypeFilters"), cuisineFilters: $("cuisineFilters"), dessertFilters: $("dessertFilters"), drinkFilters: $("drinkFilters"),
     clearFilters: $("clearFilters"), emptyClearBtn: $("emptyClearBtn"), activeFilters: $("activeFilters"), restaurantGrid: $("restaurantGrid"), resultCount: $("resultCount"), emptyState: $("emptyState"), loadMoreBtn: $("loadMoreBtn"),
     sortSelect: $("sortSelect"), randomBtn: $("randomBtn"), showFavoritesBtn: $("showFavoritesBtn"), mobileFilterBtn: $("mobileFilterBtn"), filterPanel: $("filterPanel"), filterBackdrop: $("filterBackdrop"),
-    chatFab: $("chatFab"), chatWidget: $("chatWidget"), navChatBtn: $("navChatBtn"), heroChatBtn: $("heroChatBtn"), closeChatBtn: $("closeChatBtn"), chatMessages: $("chatMessages"), chatForm: $("chatForm"), chatInput: $("chatInput"), chatSuggestions: $("chatSuggestions"), toast: $("toast")
+    chatFab: $("chatFab"), chatWidget: $("chatWidget"), navChatBtn: $("navChatBtn"), heroChatBtn: $("heroChatBtn"), closeChatBtn: $("closeChatBtn"), chatMessages: $("chatMessages"), chatForm: $("chatForm"), chatInput: $("chatInput"), chatSuggestions: $("chatSuggestions"),
+    branchModal: $("branchModal"), branchModalTitle: $("branchModalTitle"), branchModalMeta: $("branchModalMeta"), branchModalList: $("branchModalList"), closeBranchModal: $("closeBranchModal"),
+    toast: $("toast")
   };
 
   const escapeHtml = (value = "") => String(value)
@@ -37,16 +41,20 @@
     .replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d")
     .replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
 
-  const splitTags = (value) => {
+  const slugify = (value = "") => normalize(value).replace(/\s+/g, "-") || "restaurant";
+
+  const splitTags = value => {
     if (Array.isArray(value)) return value.filter(Boolean).map(v => String(v).trim());
     if (!value) return [];
     return String(value).split(/[;,]/).map(v => v.trim()).filter(Boolean);
   };
 
   function normalizeRestaurant(raw, index) {
+    const name = raw.name || raw["Tên quán"] || "";
     return {
-      id: raw.id || index + 1,
-      name: raw.name || raw["Tên quán"] || "",
+      id: raw.id ?? index + 1,
+      brandId: raw.brandId || raw["brandId"] || slugify(name),
+      name,
       branch: raw.branch || raw["Chi nhánh"] || "",
       address: raw.address || raw["Địa chỉ"] || "",
       district: raw.district || raw["Quận/Khu vực"] || "",
@@ -61,41 +69,43 @@
     };
   }
 
-  function parseCSV(text) {
-    const rows = [];
-    let row = [], cell = "", quoted = false;
-    for (let i = 0; i < text.length; i++) {
-      const ch = text[i], next = text[i + 1];
-      if (ch === '"' && quoted && next === '"') { cell += '"'; i++; }
-      else if (ch === '"') quoted = !quoted;
-      else if (ch === ',' && !quoted) { row.push(cell); cell = ""; }
-      else if ((ch === '\n' || ch === '\r') && !quoted) {
-        if (ch === '\r' && next === '\n') i++;
-        row.push(cell); cell = "";
-        if (row.some(v => v.trim() !== "")) rows.push(row);
-        row = [];
-      } else cell += ch;
-    }
-    if (cell || row.length) { row.push(cell); if (row.some(v => v.trim() !== "")) rows.push(row); }
-    if (!rows.length) return [];
-    const headers = rows.shift().map(h => h.trim());
-    return rows.map(r => Object.fromEntries(headers.map((h, i) => [h, (r[i] || "").trim()])));
+  function uniqueSorted(values) {
+    return [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b, "vi"));
+  }
+
+  function mapsLink(r) {
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent([r.name, r.branch, r.address, "TP.HCM"].filter(Boolean).join(" "))}`;
+  }
+
+  function searchableText(r) {
+    return normalize([r.name, r.branch, r.address, r.district, r.mainGroup, ...r.foodTypes, ...r.cuisines, ...r.desserts, ...r.drinks, r.note].join(" "));
+  }
+
+  function loadJsonp(url) {
+    return new Promise((resolve, reject) => {
+      const callback = `__foodFinderJsonp_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+      const script = document.createElement("script");
+      const timer = setTimeout(() => cleanup(new Error("Cloud API phản hồi quá lâu.")), 12000);
+      const cleanup = (error, value) => {
+        clearTimeout(timer);
+        try { delete window[callback]; } catch (_) { window[callback] = undefined; }
+        script.remove();
+        error ? reject(error) : resolve(value);
+      };
+      window[callback] = payload => cleanup(null, payload);
+      script.onerror = () => cleanup(new Error("Không tải được database cloud."));
+      const sep = url.includes("?") ? "&" : "?";
+      script.src = `${url}${sep}prefix=${encodeURIComponent(callback)}&t=${Date.now()}`;
+      document.head.appendChild(script);
+    });
   }
 
   async function loadData() {
-    const localOverride = localStorage.getItem("foodFinderCustomData");
-    if (localOverride) {
-      try { return JSON.parse(localOverride).map(normalizeRestaurant); } catch (_) {}
-    }
-
-    if (CONFIG.dataSource === "google-sheet" && CONFIG.googleSheetCsvUrl) {
-      try {
-        const response = await fetch(CONFIG.googleSheetCsvUrl, { cache: "no-store" });
-        if (!response.ok) throw new Error("Không tải được Google Sheet");
-        return parseCSV(await response.text()).map(normalizeRestaurant).filter(x => x.name);
-      } catch (error) {
-        console.warn("Google Sheet lỗi, dùng data local:", error);
-      }
+    if (CONFIG.dataSource === "api" && CONFIG.apiUrl) {
+      const payload = await loadJsonp(CONFIG.apiUrl);
+      const rows = Array.isArray(payload) ? payload : payload.data;
+      if (!Array.isArray(rows)) throw new Error("API trả về dữ liệu không hợp lệ.");
+      return rows.map(normalizeRestaurant).filter(x => x.name);
     }
 
     const response = await fetch(CONFIG.localDataUrl || "./data/restaurants.json", { cache: "no-store" });
@@ -103,8 +113,38 @@
     return (await response.json()).map(normalizeRestaurant).filter(x => x.name);
   }
 
-  function uniqueSorted(values) {
-    return [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b, "vi"));
+  function groupRows(rows) {
+    const groups = new Map();
+    for (const r of rows) {
+      const key = r.brandId || slugify(r.name);
+      if (!groups.has(key)) {
+        groups.set(key, {
+          brandId: key,
+          name: r.name,
+          branches: [],
+          foodTypes: [], cuisines: [], desserts: [], drinks: [], mainGroups: []
+        });
+      }
+      const g = groups.get(key);
+      g.branches.push(r);
+      g.foodTypes.push(...r.foodTypes);
+      g.cuisines.push(...r.cuisines);
+      g.desserts.push(...r.desserts);
+      g.drinks.push(...r.drinks);
+      if (r.mainGroup) g.mainGroups.push(r.mainGroup);
+    }
+    for (const g of groups.values()) {
+      g.foodTypes = uniqueSorted(g.foodTypes);
+      g.cuisines = uniqueSorted(g.cuisines);
+      g.desserts = uniqueSorted(g.desserts);
+      g.drinks = uniqueSorted(g.drinks);
+      g.mainGroups = uniqueSorted(g.mainGroups);
+    }
+    return [...groups.values()];
+  }
+
+  function allBranchesForBrand(brandId) {
+    return state.restaurants.filter(r => r.brandId === brandId);
   }
 
   function getFilterConfig() {
@@ -141,88 +181,136 @@
     });
   }
 
-  function searchableText(r) {
-    return normalize([r.name, r.branch, r.address, r.district, r.mainGroup, ...r.foodTypes, ...r.cuisines, ...r.desserts, ...r.drinks, r.note].join(" "));
-  }
-
   function matchesAny(values, selectedSet) {
     if (!selectedSet.size) return true;
     return [...selectedSet].some(selected => values.includes(selected));
   }
 
-  function applyFilters() {
+  function rowMatchesFilters(r) {
     const keyword = normalize(state.keyword);
-    let result = state.restaurants.filter(r => {
-      if (state.favoritesOnly && !state.favorites.has(String(r.id))) return false;
-      if (state.selected.district.size && !state.selected.district.has(r.district)) return false;
-      if (!matchesAny(r.foodTypes, state.selected.foodType)) return false;
-      if (!matchesAny(r.cuisines, state.selected.cuisine)) return false;
-      if (!matchesAny(r.desserts, state.selected.dessert)) return false;
-      if (!matchesAny(r.drinks, state.selected.drink)) return false;
-      if (keyword && !searchableText(r).includes(keyword)) return false;
-      return true;
-    });
+    if (state.selected.district.size && !state.selected.district.has(r.district)) return false;
+    if (!matchesAny(r.foodTypes, state.selected.foodType)) return false;
+    if (!matchesAny(r.cuisines, state.selected.cuisine)) return false;
+    if (!matchesAny(r.desserts, state.selected.dessert)) return false;
+    if (!matchesAny(r.drinks, state.selected.drink)) return false;
+    if (keyword && !searchableText(r).includes(keyword)) return false;
+    return true;
+  }
 
-    if (state.sort === "district") result.sort((a,b) => (a.district + a.name).localeCompare(b.district + b.name, "vi"));
-    else if (state.sort === "favorites") result.sort((a,b) => Number(state.favorites.has(String(b.id))) - Number(state.favorites.has(String(a.id))) || a.name.localeCompare(b.name,"vi"));
-    else result.sort((a,b) => a.name.localeCompare(b.name, "vi"));
+  function applyFilters() {
+    let rows = state.restaurants.filter(rowMatchesFilters);
+    let brands = groupRows(rows);
 
-    state.filtered = result;
+    if (state.favoritesOnly) brands = brands.filter(b => state.favorites.has(b.brandId));
+
+    if (state.sort === "district") {
+      brands.sort((a, b) => {
+        const ad = a.branches[0]?.district || "";
+        const bd = b.branches[0]?.district || "";
+        return (ad + a.name).localeCompare(bd + b.name, "vi");
+      });
+    } else if (state.sort === "favorites") {
+      brands.sort((a, b) => Number(state.favorites.has(b.brandId)) - Number(state.favorites.has(a.brandId)) || a.name.localeCompare(b.name, "vi"));
+    } else {
+      brands.sort((a, b) => a.name.localeCompare(b.name, "vi"));
+    }
+
+    state.filteredBrands = brands;
     renderActiveFilters();
     renderRestaurants();
     updateStats();
   }
 
-  function getAllTags(r) {
-    return uniqueSorted([...r.foodTypes, ...r.cuisines, ...r.desserts, ...r.drinks]).slice(0, 6);
+  function brandTags(brand) {
+    return uniqueSorted([...brand.foodTypes, ...brand.cuisines, ...brand.desserts, ...brand.drinks]).slice(0, 6);
   }
 
-  function mapsLink(r) {
-    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent([r.name,r.branch,r.address,"TP.HCM"].filter(Boolean).join(" "))}`;
+  function mainGroupForBrand(brand) {
+    return brand.mainGroups[0] || "";
   }
 
-  function cardHtml(r) {
-    const fav = state.favorites.has(String(r.id));
-    const safeSource = /^https?:\/\//i.test(r.source) ? r.source : "";
+  function brandCardHtml(brand) {
+    const allBranches = allBranchesForBrand(brand.brandId);
+    const isMulti = allBranches.length > 1;
+    const fav = state.favorites.has(brand.brandId);
+    const single = brand.branches[0] || allBranches[0];
+    const districtLabel = isMulti ? `${brand.branches.length} chi nhánh phù hợp` : (single?.district || "");
+
     return `
-      <article class="restaurant-card" data-id="${escapeHtml(r.id)}">
+      <article class="restaurant-card brand-card" data-brand="${escapeHtml(brand.brandId)}">
         <div class="card-top">
           <div class="card-title-wrap">
             <div class="card-eyebrow">
-              ${r.district ? `<span class="district-tag">${escapeHtml(r.district)}</span>` : ""}
-              ${r.mainGroup ? `<span class="main-tag">${escapeHtml(r.mainGroup)}</span>` : ""}
+              ${districtLabel ? `<span class="district-tag">${escapeHtml(districtLabel)}</span>` : ""}
+              ${mainGroupForBrand(brand) ? `<span class="main-tag">${escapeHtml(mainGroupForBrand(brand))}</span>` : ""}
             </div>
-            <h4>${escapeHtml(r.name)}</h4>
-            ${r.branch ? `<p class="branch-name">Chi nhánh ${escapeHtml(r.branch)}</p>` : ""}
+            <h4>${escapeHtml(brand.name)}</h4>
+            ${isMulti ? `<p class="branch-name">${allBranches.length} chi nhánh tại TP.HCM</p>` : (single?.branch ? `<p class="branch-name">Chi nhánh ${escapeHtml(single.branch)}</p>` : "")}
           </div>
-          <button class="favorite-btn ${fav ? "active" : ""}" type="button" data-favorite="${escapeHtml(r.id)}" aria-label="Yêu thích">${fav ? "♥" : "♡"}</button>
+          <button class="favorite-btn ${fav ? "active" : ""}" type="button" data-favorite-brand="${escapeHtml(brand.brandId)}" aria-label="Yêu thích">${fav ? "♥" : "♡"}</button>
         </div>
-        <p class="card-address"><span>●</span>${escapeHtml(r.address || "Đang cập nhật địa chỉ")}</p>
-        <div class="card-tags">${getAllTags(r).map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
-        ${r.note ? `<p class="card-note">${escapeHtml(r.note)}</p>` : ""}
+
+        ${isMulti
+          ? `<p class="branch-summary">Bấm xem chi nhánh để chọn địa điểm gần bạn.</p>`
+          : `<p class="card-address"><span>●</span>${escapeHtml(single?.address || "Đang cập nhật địa chỉ")}</p>`}
+
+        <div class="card-tags">${brandTags(brand).map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
+        ${!isMulti && single?.note ? `<p class="card-note">${escapeHtml(single.note)}</p>` : ""}
         <div class="card-footer">
-          <a class="map-link" href="${mapsLink(r)}" target="_blank" rel="noopener">↗ Google Maps</a>
-          <span class="status-dot"><i></i>${safeSource ? `<a href="${escapeHtml(safeSource)}" target="_blank" rel="noopener">Nguồn</a>` : "Đã lưu"}</span>
+          ${isMulti
+            ? `<button class="branch-open-btn" type="button" data-open-branches="${escapeHtml(brand.brandId)}">Xem ${allBranches.length} chi nhánh →</button>`
+            : `<a class="map-link" href="${mapsLink(single)}" target="_blank" rel="noopener">↗ Google Maps</a>`}
+          <span class="status-dot"><i></i>${isMulti ? "Nhiều chi nhánh" : "Đã lưu"}</span>
         </div>
       </article>`;
   }
 
   function renderRestaurants() {
-    els.resultCount.textContent = state.filtered.length;
-    const visible = state.filtered.slice(0, state.visibleCount);
-    els.restaurantGrid.innerHTML = visible.map(cardHtml).join("");
-    els.emptyState.classList.toggle("hidden", state.filtered.length > 0);
-    els.loadMoreBtn.classList.toggle("hidden", state.visibleCount >= state.filtered.length || !state.filtered.length);
+    els.resultCount.textContent = state.filteredBrands.length;
+    const visible = state.filteredBrands.slice(0, state.visibleCount);
+    els.restaurantGrid.innerHTML = visible.map(brandCardHtml).join("");
+    els.emptyState.classList.toggle("hidden", state.filteredBrands.length > 0);
+    els.loadMoreBtn.classList.toggle("hidden", state.visibleCount >= state.filteredBrands.length || !state.filteredBrands.length);
+  }
 
-    document.querySelectorAll("[data-favorite]").forEach(btn => btn.addEventListener("click", () => toggleFavorite(btn.dataset.favorite)));
+  function openBranchModal(brandId) {
+    const branches = allBranchesForBrand(brandId);
+    if (!branches.length) return;
+    const name = branches[0].name;
+    els.branchModalTitle.textContent = name;
+    els.branchModalMeta.textContent = `${branches.length} chi nhánh tại TP.HCM`;
+    els.branchModalList.innerHTML = branches
+      .slice()
+      .sort((a, b) => (a.district + a.branch).localeCompare(b.district + b.branch, "vi"))
+      .map(r => `
+        <article class="branch-item">
+          <div>
+            <div class="branch-item-head">
+              <strong>${escapeHtml(r.branch || r.district || "Chi nhánh")}</strong>
+              ${r.district ? `<span>${escapeHtml(r.district)}</span>` : ""}
+            </div>
+            <p>${escapeHtml(r.address || "Đang cập nhật địa chỉ")}</p>
+            <div class="branch-item-tags">${uniqueSorted([...r.foodTypes, ...r.cuisines, ...r.desserts, ...r.drinks]).slice(0, 4).map(t => `<em>${escapeHtml(t)}</em>`).join("")}</div>
+          </div>
+          <a href="${mapsLink(r)}" target="_blank" rel="noopener">Mở Maps ↗</a>
+        </article>`).join("");
+    els.branchModal.classList.add("open");
+    els.branchModal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+  }
+
+  function closeBranchModal() {
+    els.branchModal.classList.remove("open");
+    els.branchModal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
   }
 
   function renderActiveFilters() {
     const chips = [];
-    Object.entries(state.selected).forEach(([group,set]) => set.forEach(value => chips.push({group,value})));
-    if (state.keyword) chips.push({group:"keyword",value:`“${state.keyword}”`});
-    if (state.favoritesOnly) chips.push({group:"favorites", value:"Chỉ yêu thích"});
-    els.activeFilters.innerHTML = chips.map((chip,i) => `<button type="button" class="filter-chip" data-chip="${i}">${escapeHtml(chip.value)} ×</button>`).join("");
+    Object.entries(state.selected).forEach(([group, set]) => set.forEach(value => chips.push({ group, value })));
+    if (state.keyword) chips.push({ group: "keyword", value: `“${state.keyword}”` });
+    if (state.favoritesOnly) chips.push({ group: "favorites", value: "Chỉ yêu thích" });
+    els.activeFilters.innerHTML = chips.map((chip, i) => `<button type="button" class="filter-chip" data-chip="${i}">${escapeHtml(chip.value)} ×</button>`).join("");
     els.activeFilters.querySelectorAll("[data-chip]").forEach((btn, i) => btn.addEventListener("click", () => {
       const chip = chips[i];
       if (chip.group === "keyword") { state.keyword = ""; els.searchInput.value = ""; els.heroSearchInput.value = ""; }
@@ -237,17 +325,18 @@
   }
 
   function updateStats() {
-    els.heroCount.textContent = state.restaurants.length;
+    const totalBrands = groupRows(state.restaurants).length;
+    els.heroCount.textContent = totalBrands;
+    if (els.plateCount) els.plateCount.textContent = `${totalBrands}+`;
     els.districtStat.textContent = uniqueSorted(state.restaurants.map(r => r.district)).length;
     els.cuisineStat.textContent = uniqueSorted(state.restaurants.flatMap(r => r.cuisines)).length;
     els.favoriteStat.textContent = state.favorites.size;
   }
 
-  function toggleFavorite(id) {
-    const key = String(id);
-    if (state.favorites.has(key)) { state.favorites.delete(key); showToast("Đã bỏ khỏi yêu thích"); }
-    else { state.favorites.add(key); showToast("Đã lưu vào yêu thích ♡"); }
-    localStorage.setItem("foodFinderFavorites", JSON.stringify([...state.favorites]));
+  function toggleFavorite(brandId) {
+    if (state.favorites.has(brandId)) { state.favorites.delete(brandId); showToast("Đã bỏ khỏi yêu thích"); }
+    else { state.favorites.add(brandId); showToast("Đã lưu vào yêu thích ♡"); }
+    localStorage.setItem("foodFinderFavoriteBrands", JSON.stringify([...state.favorites]));
     applyFilters();
   }
 
@@ -268,26 +357,26 @@
     els.heroSearchInput.value = value;
     state.visibleCount = 12;
     applyFilters();
-    document.querySelector("#discover")?.scrollIntoView({behavior:"smooth",block:"start"});
+    document.querySelector("#discover")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function showToast(text) {
     els.toast.textContent = text;
     els.toast.classList.add("show");
     clearTimeout(showToast.timer);
-    showToast.timer = setTimeout(() => els.toast.classList.remove("show"), 1800);
+    showToast.timer = setTimeout(() => els.toast.classList.remove("show"), 1900);
   }
 
-  function randomRestaurant(pool = state.filtered.length ? state.filtered : state.restaurants) {
+  function randomBrand(pool = state.filteredBrands.length ? state.filteredBrands : groupRows(state.restaurants)) {
     if (!pool.length) return null;
     return pool[Math.floor(Math.random() * pool.length)];
   }
 
   function randomAction() {
-    const r = randomRestaurant();
-    if (!r) return;
-    showToast(`🎲 ${r.name} — ${r.district}`);
-    setSearch(r.name);
+    const brand = randomBrand();
+    if (!brand) return;
+    showToast(`🎲 Hôm nay thử ${brand.name} nhé!`);
+    setSearch(brand.name);
   }
 
   // CHATBOT ---------------------------------------------------------
@@ -305,20 +394,16 @@
     "do thai":"Thái Lan", "mon thai":"Thái Lan", "tra sua":"Trà sữa", "cafe":"Cafe", "ca phe":"Cafe",
     "ramen":"Ramen", "udon":"Udon", "sushi":"Sushi", "pizza":"Pizza", "lau":"Lẩu", "nuong":"Đồ nướng",
     "an vat":"Ăn vặt", "ga ran":"Gà rán", "hai san":"Hải sản", "bun bo":"Bún bò", "com tam":"Cơm tấm", "mi cay":"Mì cay",
-    "banh":"Bánh ngọt"
+    "banh":"Bánh ngọt", "kem":"Kem"
   };
 
-  function containsPhrase(text, phrase) {
-    return (` ${text} `).includes(` ${phrase} `);
-  }
+  function containsPhrase(text, phrase) { return (` ${text} `).includes(` ${phrase} `); }
 
   function parseBotQuery(query) {
     const q = normalize(query);
     let district = "", intent = "";
-    const districtEntries = Object.entries(districtAliases).sort((a,b) => b[0].length-a[0].length);
-    const intentEntries = Object.entries(intentAliases).sort((a,b) => b[0].length-a[0].length);
-    for (const [alias,val] of districtEntries) if (containsPhrase(q,alias)) { district = val; break; }
-    for (const [alias,val] of intentEntries) if (containsPhrase(q,alias)) { intent = val; break; }
+    for (const [alias, val] of Object.entries(districtAliases).sort((a, b) => b[0].length - a[0].length)) if (containsPhrase(q, alias)) { district = val; break; }
+    for (const [alias, val] of Object.entries(intentAliases).sort((a, b) => b[0].length - a[0].length)) if (containsPhrase(q, alias)) { intent = val; break; }
     return { q, district, intent, random: /\b(random|ngau nhien|chon giup|chon dum|an gi|goi y)\b/.test(q) };
   }
 
@@ -326,13 +411,13 @@
     let pool = state.restaurants.filter(r => {
       if (parsed.district && r.district !== parsed.district) return false;
       if (parsed.intent) {
-        const tags = [r.mainGroup,...r.foodTypes,...r.cuisines,...r.desserts,...r.drinks];
+        const tags = [r.mainGroup, ...r.foodTypes, ...r.cuisines, ...r.desserts, ...r.drinks];
         if (!tags.some(t => normalize(t).includes(normalize(parsed.intent)) || normalize(parsed.intent).includes(normalize(t)))) return false;
       }
       return true;
     });
     if (!parsed.district && !parsed.intent && parsed.q) {
-      const stop = ["cho toi","tim","quan","giup","minh","o","gan","muon","an","uong","co","nao"];
+      const stop = ["cho toi", "tim", "quan", "giup", "minh", "o", "gan", "muon", "an", "uong", "co", "nao"];
       const terms = parsed.q.split(" ").filter(t => t.length > 1 && !stop.includes(t));
       if (terms.length) pool = state.restaurants.filter(r => terms.some(t => searchableText(r).includes(t)));
     }
@@ -347,9 +432,17 @@
     els.chatMessages.scrollTop = els.chatMessages.scrollHeight;
   }
 
-  function botResultsHtml(items, intro) {
-    return `<div>${escapeHtml(intro)}</div><div class="bot-results">${items.map(r => `
-      <div class="bot-result"><b>${escapeHtml(r.name)}</b><span>${escapeHtml([r.branch,r.district].filter(Boolean).join(" · "))}</span><span>${escapeHtml(r.address)}</span><a href="${mapsLink(r)}" target="_blank" rel="noopener">Mở Google Maps ↗</a></div>`).join("")}</div>`;
+  function botResultsHtml(brands, intro) {
+    return `<div>${escapeHtml(intro)}</div><div class="bot-results">${brands.map(brand => {
+      const branches = allBranchesForBrand(brand.brandId);
+      const one = branches[0];
+      return `<div class="bot-result">
+        <b>${escapeHtml(brand.name)}</b>
+        ${branches.length > 1
+          ? `<span>${branches.length} chi nhánh tại TP.HCM</span><button type="button" data-open-branches="${escapeHtml(brand.brandId)}">Xem chi nhánh →</button>`
+          : `<span>${escapeHtml([one?.branch, one?.district].filter(Boolean).join(" · "))}</span><span>${escapeHtml(one?.address || "")}</span><a href="${mapsLink(one)}" target="_blank" rel="noopener">Mở Google Maps ↗</a>`}
+      </div>`;
+    }).join("")}</div>`;
   }
 
   function botReply(query) {
@@ -359,25 +452,27 @@
       return;
     }
     if (/\b(bao nhieu|tong cong|co may)\b/.test(parsed.q)) {
-      addMessage(`Hiện mình đang có ${state.restaurants.length} địa điểm trong danh sách, trải ở ${uniqueSorted(state.restaurants.map(r=>r.district)).length} khu vực TP.HCM.`);
+      const brands = groupRows(state.restaurants);
+      addMessage(`Hiện mình có ${brands.length} quán/thương hiệu với ${state.restaurants.length} địa điểm, trải ở ${uniqueSorted(state.restaurants.map(r => r.district)).length} khu vực TP.HCM.`);
       return;
     }
 
-    let pool = botFilter(parsed);
-    if (!pool.length) {
+    const rows = botFilter(parsed);
+    const brands = groupRows(rows);
+    if (!brands.length) {
       addMessage("Mình chưa tìm thấy quán khớp câu đó. Bạn thử nói ngắn hơn, ví dụ “ramen Tân Bình”, “lẩu Quận 7” hoặc “trà sữa Quận 10”.");
       return;
     }
 
     if (parsed.random) {
-      const pick = randomRestaurant(pool);
-      addMessage(botResultsHtml([pick], `Chốt cho bạn một chỗ trong ${pool.length} lựa chọn:`), "bot", true);
+      const pick = randomBrand(brands);
+      addMessage(botResultsHtml([pick], `Chốt cho bạn một quán trong ${brands.length} lựa chọn:`), "bot", true);
       return;
     }
 
-    const picks = pool.slice(0, 4);
-    let intro = `Mình tìm thấy ${pool.length} địa điểm phù hợp.`;
-    if (pool.length > 4) intro += " Đây là 4 gợi ý đầu tiên:";
+    const picks = brands.slice(0, 4);
+    let intro = `Mình tìm thấy ${brands.length} quán/thương hiệu phù hợp.`;
+    if (brands.length > 4) intro += " Đây là 4 gợi ý đầu tiên:";
     addMessage(botResultsHtml(picks, intro), "bot", true);
   }
 
@@ -387,7 +482,7 @@
     els.chatFab.style.opacity = "0";
     els.chatFab.style.pointerEvents = "none";
     if (!els.chatMessages.children.length) {
-      addMessage(`Chào bạn! Mình là Măm Măm Bot ✦ Mình đang đọc ${state.restaurants.length} địa điểm trong danh sách. Bạn muốn ăn/uống gì hôm nay?`);
+      addMessage(`Chào bạn! Mình là Măm Măm Bot ✦ Mình đang đọc ${groupRows(state.restaurants).length} quán/thương hiệu (${state.restaurants.length} địa điểm). Bạn muốn ăn/uống gì hôm nay?`);
     }
     setTimeout(() => els.chatInput.focus(), 120);
   }
@@ -399,9 +494,27 @@
     els.chatFab.style.pointerEvents = "auto";
   }
 
-  // EVENTS ----------------------------------------------------------
+  async function refreshCloudData(silent = true) {
+    if (CONFIG.dataSource !== "api" || !CONFIG.apiUrl) return;
+    try {
+      const fresh = await loadData();
+      const oldFingerprint = JSON.stringify(state.restaurants.map(r => [r.id, r.name, r.branch, r.address]));
+      const newFingerprint = JSON.stringify(fresh.map(r => [r.id, r.name, r.branch, r.address]));
+      if (oldFingerprint !== newFingerprint) {
+        state.restaurants = fresh;
+        state.brands = groupRows(fresh);
+        renderFilterOptions();
+        applyFilters();
+        if (!silent) showToast("Dữ liệu đã được cập nhật từ cloud");
+      }
+      state.loadedAt = Date.now();
+    } catch (error) {
+      console.warn("Không refresh được cloud data:", error);
+    }
+  }
+
   function bindEvents() {
-    els.searchInput.addEventListener("input", e => { state.keyword = e.target.value; state.visibleCount=12; applyFilters(); });
+    els.searchInput.addEventListener("input", e => { state.keyword = e.target.value; state.visibleCount = 12; applyFilters(); });
     els.heroSearchInput.addEventListener("keydown", e => { if (e.key === "Enter") setSearch(e.target.value); });
     els.heroSearchBtn.addEventListener("click", () => setSearch(els.heroSearchInput.value));
     els.clearFilters.addEventListener("click", clearAll);
@@ -413,7 +526,7 @@
       state.favoritesOnly = !state.favoritesOnly;
       state.visibleCount = 12;
       applyFilters();
-      document.querySelector("#discover")?.scrollIntoView({behavior:"smooth"});
+      document.querySelector("#discover")?.scrollIntoView({ behavior: "smooth" });
       showToast(state.favoritesOnly ? "Đang hiện quán yêu thích" : "Đã hiện lại tất cả quán");
     });
 
@@ -422,6 +535,22 @@
       const collapsed = target.classList.toggle("hidden");
       btn.querySelector("b").textContent = collapsed ? "+" : "−";
     }));
+
+    els.restaurantGrid.addEventListener("click", e => {
+      const favorite = e.target.closest("[data-favorite-brand]");
+      if (favorite) { toggleFavorite(favorite.dataset.favoriteBrand); return; }
+      const branchBtn = e.target.closest("[data-open-branches]");
+      if (branchBtn) openBranchModal(branchBtn.dataset.openBranches);
+    });
+
+    els.chatMessages.addEventListener("click", e => {
+      const branchBtn = e.target.closest("[data-open-branches]");
+      if (branchBtn) openBranchModal(branchBtn.dataset.openBranches);
+    });
+
+    els.closeBranchModal.addEventListener("click", closeBranchModal);
+    els.branchModal.addEventListener("click", e => { if (e.target === els.branchModal) closeBranchModal(); });
+    document.addEventListener("keydown", e => { if (e.key === "Escape" && els.branchModal.classList.contains("open")) closeBranchModal(); });
 
     els.mobileFilterBtn.addEventListener("click", () => { els.filterPanel.classList.add("open"); els.filterBackdrop.classList.add("show"); document.body.classList.add("modal-open"); });
     els.filterBackdrop.addEventListener("click", () => { els.filterPanel.classList.remove("open"); els.filterBackdrop.classList.remove("show"); document.body.classList.remove("modal-open"); });
@@ -442,9 +571,14 @@
   async function init() {
     try {
       state.restaurants = await loadData();
+      state.brands = groupRows(state.restaurants);
       renderFilterOptions();
       bindEvents();
       applyFilters();
+
+      if (CONFIG.dataSource === "api" && CONFIG.apiUrl && Number(CONFIG.cloudRefreshMs) > 0) {
+        setInterval(() => refreshCloudData(true), Number(CONFIG.cloudRefreshMs));
+      }
     } catch (error) {
       console.error(error);
       els.restaurantGrid.innerHTML = `<div class="empty-state"><div class="empty-emoji">⚠️</div><h3>Không tải được dữ liệu</h3><p>${escapeHtml(error.message)}</p></div>`;

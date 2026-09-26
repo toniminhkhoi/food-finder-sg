@@ -18,7 +18,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Gà rán Hàn Quốc & bia",
-    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia"
+    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia",
+    "brandId": "chivago-chicken"
   },
   {
     "id": 2,
@@ -39,7 +40,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia"
+    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia",
+    "brandId": "chivago-chicken"
   },
   {
     "id": 3,
@@ -60,7 +62,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia"
+    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia",
+    "brandId": "chivago-chicken"
   },
   {
     "id": 4,
@@ -81,7 +84,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia"
+    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia",
+    "brandId": "chivago-chicken"
   },
   {
     "id": 5,
@@ -102,7 +106,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia"
+    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia",
+    "brandId": "chivago-chicken"
   },
   {
     "id": 6,
@@ -123,7 +128,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Pizza+Lam+64%2F1B+Nguy%E1%BB%85n+Th%E1%BB%8B+S%C3%B3c%2C+B%C3%A0+%C4%90i%E1%BB%83m"
+    "source": "https://www.google.com/maps/search/?api=1&query=Pizza+Lam+64%2F1B+Nguy%E1%BB%85n+Th%E1%BB%8B+S%C3%B3c%2C+B%C3%A0+%C4%90i%E1%BB%83m",
+    "brandId": "pizza-lam"
   },
   {
     "id": 7,
@@ -144,7 +150,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://kokoria.food/cua-hang/"
+    "source": "https://kokoria.food/cua-hang/",
+    "brandId": "kokoria"
   },
   {
     "id": 8,
@@ -165,7 +172,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://kokoria.food/cua-hang/"
+    "source": "https://kokoria.food/cua-hang/",
+    "brandId": "kokoria"
   },
   {
     "id": 9,
@@ -186,7 +194,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://kokoria.food/cua-hang/"
+    "source": "https://kokoria.food/cua-hang/",
+    "brandId": "kokoria"
   },
   {
     "id": 10,
@@ -207,7 +216,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://kokoria.food/cua-hang/"
+    "source": "https://kokoria.food/cua-hang/",
+    "brandId": "kokoria"
   },
   {
     "id": 11,
@@ -228,7 +238,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://kokoria.food/cua-hang/"
+    "source": "https://kokoria.food/cua-hang/",
+    "brandId": "kokoria"
   },
   {
     "id": 12,
@@ -249,7 +260,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://kokoria.food/cua-hang/"
+    "source": "https://kokoria.food/cua-hang/",
+    "brandId": "kokoria"
   },
   {
     "id": 13,
@@ -270,7 +282,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://kokoria.food/cua-hang/"
+    "source": "https://kokoria.food/cua-hang/",
+    "brandId": "kokoria"
   },
   {
     "id": 14,
@@ -291,7 +304,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://kokoria.food/cua-hang/"
+    "source": "https://kokoria.food/cua-hang/",
+    "brandId": "kokoria"
   },
   {
     "id": 15,
@@ -312,7 +326,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://hanuri.food/"
+    "source": "https://hanuri.food/",
+    "brandId": "hanuri"
   },
   {
     "id": 16,
@@ -333,7 +348,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://hanuri.food/"
+    "source": "https://hanuri.food/",
+    "brandId": "hanuri"
   },
   {
     "id": 17,
@@ -354,7 +370,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://hanuri.food/"
+    "source": "https://hanuri.food/",
+    "brandId": "hanuri"
   },
   {
     "id": 18,
@@ -375,7 +392,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://hanuri.food/"
+    "source": "https://hanuri.food/",
+    "brandId": "hanuri"
   },
   {
     "id": 19,
@@ -396,7 +414,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://hanuri.food/"
+    "source": "https://hanuri.food/",
+    "brandId": "hanuri"
   },
   {
     "id": 20,
@@ -417,7 +436,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://hanuri.food/"
+    "source": "https://hanuri.food/",
+    "brandId": "hanuri"
   },
   {
     "id": 21,
@@ -437,7 +457,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Chi nhánh tìm thấy trên bản đồ; nên kiểm tra lại trạng thái trước khi đi.",
-    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+75+G%C3%B2+D%E1%BA%A7u"
+    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+75+G%C3%B2+D%E1%BA%A7u",
+    "brandId": "busan-korean-food"
   },
   {
     "id": 22,
@@ -457,7 +478,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Chi nhánh tìm thấy trên bản đồ; nên kiểm tra lại trạng thái trước khi đi.",
-    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+288+Nguy%E1%BB%85n+Duy+Trinh"
+    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+288+Nguy%E1%BB%85n+Duy+Trinh",
+    "brandId": "busan-korean-food"
   },
   {
     "id": 23,
@@ -477,7 +499,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Chi nhánh tìm thấy trên bản đồ; nên kiểm tra lại trạng thái trước khi đi.",
-    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+45%2F4+Nguy%E1%BB%85n+Th%C3%A1i+H%E1%BB%8Dc"
+    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+45%2F4+Nguy%E1%BB%85n+Th%C3%A1i+H%E1%BB%8Dc",
+    "brandId": "busan-korean-food"
   },
   {
     "id": 24,
@@ -497,7 +520,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Chi nhánh tìm thấy trên bản đồ; nên kiểm tra lại trạng thái trước khi đi.",
-    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+124+Ho%C3%A0ng+Hoa+Th%C3%A1m"
+    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+124+Ho%C3%A0ng+Hoa+Th%C3%A1m",
+    "brandId": "busan-korean-food"
   },
   {
     "id": 25,
@@ -517,7 +541,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Chi nhánh tìm thấy trên bản đồ; nên kiểm tra lại trạng thái trước khi đi.",
-    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+346+L%C3%AA+V%C4%83n+S%E1%BB%B9"
+    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+346+L%C3%AA+V%C4%83n+S%E1%BB%B9",
+    "brandId": "busan-korean-food"
   },
   {
     "id": 26,
@@ -535,7 +560,8 @@
     ],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+108+H%E1%BB%93+T%C3%B9ng+M%E1%BA%ADu"
+    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+108+H%E1%BB%93+T%C3%B9ng+M%E1%BA%ADu",
+    "brandId": "koi-the"
   },
   {
     "id": 27,
@@ -553,7 +579,8 @@
     ],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+120+Pasteur"
+    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+120+Pasteur",
+    "brandId": "koi-the"
   },
   {
     "id": 28,
@@ -571,7 +598,8 @@
     ],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+A-13%2C+Riviera+Point%2C+%C4%90%C6%B0%E1%BB%9Dng+s%E1%BB%91+1"
+    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+A-13%2C+Riviera+Point%2C+%C4%90%C6%B0%E1%BB%9Dng+s%E1%BB%91+1",
+    "brandId": "koi-the"
   },
   {
     "id": 29,
@@ -589,7 +617,8 @@
     ],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+249A1-249A2+Nguy%E1%BB%85n+V%C4%83n+Lu%C3%B4ng"
+    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+249A1-249A2+Nguy%E1%BB%85n+V%C4%83n+Lu%C3%B4ng",
+    "brandId": "koi-the"
   },
   {
     "id": 30,
@@ -607,7 +636,8 @@
     ],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+46-48+Cao+Th%E1%BA%AFng"
+    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+46-48+Cao+Th%E1%BA%AFng",
+    "brandId": "koi-the"
   },
   {
     "id": 31,
@@ -625,7 +655,8 @@
     ],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+400+T%C3%A2n+S%C6%A1n+Nh%C3%AC"
+    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+400+T%C3%A2n+S%C6%A1n+Nh%C3%AC",
+    "brandId": "koi-the"
   },
   {
     "id": 32,
@@ -643,7 +674,8 @@
     ],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=H%E1%BB%93ng+Tr%C3%A0+T%E1%BB%AB+Nam+256+L%C3%AA+V%C4%83n+S%E1%BB%B9"
+    "source": "https://www.google.com/maps/search/?api=1&query=H%E1%BB%93ng+Tr%C3%A0+T%E1%BB%AB+Nam+256+L%C3%AA+V%C4%83n+S%E1%BB%B9",
+    "brandId": "hong-tra-tu-nam"
   },
   {
     "id": 33,
@@ -663,7 +695,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Konomi+Sushi+4A+H%E1%BA%BBm+4+Nguy%E1%BB%85n+V%C4%83n+Th%C6%B0%C6%A1ng"
+    "source": "https://www.google.com/maps/search/?api=1&query=Konomi+Sushi+4A+H%E1%BA%BBm+4+Nguy%E1%BB%85n+V%C4%83n+Th%C6%B0%C6%A1ng",
+    "brandId": "konomi-sushi"
   },
   {
     "id": 34,
@@ -684,7 +717,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.foody.vn/ho-chi-minh/bach-tuoc-nuong-cau-kieu"
+    "source": "https://www.foody.vn/ho-chi-minh/bach-tuoc-nuong-cau-kieu",
+    "brandId": "bach-tuoc-nuong-cau-kieu"
   },
   {
     "id": 35,
@@ -704,7 +738,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://vinwonders.com/vi/wonderpedia/news/bun-thit-nuong-sai-gon/"
+    "source": "https://vinwonders.com/vi/wonderpedia/news/bun-thit-nuong-sai-gon/",
+    "brandId": "bun-thit-nuong-hai-ang"
   },
   {
     "id": 36,
@@ -724,7 +759,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Ovenmaru+Chicken+187+%C4%90i%E1%BB%87n+Bi%C3%AAn+Ph%E1%BB%A7"
+    "source": "https://www.google.com/maps/search/?api=1&query=Ovenmaru+Chicken+187+%C4%90i%E1%BB%87n+Bi%C3%AAn+Ph%E1%BB%A7",
+    "brandId": "ovenmaru-chicken"
   },
   {
     "id": 37,
@@ -745,7 +781,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Saewoo+Bong+Bong+5A+%C4%90%E1%BA%B7ng+Ti%E1%BA%BFn+%C4%90%C3%B4ng%2C+An+Kh%C3%A1nh"
+    "source": "https://www.google.com/maps/search/?api=1&query=Saewoo+Bong+Bong+5A+%C4%90%E1%BA%B7ng+Ti%E1%BA%BFn+%C4%90%C3%B4ng%2C+An+Kh%C3%A1nh",
+    "brandId": "saewoo-bong-bong"
   },
   {
     "id": 38,
@@ -767,7 +804,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Chỉ giữ chi nhánh THISO Mall theo yêu cầu của bạn.",
-    "source": "https://thisomallsala.vn/vn/chi-tiet-cua-hang/pizza360-PIZZA360"
+    "source": "https://thisomallsala.vn/vn/chi-tiet-cua-hang/pizza360-PIZZA360",
+    "brandId": "pizza360"
   },
   {
     "id": 39,
@@ -787,7 +825,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=C%C6%A1m+T%E1%BA%A5m+H%E1%BA%BBm+33+33%2F16+Nguy%E1%BB%85n+%C4%90%C3%ACnh+Ch%C3%ADnh"
+    "source": "https://www.google.com/maps/search/?api=1&query=C%C6%A1m+T%E1%BA%A5m+H%E1%BA%BBm+33+33%2F16+Nguy%E1%BB%85n+%C4%90%C3%ACnh+Ch%C3%ADnh",
+    "brandId": "com-tam-hem-33"
   },
   {
     "id": 40,
@@ -807,7 +846,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%A1nh+Canh+Cua+Hai+D%E1%BA%ADu+6+T%C3%A2n+H%E1%BA%A3i"
+    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%A1nh+Canh+Cua+Hai+D%E1%BA%ADu+6+T%C3%A2n+H%E1%BA%A3i",
+    "brandId": "banh-canh-cua-hai-dau"
   },
   {
     "id": 41,
@@ -827,7 +867,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Địa chỉ mới; quán trước đây từng bán ở Hoàng Sa.",
-    "source": "https://tuoitre.vn/banh-canh-cua-dung-rau-45-000-dong-mot-to-ma-u-nu-6-loai-topping-20260508101127948.htm"
+    "source": "https://tuoitre.vn/banh-canh-cua-dung-rau-45-000-dong-mot-to-ma-u-nu-6-loai-topping-20260508101127948.htm",
+    "brandId": "banh-canh-cua-dung-rau"
   },
   {
     "id": 42,
@@ -847,7 +888,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Fujiro+8A%2F8B1+Th%C3%A1i+V%C4%83n+Lung"
+    "source": "https://www.google.com/maps/search/?api=1&query=Fujiro+8A%2F8B1+Th%C3%A1i+V%C4%83n+Lung",
+    "brandId": "fujiro"
   },
   {
     "id": 43,
@@ -865,7 +907,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Manuka.mee+157%2F1A+Nguy%E1%BB%85n+Gia+Tr%C3%AD"
+    "source": "https://www.google.com/maps/search/?api=1&query=Manuka.mee+157%2F1A+Nguy%E1%BB%85n+Gia+Tr%C3%AD",
+    "brandId": "manuka-mee"
   },
   {
     "id": 44,
@@ -883,7 +926,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Manuka.mee+106+Xu%C3%A2n+Th%E1%BB%A7y"
+    "source": "https://www.google.com/maps/search/?api=1&query=Manuka.mee+106+Xu%C3%A2n+Th%E1%BB%A7y",
+    "brandId": "manuka-mee"
   },
   {
     "id": 45,
@@ -901,7 +945,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Manuka.mee+58+L%C3%AA+V%C4%83n+Thi%C3%AAm"
+    "source": "https://www.google.com/maps/search/?api=1&query=Manuka.mee+58+L%C3%AA+V%C4%83n+Thi%C3%AAm",
+    "brandId": "manuka-mee"
   },
   {
     "id": 46,
@@ -919,7 +964,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Manuka.mee+C%E1%BB%ADa+h%C3%A0ng+30+kh%E1%BB%91i+C%2C+Midtown%2C+Nguy%E1%BB%85n+V%C4%83n+Linh"
+    "source": "https://www.google.com/maps/search/?api=1&query=Manuka.mee+C%E1%BB%ADa+h%C3%A0ng+30+kh%E1%BB%91i+C%2C+Midtown%2C+Nguy%E1%BB%85n+V%C4%83n+Linh",
+    "brandId": "manuka-mee"
   },
   {
     "id": 47,
@@ -937,7 +983,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Website chính thức",
-    "source": "https://www.bobybutterman.com/store.php"
+    "source": "https://www.bobybutterman.com/store.php",
+    "brandId": "bo-by-butterman"
   },
   {
     "id": 48,
@@ -955,7 +1002,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Website chính thức",
-    "source": "https://www.bobybutterman.com/store.php"
+    "source": "https://www.bobybutterman.com/store.php",
+    "brandId": "bo-by-butterman"
   },
   {
     "id": 49,
@@ -973,7 +1021,8 @@
     "drinks": [],
     "status": "Cần kiểm tra thêm",
     "note": "Google Maps có điểm này nhưng website chính thức hiện chỉ liệt kê 2 cửa hàng.",
-    "source": "https://www.google.com/maps/search/?api=1&query=B%C6%A1+by+Butterman+112+Nguy%E1%BB%85n+Gia+Tr%C3%AD"
+    "source": "https://www.google.com/maps/search/?api=1&query=B%C6%A1+by+Butterman+112+Nguy%E1%BB%85n+Gia+Tr%C3%AD",
+    "brandId": "bo-by-butterman"
   },
   {
     "id": 50,
@@ -991,7 +1040,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=L%C3%B2+Nh%E1%BB%8F+v%C3%A0+M%C3%A8o+-+Canele+192%2F7+Nguy%E1%BB%85n+Oanh"
+    "source": "https://www.google.com/maps/search/?api=1&query=L%C3%B2+Nh%E1%BB%8F+v%C3%A0+M%C3%A8o+-+Canele+192%2F7+Nguy%E1%BB%85n+Oanh",
+    "brandId": "lo-nho-va-meo-canele"
   },
   {
     "id": 51,
@@ -1012,7 +1062,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Bạn đã xác nhận đây là đúng quán tại CT7 đường Tam Đảo.",
-    "source": "https://www.google.com/maps/search/?api=1&query=C%C6%A1m+G%C3%A0+123+CT7%2C+%C4%91%C6%B0%E1%BB%9Dng+Tam+%C4%90%E1%BA%A3o%2C+C%C6%B0+x%C3%A1+B%E1%BA%AFc+H%E1%BA%A3i"
+    "source": "https://www.google.com/maps/search/?api=1&query=C%C6%A1m+G%C3%A0+123+CT7%2C+%C4%91%C6%B0%E1%BB%9Dng+Tam+%C4%90%E1%BA%A3o%2C+C%C6%B0+x%C3%A1+B%E1%BA%AFc+H%E1%BA%A3i",
+    "brandId": "com-ga-123"
   },
   {
     "id": 52,
@@ -1029,7 +1080,8 @@
     ],
     "status": "Đã xác minh",
     "note": "Đã sửa theo địa chỉ hiện tại; bạn xác nhận 95/40 Lê Văn Sỹ là đúng.",
-    "source": "https://www.google.com/maps/search/?api=1&query=%E1%BA%A5m+c%C3%A0+ph%C3%AA+95%2F40+L%C3%AA+V%C4%83n+S%E1%BB%B9%2C+Ph%C3%BA+Nhu%E1%BA%ADn"
+    "source": "https://www.google.com/maps/search/?api=1&query=%E1%BA%A5m+c%C3%A0+ph%C3%AA+95%2F40+L%C3%AA+V%C4%83n+S%E1%BB%B9%2C+Ph%C3%BA+Nhu%E1%BA%ADn",
+    "brandId": "am-ca-phe"
   },
   {
     "id": 53,
@@ -1049,7 +1101,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.foody.vn/ho-chi-minh/food/dia-diem?ds=Restaurant&q=b%C3%A1nh+canh+b%E1%BB%99t+l%E1%BB%8Dc"
+    "source": "https://www.foody.vn/ho-chi-minh/food/dia-diem?ds=Restaurant&q=b%C3%A1nh+canh+b%E1%BB%99t+l%E1%BB%8Dc",
+    "brandId": "banh-canh-bot-loc-quang"
   },
   {
     "id": 54,
@@ -1072,7 +1125,8 @@
     ],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.foody.vn/ho-chi-minh/betsu-milk-matcha-sweets"
+    "source": "https://www.foody.vn/ho-chi-minh/betsu-milk-matcha-sweets",
+    "brandId": "betsu-milk"
   },
   {
     "id": 55,
@@ -1092,7 +1146,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%A1nh+Cu%E1%BB%91n+N%C3%B3ng+Cao+B%E1%BA%B1ng+33+Khu+ph%E1%BB%91+H%C6%B0ng+Gia+1%2C+Ph%C3%BA+M%E1%BB%B9+H%C6%B0ng"
+    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%A1nh+Cu%E1%BB%91n+N%C3%B3ng+Cao+B%E1%BA%B1ng+33+Khu+ph%E1%BB%91+H%C6%B0ng+Gia+1%2C+Ph%C3%BA+M%E1%BB%B9+H%C6%B0ng",
+    "brandId": "banh-cuon-nong-cao-bang"
   },
   {
     "id": 56,
@@ -1112,7 +1167,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Yabai-Ten+Ramen+1119+Ho%C3%A0ng+Sa"
+    "source": "https://www.google.com/maps/search/?api=1&query=Yabai-Ten+Ramen+1119+Ho%C3%A0ng+Sa",
+    "brandId": "yabai-ten-ramen"
   },
   {
     "id": 57,
@@ -1134,7 +1190,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.foody.vn/ho-chi-minh/thuy-linh-lau-de-hai-san-57a-ung-van-khiem"
+    "source": "https://www.foody.vn/ho-chi-minh/thuy-linh-lau-de-hai-san-57a-ung-van-khiem",
+    "brandId": "quan-thuy-linh"
   },
   {
     "id": 58,
@@ -1155,7 +1212,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=%E1%BB%90c+168+94+Tr%C6%B0%E1%BB%9Dng+Sa"
+    "source": "https://www.google.com/maps/search/?api=1&query=%E1%BB%90c+168+94+Tr%C6%B0%E1%BB%9Dng+Sa",
+    "brandId": "oc-168"
   },
   {
     "id": 59,
@@ -1176,7 +1234,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Ng%C3%B5+Th%C3%A1i+343%2F5+T%C3%B4+Hi%E1%BA%BFn+Th%C3%A0nh"
+    "source": "https://www.google.com/maps/search/?api=1&query=Ng%C3%B5+Th%C3%A1i+343%2F5+T%C3%B4+Hi%E1%BA%BFn+Th%C3%A0nh",
+    "brandId": "ngo-thai"
   },
   {
     "id": 60,
@@ -1197,7 +1256,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Ng%C3%B5+Th%C3%A1i+126%2F6+Phan+X%C3%ADch+Long"
+    "source": "https://www.google.com/maps/search/?api=1&query=Ng%C3%B5+Th%C3%A1i+126%2F6+Phan+X%C3%ADch+Long",
+    "brandId": "ngo-thai"
   },
   {
     "id": 61,
@@ -1218,7 +1278,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Ng%C3%B5+Th%C3%A1i+48+%C4%90%C6%B0%E1%BB%9Dng+S%E1%BB%91+1"
+    "source": "https://www.google.com/maps/search/?api=1&query=Ng%C3%B5+Th%C3%A1i+48+%C4%90%C6%B0%E1%BB%9Dng+S%E1%BB%91+1",
+    "brandId": "ngo-thai"
   },
   {
     "id": 62,
@@ -1238,7 +1299,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Ti%E1%BB%87m+M%C3%AC+No+N%C3%AA+23+Ph%E1%BA%A1m+V%C4%83n+B%E1%BA%A1ch"
+    "source": "https://www.google.com/maps/search/?api=1&query=Ti%E1%BB%87m+M%C3%AC+No+N%C3%AA+23+Ph%E1%BA%A1m+V%C4%83n+B%E1%BA%A1ch",
+    "brandId": "tiem-mi-no-ne"
   },
   {
     "id": 63,
@@ -1258,7 +1320,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Cửa hàng đầu tiên của BHC tại Việt Nam, khai trương 12/09/2026.",
-    "source": "https://vi.yna.co.kr/view/AVI20260915000400880"
+    "source": "https://vi.yna.co.kr/view/AVI20260915000400880",
+    "brandId": "bhc-chicken"
   },
   {
     "id": 64,
@@ -1279,7 +1342,8 @@
     "drinks": [],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Texas+Chicken+195+L%C3%AA+%C4%90%E1%BA%A1i+H%C3%A0nh"
+    "source": "https://www.google.com/maps/search/?api=1&query=Texas+Chicken+195+L%C3%AA+%C4%90%E1%BA%A1i+H%C3%A0nh",
+    "brandId": "texas-chicken"
   },
   {
     "id": 65,
@@ -1300,7 +1364,8 @@
     "drinks": [],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Texas+Chicken+217+Nguy%E1%BB%85n+V%C4%83n+C%E1%BB%AB"
+    "source": "https://www.google.com/maps/search/?api=1&query=Texas+Chicken+217+Nguy%E1%BB%85n+V%C4%83n+C%E1%BB%AB",
+    "brandId": "texas-chicken"
   },
   {
     "id": 66,
@@ -1321,7 +1386,8 @@
     "drinks": [],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Texas+Chicken+42-44+Nguy%E1%BB%85n+Th%E1%BB%8B+T%C3%BA"
+    "source": "https://www.google.com/maps/search/?api=1&query=Texas+Chicken+42-44+Nguy%E1%BB%85n+Th%E1%BB%8B+T%C3%BA",
+    "brandId": "texas-chicken"
   },
   {
     "id": 67,
@@ -1342,7 +1408,8 @@
     "drinks": [],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Texas+Chicken+113+Nguy%E1%BB%85n+Th%C3%A1i+H%E1%BB%8Dc"
+    "source": "https://www.google.com/maps/search/?api=1&query=Texas+Chicken+113+Nguy%E1%BB%85n+Th%C3%A1i+H%E1%BB%8Dc",
+    "brandId": "texas-chicken"
   },
   {
     "id": 68,
@@ -1362,7 +1429,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Baoz+Dimsum+190+H%E1%BB%93ng+B%C3%A0ng%2C+The+Garden+Mall"
+    "source": "https://www.google.com/maps/search/?api=1&query=Baoz+Dimsum+190+H%E1%BB%93ng+B%C3%A0ng%2C+The+Garden+Mall",
+    "brandId": "baoz-dimsum"
   },
   {
     "id": 69,
@@ -1382,7 +1450,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Baoz+Dimsum+295-297-299+L%C3%AA+%C4%90%E1%BA%A1i+H%C3%A0nh"
+    "source": "https://www.google.com/maps/search/?api=1&query=Baoz+Dimsum+295-297-299+L%C3%AA+%C4%90%E1%BA%A1i+H%C3%A0nh",
+    "brandId": "baoz-dimsum"
   },
   {
     "id": 70,
@@ -1402,7 +1471,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Baoz+Dimsum+82-84-86-88+Nguy%E1%BB%85n+Tri+Ph%C6%B0%C6%A1ng"
+    "source": "https://www.google.com/maps/search/?api=1&query=Baoz+Dimsum+82-84-86-88+Nguy%E1%BB%85n+Tri+Ph%C6%B0%C6%A1ng",
+    "brandId": "baoz-dimsum"
   },
   {
     "id": 71,
@@ -1423,7 +1493,8 @@
     "drinks": [],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=iSushi+126+H%E1%BB%93ng+B%C3%A0ng%2C+H%C3%B9ng+V%C6%B0%C6%A1ng+Plaza"
+    "source": "https://www.google.com/maps/search/?api=1&query=iSushi+126+H%E1%BB%93ng+B%C3%A0ng%2C+H%C3%B9ng+V%C6%B0%C6%A1ng+Plaza",
+    "brandId": "isushi"
   },
   {
     "id": 72,
@@ -1444,7 +1515,8 @@
     "drinks": [],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=iSushi+53+Ho%C3%A0ng+Th%E1%BA%BF+Thi%E1%BB%87n%2C+Thiso+Mall"
+    "source": "https://www.google.com/maps/search/?api=1&query=iSushi+53+Ho%C3%A0ng+Th%E1%BA%BF+Thi%E1%BB%87n%2C+Thiso+Mall",
+    "brandId": "isushi"
   },
   {
     "id": 73,
@@ -1465,7 +1537,8 @@
     "drinks": [],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=iSushi+B3-17%2C+Vincom+Center+%C4%90%E1%BB%93ng+Kh%E1%BB%9Fi%2C+72+L%C3%AA+Th%C3%A1nh+T%C3%B4n"
+    "source": "https://www.google.com/maps/search/?api=1&query=iSushi+B3-17%2C+Vincom+Center+%C4%90%E1%BB%93ng+Kh%E1%BB%9Fi%2C+72+L%C3%AA+Th%C3%A1nh+T%C3%B4n",
+    "brandId": "isushi"
   },
   {
     "id": 74,
@@ -1486,7 +1559,8 @@
     "drinks": [],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=iSushi+191+Phan+X%C3%ADch+Long"
+    "source": "https://www.google.com/maps/search/?api=1&query=iSushi+191+Phan+X%C3%ADch+Long",
+    "brandId": "isushi"
   },
   {
     "id": 75,
@@ -1506,7 +1580,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=X%C6%B0%E1%BB%9Fng+M%C3%AC+Qu%E1%BB%91c+T%E1%BA%BF+525%2F72+Hu%E1%BB%B3nh+V%C4%83n+B%C3%A1nh"
+    "source": "https://www.google.com/maps/search/?api=1&query=X%C6%B0%E1%BB%9Fng+M%C3%AC+Qu%E1%BB%91c+T%E1%BA%BF+525%2F72+Hu%E1%BB%B3nh+V%C4%83n+B%C3%A1nh",
+    "brandId": "xuong-mi-quoc-te"
   },
   {
     "id": 76,
@@ -1526,7 +1601,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Meili+%E7%BE%8E%E4%B8%BD+-+M%C3%AC+B%C3%B2+%C4%90%C3%A0i+Loan+2B+Mai+V%C4%83n+V%C4%A9nh"
+    "source": "https://www.google.com/maps/search/?api=1&query=Meili+%E7%BE%8E%E4%B8%BD+-+M%C3%AC+B%C3%B2+%C4%90%C3%A0i+Loan+2B+Mai+V%C4%83n+V%C4%A9nh",
+    "brandId": "meili-mi-bo-ai-loan"
   },
   {
     "id": 77,
@@ -1546,7 +1622,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Meili+%E7%BE%8E%E4%B8%BD+-+M%C3%AC+B%C3%B2+%C4%90%C3%A0i+Loan+213+Nguy%E1%BB%85n+V%C4%83n+Kh%E1%BB%91i"
+    "source": "https://www.google.com/maps/search/?api=1&query=Meili+%E7%BE%8E%E4%B8%BD+-+M%C3%AC+B%C3%B2+%C4%90%C3%A0i+Loan+213+Nguy%E1%BB%85n+V%C4%83n+Kh%E1%BB%91i",
+    "brandId": "meili-mi-bo-ai-loan"
   },
   {
     "id": 78,
@@ -1566,7 +1643,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Meili+%E7%BE%8E%E4%B8%BD+-+M%C3%AC+B%C3%B2+%C4%90%C3%A0i+Loan+40A+Nhi%C3%AAu+T%E1%BB%A9"
+    "source": "https://www.google.com/maps/search/?api=1&query=Meili+%E7%BE%8E%E4%B8%BD+-+M%C3%AC+B%C3%B2+%C4%90%C3%A0i+Loan+40A+Nhi%C3%AAu+T%E1%BB%A9",
+    "brandId": "meili-mi-bo-ai-loan"
   },
   {
     "id": 79,
@@ -1586,7 +1664,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Meili+%E7%BE%8E%E4%B8%BD+-+M%C3%AC+B%C3%B2+%C4%90%C3%A0i+Loan+31%2F34+Ung+V%C4%83n+Khi%C3%AAm"
+    "source": "https://www.google.com/maps/search/?api=1&query=Meili+%E7%BE%8E%E4%B8%BD+-+M%C3%AC+B%C3%B2+%C4%90%C3%A0i+Loan+31%2F34+Ung+V%C4%83n+Khi%C3%AAm",
+    "brandId": "meili-mi-bo-ai-loan"
   },
   {
     "id": 80,
@@ -1606,7 +1685,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.rengeramen.vn/"
+    "source": "https://www.rengeramen.vn/",
+    "brandId": "renge-ramen"
   },
   {
     "id": 81,
@@ -1627,7 +1707,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=H%E1%BA%BBm+Fast+Food+2+75+Nguy%E1%BB%85n+C%C6%B0+Trinh"
+    "source": "https://www.google.com/maps/search/?api=1&query=H%E1%BA%BBm+Fast+Food+2+75+Nguy%E1%BB%85n+C%C6%B0+Trinh",
+    "brandId": "hem-fast-food-2"
   },
   {
     "id": 82,
@@ -1648,7 +1729,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=M%C3%AA+Th%C3%A1i+190+Th%C3%A0nh+Th%C3%A1i"
+    "source": "https://www.google.com/maps/search/?api=1&query=M%C3%AA+Th%C3%A1i+190+Th%C3%A0nh+Th%C3%A1i",
+    "brandId": "me-thai"
   },
   {
     "id": 83,
@@ -1669,7 +1751,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://marukameudon.com/"
+    "source": "https://marukameudon.com/",
+    "brandId": "marugame-marukame-udon"
   },
   {
     "id": 84,
@@ -1690,7 +1773,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://marukameudon.com/"
+    "source": "https://marukameudon.com/",
+    "brandId": "marugame-marukame-udon"
   },
   {
     "id": 85,
@@ -1711,7 +1795,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://marukameudon.com/"
+    "source": "https://marukameudon.com/",
+    "brandId": "marugame-marukame-udon"
   },
   {
     "id": 86,
@@ -1732,7 +1817,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://marukameudon.com/"
+    "source": "https://marukameudon.com/",
+    "brandId": "marugame-marukame-udon"
   },
   {
     "id": 87,
@@ -1752,7 +1838,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Tên Hàn: 봄돈까스; chuyên cutlet/tonkatsu.",
-    "source": "https://www.google.com/maps/search/?api=1&query=Cutlet+Spring+6A+%C4%90%C6%B0%E1%BB%9Dng+S%E1%BB%91+9%2C+An+Kh%C3%A1nh"
+    "source": "https://www.google.com/maps/search/?api=1&query=Cutlet+Spring+6A+%C4%90%C6%B0%E1%BB%9Dng+S%E1%BB%91+9%2C+An+Kh%C3%A1nh",
+    "brandId": "cutlet-spring"
   },
   {
     "id": 88,
@@ -1774,7 +1861,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Eddie%27s+New+York+Deli+%26+Diner+73+Pasteur"
+    "source": "https://www.google.com/maps/search/?api=1&query=Eddie%27s+New+York+Deli+%26+Diner+73+Pasteur",
+    "brandId": "eddie-s-new-york-deli-diner"
   },
   {
     "id": 89,
@@ -1796,7 +1884,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Eddie%27s+New+York+Deli+%26+Diner+71+Th%E1%BA%A3o+%C4%90i%E1%BB%81n"
+    "source": "https://www.google.com/maps/search/?api=1&query=Eddie%27s+New+York+Deli+%26+Diner+71+Th%E1%BA%A3o+%C4%90i%E1%BB%81n",
+    "brandId": "eddie-s-new-york-deli-diner"
   },
   {
     "id": 90,
@@ -1818,7 +1907,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Eddie%27s+New+York+Deli+%26+Diner+408+Ph%E1%BA%A1m+Th%C3%A1i+B%C6%B0%E1%BB%9Dng"
+    "source": "https://www.google.com/maps/search/?api=1&query=Eddie%27s+New+York+Deli+%26+Diner+408+Ph%E1%BA%A1m+Th%C3%A1i+B%C6%B0%E1%BB%9Dng",
+    "brandId": "eddie-s-new-york-deli-diner"
   },
   {
     "id": 91,
@@ -1839,7 +1929,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.foody.vn/ho-chi-minh/pizza-whassup-phu-nhuan"
+    "source": "https://www.foody.vn/ho-chi-minh/pizza-whassup-phu-nhuan",
+    "brandId": "pizza-whassup"
   },
   {
     "id": 92,
@@ -1859,7 +1950,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Ph%E1%BB%9F+G%C3%A0+B%E1%BA%A3o+Kh%C3%A1nh+136+%C4%90%C6%B0%E1%BB%9Dng+3+Th%C3%A1ng+2"
+    "source": "https://www.google.com/maps/search/?api=1&query=Ph%E1%BB%9F+G%C3%A0+B%E1%BA%A3o+Kh%C3%A1nh+136+%C4%90%C6%B0%E1%BB%9Dng+3+Th%C3%A1ng+2",
+    "brandId": "pho-ga-bao-khanh"
   },
   {
     "id": 93,
@@ -1879,7 +1971,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Ph%E1%BB%9F+G%C3%A0+B%E1%BA%A3o+Kh%C3%A1nh+164Bis+Tr%E1%BA%A7n+H%C6%B0ng+%C4%90%E1%BA%A1o"
+    "source": "https://www.google.com/maps/search/?api=1&query=Ph%E1%BB%9F+G%C3%A0+B%E1%BA%A3o+Kh%C3%A1nh+164Bis+Tr%E1%BA%A7n+H%C6%B0ng+%C4%90%E1%BA%A1o",
+    "brandId": "pho-ga-bao-khanh"
   },
   {
     "id": 94,
@@ -1900,7 +1993,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://guide.michelin.com/us/en/ho-chi-minh/ho-chi-minh_2978179/restaurant/pho-mien-ga-ky-%C4%91ong"
+    "source": "https://guide.michelin.com/us/en/ho-chi-minh/ho-chi-minh_2978179/restaurant/pho-mien-ga-ky-%C4%91ong",
+    "brandId": "pho-mien-ga-ky-ong"
   },
   {
     "id": 95,
@@ -1920,7 +2014,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Ph%E1%BB%9F+Anh+8+K%E1%BB%B3+%C4%90%E1%BB%93ng"
+    "source": "https://www.google.com/maps/search/?api=1&query=Ph%E1%BB%9F+Anh+8+K%E1%BB%B3+%C4%90%E1%BB%93ng",
+    "brandId": "pho-anh"
   },
   {
     "id": 96,
@@ -1941,7 +2036,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 97,
@@ -1962,7 +2058,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 98,
@@ -1983,7 +2080,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 99,
@@ -2004,7 +2102,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 100,
@@ -2025,7 +2124,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 101,
@@ -2046,7 +2146,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 102,
@@ -2067,7 +2168,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 103,
@@ -2088,7 +2190,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 104,
@@ -2109,7 +2212,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 105,
@@ -2130,7 +2234,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 106,
@@ -2151,7 +2256,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 107,
@@ -2172,7 +2278,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 108,
@@ -2193,7 +2300,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 109,
@@ -2214,7 +2322,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 110,
@@ -2235,7 +2344,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 111,
@@ -2256,7 +2366,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 112,
@@ -2277,7 +2388,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 113,
@@ -2298,7 +2410,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 114,
@@ -2319,7 +2432,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 115,
@@ -2340,7 +2454,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 116,
@@ -2361,7 +2476,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://www.sukiya.com.vn/store/"
+    "source": "https://www.sukiya.com.vn/store/",
+    "brandId": "sukiya"
   },
   {
     "id": 117,
@@ -2381,7 +2497,8 @@
     "drinks": [],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=M%C3%AC+Cay+Sasin+338+Nguy%E1%BB%85n+S%C6%A1n"
+    "source": "https://www.google.com/maps/search/?api=1&query=M%C3%AC+Cay+Sasin+338+Nguy%E1%BB%85n+S%C6%A1n",
+    "brandId": "mi-cay-sasin"
   },
   {
     "id": 118,
@@ -2401,7 +2518,8 @@
     "drinks": [],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=M%C3%AC+Cay+Sasin+251+T%C3%B4+Hi%E1%BA%BFn+Th%C3%A0nh"
+    "source": "https://www.google.com/maps/search/?api=1&query=M%C3%AC+Cay+Sasin+251+T%C3%B4+Hi%E1%BA%BFn+Th%C3%A0nh",
+    "brandId": "mi-cay-sasin"
   },
   {
     "id": 119,
@@ -2422,7 +2540,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://dookkivietnam.vn/"
+    "source": "https://dookkivietnam.vn/",
+    "brandId": "dookki"
   },
   {
     "id": 120,
@@ -2443,7 +2562,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://dookkivietnam.vn/"
+    "source": "https://dookkivietnam.vn/",
+    "brandId": "dookki"
   },
   {
     "id": 121,
@@ -2464,7 +2584,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://dookkivietnam.vn/"
+    "source": "https://dookkivietnam.vn/",
+    "brandId": "dookki"
   },
   {
     "id": 122,
@@ -2485,7 +2606,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://dookkivietnam.vn/"
+    "source": "https://dookkivietnam.vn/",
+    "brandId": "dookki"
   },
   {
     "id": 123,
@@ -2506,7 +2628,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://dookkivietnam.vn/"
+    "source": "https://dookkivietnam.vn/",
+    "brandId": "dookki"
   },
   {
     "id": 124,
@@ -2527,7 +2650,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://dookkivietnam.vn/"
+    "source": "https://dookkivietnam.vn/",
+    "brandId": "dookki"
   },
   {
     "id": 125,
@@ -2548,7 +2672,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://dookkivietnam.vn/"
+    "source": "https://dookkivietnam.vn/",
+    "brandId": "dookki"
   },
   {
     "id": 126,
@@ -2569,7 +2694,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://dookkivietnam.vn/"
+    "source": "https://dookkivietnam.vn/",
+    "brandId": "dookki"
   },
   {
     "id": 127,
@@ -2590,7 +2716,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "",
-    "source": "https://dookkivietnam.vn/"
+    "source": "https://dookkivietnam.vn/",
+    "brandId": "dookki"
   },
   {
     "id": 128,
@@ -2611,7 +2738,8 @@
     "drinks": [],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Pepper+Lunch+Saigon+Centre%2C+65+L%C3%AA+L%E1%BB%A3i"
+    "source": "https://www.google.com/maps/search/?api=1&query=Pepper+Lunch+Saigon+Centre%2C+65+L%C3%AA+L%E1%BB%A3i",
+    "brandId": "pepper-lunch"
   },
   {
     "id": 129,
@@ -2632,7 +2760,8 @@
     "drinks": [],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Pepper+Lunch+T%E1%BA%A7ng+2+AEON+Mall+B%C3%ACnh+T%C3%A2n%2C+1+%C4%90%C6%B0%E1%BB%9Dng+S%E1%BB%91+17A"
+    "source": "https://www.google.com/maps/search/?api=1&query=Pepper+Lunch+T%E1%BA%A7ng+2+AEON+Mall+B%C3%ACnh+T%C3%A2n%2C+1+%C4%90%C6%B0%E1%BB%9Dng+S%E1%BB%91+17A",
+    "brandId": "pepper-lunch"
   },
   {
     "id": 130,
@@ -2653,7 +2782,8 @@
     "drinks": [],
     "status": "Đã xác minh - chưa chắc đủ chi nhánh",
     "note": "",
-    "source": "https://www.google.com/maps/search/?api=1&query=Pepper+Lunch+AEON+Mall+T%C3%A2n+Ph%C3%BA%2C+30+T%C3%A2n+Th%E1%BA%AFng"
+    "source": "https://www.google.com/maps/search/?api=1&query=Pepper+Lunch+AEON+Mall+T%C3%A2n+Ph%C3%BA%2C+30+T%C3%A2n+Th%E1%BA%AFng",
+    "brandId": "pepper-lunch"
   },
   {
     "id": 131,
@@ -2673,7 +2803,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Bạn đã xác nhận đúng quán.",
-    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%BAn+B%C3%B2+B%E1%BB%9D+K%C3%A8+Ho%C3%A0ng+Sa+725+Ho%C3%A0ng+Sa%2C+Qu%E1%BA%ADn+3"
+    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%BAn+B%C3%B2+B%E1%BB%9D+K%C3%A8+Ho%C3%A0ng+Sa+725+Ho%C3%A0ng+Sa%2C+Qu%E1%BA%ADn+3",
+    "brandId": "bun-bo-bo-ke-hoang-sa"
   },
   {
     "id": 132,
@@ -2693,7 +2824,8 @@
     "drinks": [],
     "status": "Đã xác minh",
     "note": "Bạn đã xác nhận đúng quán 'cơm tấm bờ kè'.",
-    "source": "https://www.google.com/maps/search/?api=1&query=C%C6%A1m+T%E1%BA%A5m+%C4%90%C3%AAm+B%E1%BB%9D+K%C3%A8+244-246+Tr%C6%B0%E1%BB%9Dng+Sa%2C+B%C3%ACnh+Th%E1%BA%A1nh"
+    "source": "https://www.google.com/maps/search/?api=1&query=C%C6%A1m+T%E1%BA%A5m+%C4%90%C3%AAm+B%E1%BB%9D+K%C3%A8+244-246+Tr%C6%B0%E1%BB%9Dng+Sa%2C+B%C3%ACnh+Th%E1%BA%A1nh",
+    "brandId": "com-tam-em-bo-ke"
   },
   {
     "id": 133,
@@ -2711,7 +2843,8 @@
     "drinks": [],
     "status": "Đã xác minh theo bạn",
     "note": "Giữ nguyên địa chỉ bạn đã cung cấp.",
-    "source": "https://www.google.com/maps/search/?api=1&query=pastrypost_tphcm+26+Ph%C3%B9ng+V%C4%83n+Cung%2C+Ph%C3%BA+Nhu%E1%BA%ADn"
+    "source": "https://www.google.com/maps/search/?api=1&query=pastrypost_tphcm+26+Ph%C3%B9ng+V%C4%83n+Cung%2C+Ph%C3%BA+Nhu%E1%BA%ADn",
+    "brandId": "pastrypost-tphcm"
   },
   {
     "id": 134,
@@ -2732,7 +2865,8 @@
     "drinks": [],
     "status": "Đã xác minh theo bạn",
     "note": "Giữ địa chỉ ở mức đường Âu Cơ theo yêu cầu.",
-    "source": "https://www.google.com/maps/search/?api=1&query=De+Frites+%C3%82u+C%C6%A1%2C+T%C3%A2n+Ph%C3%BA"
+    "source": "https://www.google.com/maps/search/?api=1&query=De+Frites+%C3%82u+C%C6%A1%2C+T%C3%A2n+Ph%C3%BA",
+    "brandId": "de-frites"
   },
   {
     "id": 135,
@@ -2752,7 +2886,8 @@
     "drinks": [],
     "status": "Đã xác minh theo bạn",
     "note": "Bạn xác nhận địa chỉ 135 Bành Văn Trân, phường Tân Sơn Nhất.",
-    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%BAn+B%C3%B2+Hu%E1%BA%BF+H%E1%BA%A1nh+135+B%C3%A0nh+V%C4%83n+Tr%C3%A2n%2C+T%C3%A2n+S%C6%A1n+Nh%E1%BA%A5t%2C+TP.HCM"
+    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%BAn+B%C3%B2+Hu%E1%BA%BF+H%E1%BA%A1nh+135+B%C3%A0nh+V%C4%83n+Tr%C3%A2n%2C+T%C3%A2n+S%C6%A1n+Nh%E1%BA%A5t%2C+TP.HCM",
+    "brandId": "bun-bo-hue-hanh"
   },
   {
     "id": 136,
@@ -2769,7 +2904,8 @@
     ],
     "status": "Đã xác minh theo bạn",
     "note": "Bạn đã trực tiếp kiểm tra địa chỉ này.",
-    "source": "https://www.google.com/maps/search/?api=1&query=Tr%C3%A0+s%E1%BB%AFa+Monguxiu+60%2F6+V%C4%A9nh+Vi%E1%BB%85n%2C+TP.HCM"
+    "source": "https://www.google.com/maps/search/?api=1&query=Tr%C3%A0+s%E1%BB%AFa+Monguxiu+60%2F6+V%C4%A9nh+Vi%E1%BB%85n%2C+TP.HCM",
+    "brandId": "tra-sua-monguxiu"
   },
   {
     "id": 137,
@@ -2789,7 +2925,8 @@
     "drinks": [],
     "status": "Đã xác minh theo bạn",
     "note": "Quầy mochi bạn nhắc tới ở Takashimaya.",
-    "source": "https://www.google.com/maps/search/?api=1&query=Mochi+Sweets+Takashimaya+Saigon+Centre"
+    "source": "https://www.google.com/maps/search/?api=1&query=Mochi+Sweets+Takashimaya+Saigon+Centre",
+    "brandId": "mochi-sweets"
   },
   {
     "id": 138,
@@ -2809,7 +2946,8 @@
     "drinks": [],
     "status": "Đã xác minh theo bạn",
     "note": "Bạn xác nhận đúng vị trí. Google Maps hiện có thể hiển thị tên 'Bún bò O Huyền'.",
-    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%BAn+b%C3%B2+997+Ho%C3%A0ng+Sa%2C+Qu%E1%BA%ADn+3"
+    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%BAn+b%C3%B2+997+Ho%C3%A0ng+Sa%2C+Qu%E1%BA%ADn+3",
+    "brandId": "bun-bo-nha-con-ngan"
   },
   {
     "id": 139,
@@ -2830,6 +2968,29 @@
     "drinks": [],
     "status": "Đã xác minh theo bạn",
     "note": "Tên bạn gửi: Tiệm Mì Mý 1998; bạn xác nhận kết quả 58 Trần Bình Trọng.",
-    "source": "https://www.google.com/maps/search/?api=1&query=Ti%E1%BB%87m+M%E1%BB%B3+%C3%9D+1998+58+Tr%E1%BA%A7n+B%C3%ACnh+Tr%E1%BB%8Dng%2C+TP.HCM"
+    "source": "https://www.google.com/maps/search/?api=1&query=Ti%E1%BB%87m+M%E1%BB%B3+%C3%9D+1998+58+Tr%E1%BA%A7n+B%C3%ACnh+Tr%E1%BB%8Dng%2C+TP.HCM",
+    "brandId": "tiem-my-y-1998"
+  },
+  {
+    "id": 140,
+    "brandId": "mixue",
+    "name": "Mixue",
+    "branch": "Nguyễn Ảnh Thủ",
+    "address": "18/7 Đ. Nguyễn Ảnh Thủ",
+    "district": "Quận 12",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Ăn vặt"
+    ],
+    "cuisines": [],
+    "desserts": [
+      "Kem"
+    ],
+    "drinks": [
+      "Trà sữa"
+    ],
+    "status": "Đã cập nhật",
+    "note": "Kem, Trà sữa bá khí",
+    "source": ""
   }
 ]

@@ -41,7 +41,7 @@
         <div class="hero-copy">
           <div class="eyebrow"><span></span> TP.HCM • FOOD & DRINK FINDER</div>
           <h1>Không biết ăn gì?<br><em>Để web chọn giùm.</em></h1>
-          <p class="hero-lead">Lọc theo quận, loại món, ẩm thực hoặc hỏi chatbot bằng ngôn ngữ tự nhiên. Danh sách hiện có <strong id="heroCount">0</strong> địa điểm.</p>
+          <p class="hero-lead">Lọc theo quận, loại món, ẩm thực hoặc hỏi chatbot bằng ngôn ngữ tự nhiên. Danh sách hiện có <strong id="heroCount">0</strong> quán/thương hiệu, được gom từ nhiều chi nhánh TP.HCM.</p>
 
           <div class="hero-search">
             <div class="hero-search-icon">⌕</div>
@@ -68,7 +68,7 @@
           <div class="hero-plate">
             <div class="plate-inner">
               <span class="plate-noodle">🍲</span>
-              <div class="plate-copy"><strong>139+</strong><small>địa điểm đã gom</small></div>
+              <div class="plate-copy"><strong id="plateCount">0+</strong><small>quán đã gom</small></div>
             </div>
           </div>
           <div class="sparkle sp-one">✦</div>
@@ -128,7 +128,7 @@
           <div class="results-toolbar">
             <div>
               <span class="result-label">KẾT QUẢ</span>
-              <h3><strong id="resultCount">0</strong> địa điểm phù hợp</h3>
+              <h3><strong id="resultCount">0</strong> quán phù hợp</h3>
             </div>
             <div class="toolbar-actions">
               <button id="mobileFilterBtn" class="mobile-filter-btn" type="button">☷ Bộ lọc</button>
@@ -208,6 +208,21 @@
       <input id="chatInput" type="text" autocomplete="off" placeholder="Bạn muốn ăn gì?" />
       <button type="submit" aria-label="Gửi">➜</button>
     </form>
+  </section>
+
+
+  <section id="branchModal" class="branch-modal" aria-hidden="true" aria-label="Danh sách chi nhánh">
+    <div class="branch-modal-card" role="dialog" aria-modal="true">
+      <header class="branch-modal-head">
+        <div>
+          <span>CHI NHÁNH</span>
+          <h2 id="branchModalTitle">Tên quán</h2>
+          <p id="branchModalMeta"></p>
+        </div>
+        <button id="closeBranchModal" type="button" aria-label="Đóng">×</button>
+      </header>
+      <div id="branchModalList" class="branch-modal-list"></div>
+    </div>
   </section>
 
   <div id="filterBackdrop" class="filter-backdrop"></div>

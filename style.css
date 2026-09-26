@@ -304,3 +304,37 @@ button { color: inherit; }
   .chat-fab b { display: none; }
   .chat-widget { right: 8px; bottom: 8px; width: calc(100vw - 16px); height: min(640px,calc(100vh - 16px)); }
 }
+
+/* ===== V4: GỘP THƯƠNG HIỆU / CHI NHÁNH ===== */
+.branch-summary { margin: 14px 0 12px; color: #8b7468; font-size: .72rem; line-height: 1.6; }
+.branch-open-btn { position: relative; z-index: 2; border: 0; background: #2b211d; color: #fff; border-radius: 11px; padding: 10px 12px; font-size: .68rem; font-weight: 700; cursor: pointer; }
+.branch-open-btn:hover { background: #ff6b35; }
+
+.branch-modal { position: fixed; inset: 0; z-index: 120; display: grid; place-items: center; padding: 18px; background: rgba(34,24,20,.52); backdrop-filter: blur(7px); opacity: 0; pointer-events: none; transition: .18s ease; }
+.branch-modal.open { opacity: 1; pointer-events: auto; }
+.branch-modal-card { width: min(720px,100%); max-height: min(760px,calc(100vh - 36px)); display: flex; flex-direction: column; background: #fffdf9; border: 1px solid #ecd9cc; border-radius: 28px; overflow: hidden; box-shadow: 0 30px 90px rgba(48,28,18,.28); transform: translateY(14px) scale(.985); transition: .18s ease; }
+.branch-modal.open .branch-modal-card { transform: translateY(0) scale(1); }
+.branch-modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; padding: 24px 26px 19px; background: linear-gradient(135deg,#2b211d,#3d2d26); color: white; }
+.branch-modal-head span { display: block; color: #ffb194; font-size: .58rem; font-weight: 800; letter-spacing: .13em; margin-bottom: 5px; }
+.branch-modal-head h2 { margin: 0; font-family: "DM Serif Display",serif; font-weight: 400; font-size: 1.7rem; }
+.branch-modal-head p { margin: 5px 0 0; color: #d6c6bd; font-size: .7rem; }
+.branch-modal-head button { width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.08); color: white; font-size: 1.45rem; cursor: pointer; }
+.branch-modal-list { padding: 18px; overflow-y: auto; display: grid; gap: 11px; }
+.branch-item { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; border: 1px solid #eadbd1; border-radius: 17px; background: #fff; padding: 15px 16px; }
+.branch-item-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.branch-item-head strong { font-size: .8rem; }
+.branch-item-head span { border-radius: 999px; padding: 4px 8px; background: #edf6f0; color: #41705e; font-size: .56rem; font-weight: 700; }
+.branch-item p { margin: 6px 0 8px; color: #78655b; font-size: .68rem; line-height: 1.45; }
+.branch-item-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.branch-item-tags em { font-style: normal; padding: 4px 7px; border-radius: 8px; background: #f7f1ec; color: #877267; font-size: .53rem; }
+.branch-item > a { white-space: nowrap; text-decoration: none; background: #ff6b35; color: white; border-radius: 10px; padding: 9px 11px; font-size: .62rem; font-weight: 800; }
+
+.bot-result button { border: 0; background: transparent; color: #f05a25; padding: 2px 0 0; font: inherit; font-size: .61rem; font-weight: 800; cursor: pointer; text-align: left; }
+
+@media (max-width: 560px) {
+  .branch-modal { padding: 8px; }
+  .branch-modal-card { max-height: calc(100vh - 16px); border-radius: 22px; }
+  .branch-modal-head { padding: 20px 18px 16px; }
+  .branch-item { grid-template-columns: 1fr; }
+  .branch-item > a { justify-self: start; }
+}
