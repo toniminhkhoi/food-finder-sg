@@ -1,0 +1,2835 @@
+[
+  {
+    "id": 1,
+    "name": "Chivago Chicken",
+    "branch": "Nguyễn Thái Học",
+    "address": "161 Nguyễn Thái Học",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Gà rán Hàn Quốc & bia",
+    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia"
+  },
+  {
+    "id": 2,
+    "name": "Chivago Chicken",
+    "branch": "Hoa Đào",
+    "address": "8 Hoa Đào",
+    "district": "Phú Nhuận",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia"
+  },
+  {
+    "id": 3,
+    "name": "Chivago Chicken",
+    "branch": "Nguyễn Tri Phương",
+    "address": "304 Nguyễn Tri Phương",
+    "district": "Quận 10",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia"
+  },
+  {
+    "id": 4,
+    "name": "Chivago Chicken",
+    "branch": "Nguyễn Thị Thập",
+    "address": "318 Nguyễn Thị Thập",
+    "district": "Quận 7",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia"
+  },
+  {
+    "id": 5,
+    "name": "Chivago Chicken",
+    "branch": "Đường Số 2",
+    "address": "6D Đường Số 2, An Khánh",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://shopeefood.vn/thuong-hieu/chivago-chicken-ga-ran-han-quoc-bia"
+  },
+  {
+    "id": 6,
+    "name": "Pizza Lam",
+    "branch": "Bà Điểm",
+    "address": "64/1B Nguyễn Thị Sóc, Bà Điểm",
+    "district": "Hóc Môn",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Pizza"
+    ],
+    "cuisines": [
+      "Âu/Mỹ"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Pizza+Lam+64%2F1B+Nguy%E1%BB%85n+Th%E1%BB%8B+S%C3%B3c%2C+B%C3%A0+%C4%90i%E1%BB%83m"
+  },
+  {
+    "id": 7,
+    "name": "Kokoria",
+    "branch": "Ba Tháng Hai",
+    "address": "207/33 Ba Tháng Hai",
+    "district": "Quận 10",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://kokoria.food/cua-hang/"
+  },
+  {
+    "id": 8,
+    "name": "Kokoria",
+    "branch": "Lê Văn Duyệt",
+    "address": "106 Lê Văn Duyệt",
+    "district": "Bình Thạnh",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://kokoria.food/cua-hang/"
+  },
+  {
+    "id": 9,
+    "name": "Kokoria",
+    "branch": "Xô Viết Nghệ Tĩnh",
+    "address": "323 Xô Viết Nghệ Tĩnh",
+    "district": "Bình Thạnh",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://kokoria.food/cua-hang/"
+  },
+  {
+    "id": 10,
+    "name": "Kokoria",
+    "branch": "Vinhomes Grand Park",
+    "address": "Shophouse 01S04, tòa S203, khu Rainbow, Vinhomes Grand Park",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://kokoria.food/cua-hang/"
+  },
+  {
+    "id": 11,
+    "name": "Kokoria",
+    "branch": "Phan Văn Trị",
+    "address": "699 Phan Văn Trị",
+    "district": "Gò Vấp",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://kokoria.food/cua-hang/"
+  },
+  {
+    "id": 12,
+    "name": "Kokoria",
+    "branch": "Sư Vạn Hạnh",
+    "address": "573/2 Sư Vạn Hạnh",
+    "district": "Quận 10",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://kokoria.food/cua-hang/"
+  },
+  {
+    "id": 13,
+    "name": "Kokoria",
+    "branch": "Trương Công Định",
+    "address": "28 Trương Công Định",
+    "district": "Tân Bình",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://kokoria.food/cua-hang/"
+  },
+  {
+    "id": 14,
+    "name": "Kokoria",
+    "branch": "Nguyễn Ảnh Thủ",
+    "address": "29A Nguyễn Ảnh Thủ",
+    "district": "Quận 12",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://kokoria.food/cua-hang/"
+  },
+  {
+    "id": 15,
+    "name": "Hanuri",
+    "branch": "Sư Vạn Hạnh",
+    "address": "736 Sư Vạn Hạnh",
+    "district": "Quận 10",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Đồ khô",
+      "Ăn vặt"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://hanuri.food/"
+  },
+  {
+    "id": 16,
+    "name": "Hanuri",
+    "branch": "Nguyễn Đình Chiểu",
+    "address": "284A Nguyễn Đình Chiểu",
+    "district": "Quận 3",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Đồ khô",
+      "Ăn vặt"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://hanuri.food/"
+  },
+  {
+    "id": 17,
+    "name": "Hanuri",
+    "branch": "Xô Viết Nghệ Tĩnh",
+    "address": "121 Xô Viết Nghệ Tĩnh",
+    "district": "Bình Thạnh",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Đồ khô",
+      "Ăn vặt"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://hanuri.food/"
+  },
+  {
+    "id": 18,
+    "name": "Hanuri",
+    "branch": "Điện Biên Phủ",
+    "address": "531 Điện Biên Phủ",
+    "district": "Quận 3",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Đồ khô",
+      "Ăn vặt"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://hanuri.food/"
+  },
+  {
+    "id": 19,
+    "name": "Hanuri",
+    "branch": "Cộng Hòa",
+    "address": "51 Cộng Hòa",
+    "district": "Tân Bình",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Đồ khô",
+      "Ăn vặt"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://hanuri.food/"
+  },
+  {
+    "id": 20,
+    "name": "Hanuri",
+    "branch": "Phan Văn Trị",
+    "address": "530-532 Phan Văn Trị",
+    "district": "Gò Vấp",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Đồ khô",
+      "Ăn vặt"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://hanuri.food/"
+  },
+  {
+    "id": 21,
+    "name": "Busan Korean Food",
+    "branch": "Gò Dầu",
+    "address": "75 Gò Dầu",
+    "district": "Tân Phú",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Đồ khô"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Chi nhánh tìm thấy trên bản đồ; nên kiểm tra lại trạng thái trước khi đi.",
+    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+75+G%C3%B2+D%E1%BA%A7u"
+  },
+  {
+    "id": 22,
+    "name": "Busan Korean Food",
+    "branch": "Nguyễn Duy Trinh",
+    "address": "288 Nguyễn Duy Trinh",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Đồ khô"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Chi nhánh tìm thấy trên bản đồ; nên kiểm tra lại trạng thái trước khi đi.",
+    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+288+Nguy%E1%BB%85n+Duy+Trinh"
+  },
+  {
+    "id": 23,
+    "name": "Busan Korean Food",
+    "branch": "Nguyễn Thái Học",
+    "address": "45/4 Nguyễn Thái Học",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Đồ khô"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Chi nhánh tìm thấy trên bản đồ; nên kiểm tra lại trạng thái trước khi đi.",
+    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+45%2F4+Nguy%E1%BB%85n+Th%C3%A1i+H%E1%BB%8Dc"
+  },
+  {
+    "id": 24,
+    "name": "Busan Korean Food",
+    "branch": "Hoàng Hoa Thám",
+    "address": "124 Hoàng Hoa Thám",
+    "district": "Tân Bình",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Đồ khô"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Chi nhánh tìm thấy trên bản đồ; nên kiểm tra lại trạng thái trước khi đi.",
+    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+124+Ho%C3%A0ng+Hoa+Th%C3%A1m"
+  },
+  {
+    "id": 25,
+    "name": "Busan Korean Food",
+    "branch": "Lê Văn Sỹ",
+    "address": "346 Lê Văn Sỹ",
+    "district": "Quận 3",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Đồ khô"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Chi nhánh tìm thấy trên bản đồ; nên kiểm tra lại trạng thái trước khi đi.",
+    "source": "https://www.google.com/maps/search/?api=1&query=Busan+Korean+Food+346+L%C3%AA+V%C4%83n+S%E1%BB%B9"
+  },
+  {
+    "id": 26,
+    "name": "KOI Thé",
+    "branch": "Hồ Tùng Mậu",
+    "address": "108 Hồ Tùng Mậu",
+    "district": "Quận 1",
+    "mainGroup": "Đồ uống",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [],
+    "drinks": [
+      "Trà sữa",
+      "Trà"
+    ],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+108+H%E1%BB%93+T%C3%B9ng+M%E1%BA%ADu"
+  },
+  {
+    "id": 27,
+    "name": "KOI Thé",
+    "branch": "Pasteur",
+    "address": "120 Pasteur",
+    "district": "Quận 1",
+    "mainGroup": "Đồ uống",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [],
+    "drinks": [
+      "Trà sữa",
+      "Trà"
+    ],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+120+Pasteur"
+  },
+  {
+    "id": 28,
+    "name": "KOI Thé",
+    "branch": "Riviera Point",
+    "address": "A-13, Riviera Point, Đường số 1",
+    "district": "Quận 7",
+    "mainGroup": "Đồ uống",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [],
+    "drinks": [
+      "Trà sữa",
+      "Trà"
+    ],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+A-13%2C+Riviera+Point%2C+%C4%90%C6%B0%E1%BB%9Dng+s%E1%BB%91+1"
+  },
+  {
+    "id": 29,
+    "name": "KOI Thé",
+    "branch": "Nguyễn Văn Luông",
+    "address": "249A1-249A2 Nguyễn Văn Luông",
+    "district": "Quận 6",
+    "mainGroup": "Đồ uống",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [],
+    "drinks": [
+      "Trà sữa",
+      "Trà"
+    ],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+249A1-249A2+Nguy%E1%BB%85n+V%C4%83n+Lu%C3%B4ng"
+  },
+  {
+    "id": 30,
+    "name": "KOI Thé",
+    "branch": "Cao Thắng",
+    "address": "46-48 Cao Thắng",
+    "district": "Quận 3",
+    "mainGroup": "Đồ uống",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [],
+    "drinks": [
+      "Trà sữa",
+      "Trà"
+    ],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+46-48+Cao+Th%E1%BA%AFng"
+  },
+  {
+    "id": 31,
+    "name": "KOI Thé",
+    "branch": "Tân Sơn Nhì",
+    "address": "400 Tân Sơn Nhì",
+    "district": "Tân Phú",
+    "mainGroup": "Đồ uống",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [],
+    "drinks": [
+      "Trà sữa",
+      "Trà"
+    ],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=KOI+Th%C3%A9+400+T%C3%A2n+S%C6%A1n+Nh%C3%AC"
+  },
+  {
+    "id": 32,
+    "name": "Hồng Trà Từ Nam",
+    "branch": "Lê Văn Sỹ",
+    "address": "256 Lê Văn Sỹ",
+    "district": "Tân Bình",
+    "mainGroup": "Đồ uống",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [],
+    "drinks": [
+      "Trà",
+      "Trà sữa"
+    ],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=H%E1%BB%93ng+Tr%C3%A0+T%E1%BB%AB+Nam+256+L%C3%AA+V%C4%83n+S%E1%BB%B9"
+  },
+  {
+    "id": 33,
+    "name": "Konomi Sushi",
+    "branch": "Nguyễn Văn Thương",
+    "address": "4A Hẻm 4 Nguyễn Văn Thương",
+    "district": "Bình Thạnh",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Sushi"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Konomi+Sushi+4A+H%E1%BA%BBm+4+Nguy%E1%BB%85n+V%C4%83n+Th%C6%B0%C6%A1ng"
+  },
+  {
+    "id": 34,
+    "name": "Bạch Tuộc Nướng Cầu Kiệu",
+    "branch": "Hai Bà Trưng",
+    "address": "478/2A Hai Bà Trưng",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Ăn vặt",
+      "Đồ nướng",
+      "Hải sản"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.foody.vn/ho-chi-minh/bach-tuoc-nuong-cau-kieu"
+  },
+  {
+    "id": 35,
+    "name": "Bún Thịt Nướng Hải Đăng",
+    "branch": "Chấn Hưng",
+    "address": "149 Chấn Hưng",
+    "district": "Tân Bình",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Bún thịt nướng"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://vinwonders.com/vi/wonderpedia/news/bun-thit-nuong-sai-gon/"
+  },
+  {
+    "id": 36,
+    "name": "Ovenmaru Chicken",
+    "branch": "Điện Biên Phủ",
+    "address": "187 Điện Biên Phủ",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Gà"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Ovenmaru+Chicken+187+%C4%90i%E1%BB%87n+Bi%C3%AAn+Ph%E1%BB%A7"
+  },
+  {
+    "id": 37,
+    "name": "Saewoo Bong Bong",
+    "branch": "Đặng Tiến Đông",
+    "address": "5A Đặng Tiến Đông, An Khánh",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Hải sản",
+      "Tôm"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Saewoo+Bong+Bong+5A+%C4%90%E1%BA%B7ng+Ti%E1%BA%BFn+%C4%90%C3%B4ng%2C+An+Kh%C3%A1nh"
+  },
+  {
+    "id": 38,
+    "name": "Pizza360",
+    "branch": "THISO Mall Sala",
+    "address": "L4-02A, THISO Mall Sala, 10 Mai Chí Thọ",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Pizza",
+      "Pasta",
+      "Buffet"
+    ],
+    "cuisines": [
+      "Âu/Mỹ"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Chỉ giữ chi nhánh THISO Mall theo yêu cầu của bạn.",
+    "source": "https://thisomallsala.vn/vn/chi-tiet-cua-hang/pizza360-PIZZA360"
+  },
+  {
+    "id": 39,
+    "name": "Cơm Tấm Hẻm 33",
+    "branch": "Nguyễn Đình Chính",
+    "address": "33/16 Nguyễn Đình Chính",
+    "district": "Phú Nhuận",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm tấm"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=C%C6%A1m+T%E1%BA%A5m+H%E1%BA%BBm+33+33%2F16+Nguy%E1%BB%85n+%C4%90%C3%ACnh+Ch%C3%ADnh"
+  },
+  {
+    "id": 40,
+    "name": "Bánh Canh Cua Hai Dậu",
+    "branch": "Tân Hải",
+    "address": "6 Tân Hải",
+    "district": "Tân Bình",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Bánh canh"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%A1nh+Canh+Cua+Hai+D%E1%BA%ADu+6+T%C3%A2n+H%E1%BA%A3i"
+  },
+  {
+    "id": 41,
+    "name": "Bánh Canh Cua Dũng Râu",
+    "branch": "Đỗ Thị Lời",
+    "address": "170 Đỗ Thị Lời",
+    "district": "Quận 3",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Bánh canh cua"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Địa chỉ mới; quán trước đây từng bán ở Hoàng Sa.",
+    "source": "https://tuoitre.vn/banh-canh-cua-dung-rau-45-000-dong-mot-to-ma-u-nu-6-loai-topping-20260508101127948.htm"
+  },
+  {
+    "id": 42,
+    "name": "Fujiro",
+    "branch": "Thái Văn Lung",
+    "address": "8A/8B1 Thái Văn Lung",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Tonkatsu"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Fujiro+8A%2F8B1+Th%C3%A1i+V%C4%83n+Lung"
+  },
+  {
+    "id": 43,
+    "name": "Manuka.mee",
+    "branch": "Bình Thạnh",
+    "address": "157/1A Nguyễn Gia Trí",
+    "district": "Bình Thạnh",
+    "mainGroup": "Bánh & tráng miệng",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [
+      "Kem",
+      "Tráng miệng"
+    ],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Manuka.mee+157%2F1A+Nguy%E1%BB%85n+Gia+Tr%C3%AD"
+  },
+  {
+    "id": 44,
+    "name": "Manuka.mee",
+    "branch": "Thảo Điền",
+    "address": "106 Xuân Thủy",
+    "district": "Thủ Đức",
+    "mainGroup": "Bánh & tráng miệng",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [
+      "Kem",
+      "Tráng miệng"
+    ],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Manuka.mee+106+Xu%C3%A2n+Th%E1%BB%A7y"
+  },
+  {
+    "id": 45,
+    "name": "Manuka.mee",
+    "branch": "Sky Garden",
+    "address": "58 Lê Văn Thiêm",
+    "district": "Quận 7",
+    "mainGroup": "Bánh & tráng miệng",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [
+      "Kem",
+      "Tráng miệng"
+    ],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Manuka.mee+58+L%C3%AA+V%C4%83n+Thi%C3%AAm"
+  },
+  {
+    "id": 46,
+    "name": "Manuka.mee",
+    "branch": "Midtown",
+    "address": "Cửa hàng 30 khối C, Midtown, Nguyễn Văn Linh",
+    "district": "Quận 7",
+    "mainGroup": "Bánh & tráng miệng",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [
+      "Kem",
+      "Tráng miệng"
+    ],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Manuka.mee+C%E1%BB%ADa+h%C3%A0ng+30+kh%E1%BB%91i+C%2C+Midtown%2C+Nguy%E1%BB%85n+V%C4%83n+Linh"
+  },
+  {
+    "id": 47,
+    "name": "Bơ by Butterman",
+    "branch": "Lê Thị Riêng",
+    "address": "67 Lê Thị Riêng",
+    "district": "Quận 1",
+    "mainGroup": "Bánh & tráng miệng",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [
+      "Bánh ngọt",
+      "Cookies"
+    ],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Website chính thức",
+    "source": "https://www.bobybutterman.com/store.php"
+  },
+  {
+    "id": 48,
+    "name": "Bơ by Butterman",
+    "branch": "Thích Quảng Đức",
+    "address": "166/41A Thích Quảng Đức",
+    "district": "Phú Nhuận",
+    "mainGroup": "Bánh & tráng miệng",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [
+      "Bánh ngọt",
+      "Cookies"
+    ],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Website chính thức",
+    "source": "https://www.bobybutterman.com/store.php"
+  },
+  {
+    "id": 49,
+    "name": "Bơ by Butterman",
+    "branch": "Nguyễn Gia Trí",
+    "address": "112 Nguyễn Gia Trí",
+    "district": "Bình Thạnh",
+    "mainGroup": "Bánh & tráng miệng",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [
+      "Bánh ngọt",
+      "Cookies"
+    ],
+    "drinks": [],
+    "status": "Cần kiểm tra thêm",
+    "note": "Google Maps có điểm này nhưng website chính thức hiện chỉ liệt kê 2 cửa hàng.",
+    "source": "https://www.google.com/maps/search/?api=1&query=B%C6%A1+by+Butterman+112+Nguy%E1%BB%85n+Gia+Tr%C3%AD"
+  },
+  {
+    "id": 50,
+    "name": "Lò Nhỏ và Mèo - Canele",
+    "branch": "Nguyễn Oanh",
+    "address": "192/7 Nguyễn Oanh",
+    "district": "Gò Vấp",
+    "mainGroup": "Bánh & tráng miệng",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [
+      "Canele",
+      "Bánh ngọt"
+    ],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=L%C3%B2+Nh%E1%BB%8F+v%C3%A0+M%C3%A8o+-+Canele+192%2F7+Nguy%E1%BB%85n+Oanh"
+  },
+  {
+    "id": 51,
+    "name": "Cơm Gà 123",
+    "branch": "Tam Đảo",
+    "address": "CT7, đường Tam Đảo, Cư xá Bắc Hải",
+    "district": "Quận 10",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm gà",
+      "Mì xào"
+    ],
+    "cuisines": [
+      "Việt/Trung"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Bạn đã xác nhận đây là đúng quán tại CT7 đường Tam Đảo.",
+    "source": "https://www.google.com/maps/search/?api=1&query=C%C6%A1m+G%C3%A0+123+CT7%2C+%C4%91%C6%B0%E1%BB%9Dng+Tam+%C4%90%E1%BA%A3o%2C+C%C6%B0+x%C3%A1+B%E1%BA%AFc+H%E1%BA%A3i"
+  },
+  {
+    "id": 52,
+    "name": "ấm cà phê",
+    "branch": "Lê Văn Sỹ",
+    "address": "95/40 Lê Văn Sỹ",
+    "district": "Phú Nhuận",
+    "mainGroup": "Đồ uống",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [],
+    "drinks": [
+      "Cafe"
+    ],
+    "status": "Đã xác minh",
+    "note": "Đã sửa theo địa chỉ hiện tại; bạn xác nhận 95/40 Lê Văn Sỹ là đúng.",
+    "source": "https://www.google.com/maps/search/?api=1&query=%E1%BA%A5m+c%C3%A0+ph%C3%AA+95%2F40+L%C3%AA+V%C4%83n+S%E1%BB%B9%2C+Ph%C3%BA+Nhu%E1%BA%ADn"
+  },
+  {
+    "id": 53,
+    "name": "Bánh Canh Bột Lọc Quàng",
+    "branch": "Võ Văn Tần",
+    "address": "416/1 Võ Văn Tần",
+    "district": "Quận 3",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Bánh canh"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.foody.vn/ho-chi-minh/food/dia-diem?ds=Restaurant&q=b%C3%A1nh+canh+b%E1%BB%99t+l%E1%BB%8Dc"
+  },
+  {
+    "id": 54,
+    "name": "Betsu Milk",
+    "branch": "Saigon Centre / Takashimaya",
+    "address": "L5-09, Tầng 5, Saigon Centre, 65 Lê Lợi",
+    "district": "Quận 1",
+    "mainGroup": "Bánh & tráng miệng",
+    "foodTypes": [],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [
+      "Kem",
+      "Matcha",
+      "Tráng miệng"
+    ],
+    "drinks": [
+      "Matcha"
+    ],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.foody.vn/ho-chi-minh/betsu-milk-matcha-sweets"
+  },
+  {
+    "id": 55,
+    "name": "Bánh Cuốn Nóng Cao Bằng",
+    "branch": "Hưng Gia 1",
+    "address": "33 Khu phố Hưng Gia 1, Phú Mỹ Hưng",
+    "district": "Quận 7",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Bánh cuốn"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%A1nh+Cu%E1%BB%91n+N%C3%B3ng+Cao+B%E1%BA%B1ng+33+Khu+ph%E1%BB%91+H%C6%B0ng+Gia+1%2C+Ph%C3%BA+M%E1%BB%B9+H%C6%B0ng"
+  },
+  {
+    "id": 56,
+    "name": "Yabai-Ten Ramen",
+    "branch": "Hoàng Sa",
+    "address": "1119 Hoàng Sa",
+    "district": "Quận 3",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Ramen"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Yabai-Ten+Ramen+1119+Ho%C3%A0ng+Sa"
+  },
+  {
+    "id": 57,
+    "name": "Quán Thùy Linh",
+    "branch": "Ung Văn Khiêm",
+    "address": "57A Ung Văn Khiêm",
+    "district": "Bình Thạnh",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Lẩu",
+      "Đồ nướng",
+      "Hải sản",
+      "Món nhậu"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.foody.vn/ho-chi-minh/thuy-linh-lau-de-hai-san-57a-ung-van-khiem"
+  },
+  {
+    "id": 58,
+    "name": "Ốc 168",
+    "branch": "Trường Sa",
+    "address": "94 Trường Sa",
+    "district": "Bình Thạnh",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Hải sản",
+      "Ốc",
+      "Ăn vặt"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=%E1%BB%90c+168+94+Tr%C6%B0%E1%BB%9Dng+Sa"
+  },
+  {
+    "id": 59,
+    "name": "Ngõ Thái",
+    "branch": "Quận 10",
+    "address": "343/5 Tô Hiến Thành",
+    "district": "Quận 10",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Đồ nước",
+      "Ăn vặt"
+    ],
+    "cuisines": [
+      "Thái Lan"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Ng%C3%B5+Th%C3%A1i+343%2F5+T%C3%B4+Hi%E1%BA%BFn+Th%C3%A0nh"
+  },
+  {
+    "id": 60,
+    "name": "Ngõ Thái",
+    "branch": "Bình Thạnh",
+    "address": "126/6 Phan Xích Long",
+    "district": "Bình Thạnh",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Đồ nước",
+      "Ăn vặt"
+    ],
+    "cuisines": [
+      "Thái Lan"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Ng%C3%B5+Th%C3%A1i+126%2F6+Phan+X%C3%ADch+Long"
+  },
+  {
+    "id": 61,
+    "name": "Ngõ Thái",
+    "branch": "An Hội Đông",
+    "address": "48 Đường Số 1",
+    "district": "Gò Vấp",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Đồ nước",
+      "Ăn vặt"
+    ],
+    "cuisines": [
+      "Thái Lan"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Ng%C3%B5+Th%C3%A1i+48+%C4%90%C6%B0%E1%BB%9Dng+S%E1%BB%91+1"
+  },
+  {
+    "id": 62,
+    "name": "Tiệm Mì No Nê",
+    "branch": "Phạm Văn Bạch",
+    "address": "23 Phạm Văn Bạch",
+    "district": "Tân Bình",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Mì"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Ti%E1%BB%87m+M%C3%AC+No+N%C3%AA+23+Ph%E1%BA%A1m+V%C4%83n+B%E1%BA%A1ch"
+  },
+  {
+    "id": 63,
+    "name": "BHC Chicken",
+    "branch": "Vincom Phan Văn Trị",
+    "address": "Vincom Plaza Phan Văn Trị, 12 Phan Văn Trị",
+    "district": "Gò Vấp",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Gà rán"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Cửa hàng đầu tiên của BHC tại Việt Nam, khai trương 12/09/2026.",
+    "source": "https://vi.yna.co.kr/view/AVI20260915000400880"
+  },
+  {
+    "id": 64,
+    "name": "Texas Chicken",
+    "branch": "Lê Đại Hành",
+    "address": "195 Lê Đại Hành",
+    "district": "Quận 11",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Gà rán",
+      "Fast food"
+    ],
+    "cuisines": [
+      "Âu/Mỹ"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Texas+Chicken+195+L%C3%AA+%C4%90%E1%BA%A1i+H%C3%A0nh"
+  },
+  {
+    "id": 65,
+    "name": "Texas Chicken",
+    "branch": "Nguyễn Văn Cừ",
+    "address": "217 Nguyễn Văn Cừ",
+    "district": "Quận 5",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Gà rán",
+      "Fast food"
+    ],
+    "cuisines": [
+      "Âu/Mỹ"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Texas+Chicken+217+Nguy%E1%BB%85n+V%C4%83n+C%E1%BB%AB"
+  },
+  {
+    "id": 66,
+    "name": "Texas Chicken",
+    "branch": "Nguyễn Thị Tú",
+    "address": "42-44 Nguyễn Thị Tú",
+    "district": "Bình Tân",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Gà rán",
+      "Fast food"
+    ],
+    "cuisines": [
+      "Âu/Mỹ"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Texas+Chicken+42-44+Nguy%E1%BB%85n+Th%E1%BB%8B+T%C3%BA"
+  },
+  {
+    "id": 67,
+    "name": "Texas Chicken",
+    "branch": "Nguyễn Thái Học",
+    "address": "113 Nguyễn Thái Học",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Gà rán",
+      "Fast food"
+    ],
+    "cuisines": [
+      "Âu/Mỹ"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Texas+Chicken+113+Nguy%E1%BB%85n+Th%C3%A1i+H%E1%BB%8Dc"
+  },
+  {
+    "id": 68,
+    "name": "Baoz Dimsum",
+    "branch": "The Garden Mall",
+    "address": "190 Hồng Bàng, The Garden Mall",
+    "district": "Quận 5",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Dimsum"
+    ],
+    "cuisines": [
+      "Trung Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Baoz+Dimsum+190+H%E1%BB%93ng+B%C3%A0ng%2C+The+Garden+Mall"
+  },
+  {
+    "id": 69,
+    "name": "Baoz Dimsum",
+    "branch": "Lê Đại Hành",
+    "address": "295-297-299 Lê Đại Hành",
+    "district": "Quận 11",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Dimsum"
+    ],
+    "cuisines": [
+      "Trung Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Baoz+Dimsum+295-297-299+L%C3%AA+%C4%90%E1%BA%A1i+H%C3%A0nh"
+  },
+  {
+    "id": 70,
+    "name": "Baoz Dimsum",
+    "branch": "Nguyễn Tri Phương",
+    "address": "82-84-86-88 Nguyễn Tri Phương",
+    "district": "Quận 5",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Dimsum"
+    ],
+    "cuisines": [
+      "Trung Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Baoz+Dimsum+82-84-86-88+Nguy%E1%BB%85n+Tri+Ph%C6%B0%C6%A1ng"
+  },
+  {
+    "id": 71,
+    "name": "iSushi",
+    "branch": "Hùng Vương Plaza",
+    "address": "126 Hồng Bàng, Hùng Vương Plaza",
+    "district": "Quận 5",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Sushi",
+      "Buffet"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=iSushi+126+H%E1%BB%93ng+B%C3%A0ng%2C+H%C3%B9ng+V%C6%B0%C6%A1ng+Plaza"
+  },
+  {
+    "id": 72,
+    "name": "iSushi",
+    "branch": "Thiso Mall",
+    "address": "53 Hoàng Thế Thiện, Thiso Mall",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Sushi",
+      "Buffet"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=iSushi+53+Ho%C3%A0ng+Th%E1%BA%BF+Thi%E1%BB%87n%2C+Thiso+Mall"
+  },
+  {
+    "id": 73,
+    "name": "iSushi",
+    "branch": "Vincom Đồng Khởi",
+    "address": "B3-17, Vincom Center Đồng Khởi, 72 Lê Thánh Tôn",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Sushi",
+      "Buffet"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=iSushi+B3-17%2C+Vincom+Center+%C4%90%E1%BB%93ng+Kh%E1%BB%9Fi%2C+72+L%C3%AA+Th%C3%A1nh+T%C3%B4n"
+  },
+  {
+    "id": 74,
+    "name": "iSushi",
+    "branch": "Phan Xích Long",
+    "address": "191 Phan Xích Long",
+    "district": "Phú Nhuận",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Sushi",
+      "Buffet"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=iSushi+191+Phan+X%C3%ADch+Long"
+  },
+  {
+    "id": 75,
+    "name": "Xưởng Mì Quốc Tế",
+    "branch": "Huỳnh Văn Bánh",
+    "address": "525/72 Huỳnh Văn Bánh",
+    "district": "Phú Nhuận",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Mì"
+    ],
+    "cuisines": [
+      "Quốc tế"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=X%C6%B0%E1%BB%9Fng+M%C3%AC+Qu%E1%BB%91c+T%E1%BA%BF+525%2F72+Hu%E1%BB%B3nh+V%C4%83n+B%C3%A1nh"
+  },
+  {
+    "id": 76,
+    "name": "Meili 美丽 - Mì Bò Đài Loan",
+    "branch": "Mai Văn Vĩnh",
+    "address": "2B Mai Văn Vĩnh",
+    "district": "Quận 7",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Mì bò"
+    ],
+    "cuisines": [
+      "Trung Quốc/Đài Loan"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Meili+%E7%BE%8E%E4%B8%BD+-+M%C3%AC+B%C3%B2+%C4%90%C3%A0i+Loan+2B+Mai+V%C4%83n+V%C4%A9nh"
+  },
+  {
+    "id": 77,
+    "name": "Meili 美丽 - Mì Bò Đài Loan",
+    "branch": "Nguyễn Văn Khối",
+    "address": "213 Nguyễn Văn Khối",
+    "district": "Gò Vấp",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Mì bò"
+    ],
+    "cuisines": [
+      "Trung Quốc/Đài Loan"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Meili+%E7%BE%8E%E4%B8%BD+-+M%C3%AC+B%C3%B2+%C4%90%C3%A0i+Loan+213+Nguy%E1%BB%85n+V%C4%83n+Kh%E1%BB%91i"
+  },
+  {
+    "id": 78,
+    "name": "Meili 美丽 - Mì Bò Đài Loan",
+    "branch": "Nhiêu Tứ",
+    "address": "40A Nhiêu Tứ",
+    "district": "Phú Nhuận",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Mì bò"
+    ],
+    "cuisines": [
+      "Trung Quốc/Đài Loan"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Meili+%E7%BE%8E%E4%B8%BD+-+M%C3%AC+B%C3%B2+%C4%90%C3%A0i+Loan+40A+Nhi%C3%AAu+T%E1%BB%A9"
+  },
+  {
+    "id": 79,
+    "name": "Meili 美丽 - Mì Bò Đài Loan",
+    "branch": "Ung Văn Khiêm",
+    "address": "31/34 Ung Văn Khiêm",
+    "district": "Bình Thạnh",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Mì bò"
+    ],
+    "cuisines": [
+      "Trung Quốc/Đài Loan"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Meili+%E7%BE%8E%E4%B8%BD+-+M%C3%AC+B%C3%B2+%C4%90%C3%A0i+Loan+31%2F34+Ung+V%C4%83n+Khi%C3%AAm"
+  },
+  {
+    "id": 80,
+    "name": "Renge Ramen",
+    "branch": "Nguyễn Hồng Đào",
+    "address": "157 Nguyễn Hồng Đào",
+    "district": "Tân Bình",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Ramen"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.rengeramen.vn/"
+  },
+  {
+    "id": 81,
+    "name": "Hẻm Fast Food 2",
+    "branch": "Nguyễn Cư Trinh",
+    "address": "75 Nguyễn Cư Trinh",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Fast food"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=H%E1%BA%BBm+Fast+Food+2+75+Nguy%E1%BB%85n+C%C6%B0+Trinh"
+  },
+  {
+    "id": 82,
+    "name": "Mê Thái",
+    "branch": "Thành Thái",
+    "address": "190 Thành Thái",
+    "district": "Quận 10",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Đồ khô",
+      "Lẩu"
+    ],
+    "cuisines": [
+      "Thái Lan"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=M%C3%AA+Th%C3%A1i+190+Th%C3%A0nh+Th%C3%A1i"
+  },
+  {
+    "id": 83,
+    "name": "Marugame / Marukame Udon",
+    "branch": "Bến Thành",
+    "address": "215 Lý Tự Trọng",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Udon",
+      "Tempura"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://marukameudon.com/"
+  },
+  {
+    "id": 84,
+    "name": "Marugame / Marukame Udon",
+    "branch": "Thảo Điền",
+    "address": "27 Thảo Điền",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Udon",
+      "Tempura"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://marukameudon.com/"
+  },
+  {
+    "id": 85,
+    "name": "Marugame / Marukame Udon",
+    "branch": "AEON Tân Phú",
+    "address": "Tầng 3, AEON Mall Tân Phú, 30 Tân Thắng",
+    "district": "Tân Phú",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Udon",
+      "Tempura"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://marukameudon.com/"
+  },
+  {
+    "id": 86,
+    "name": "Marugame / Marukame Udon",
+    "branch": "Vincom Đồng Khởi",
+    "address": "Vincom Center Đồng Khởi, 72 Lê Thánh Tôn",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Udon",
+      "Tempura"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://marukameudon.com/"
+  },
+  {
+    "id": 87,
+    "name": "Cutlet Spring",
+    "branch": "An Khánh",
+    "address": "6A Đường Số 9, An Khánh",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Tonkatsu"
+    ],
+    "cuisines": [
+      "Hàn/Nhật"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Tên Hàn: 봄돈까스; chuyên cutlet/tonkatsu.",
+    "source": "https://www.google.com/maps/search/?api=1&query=Cutlet+Spring+6A+%C4%90%C6%B0%E1%BB%9Dng+S%E1%BB%91+9%2C+An+Kh%C3%A1nh"
+  },
+  {
+    "id": 88,
+    "name": "Eddie's New York Deli & Diner",
+    "branch": "District 1",
+    "address": "73 Pasteur",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Burger",
+      "Pizza",
+      "Diner"
+    ],
+    "cuisines": [
+      "Âu/Mỹ"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Eddie%27s+New+York+Deli+%26+Diner+73+Pasteur"
+  },
+  {
+    "id": 89,
+    "name": "Eddie's New York Deli & Diner",
+    "branch": "Thảo Điền",
+    "address": "71 Thảo Điền",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Burger",
+      "Pizza",
+      "Diner"
+    ],
+    "cuisines": [
+      "Âu/Mỹ"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Eddie%27s+New+York+Deli+%26+Diner+71+Th%E1%BA%A3o+%C4%90i%E1%BB%81n"
+  },
+  {
+    "id": 90,
+    "name": "Eddie's New York Deli & Diner",
+    "branch": "District 7",
+    "address": "408 Phạm Thái Bường",
+    "district": "Quận 7",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Burger",
+      "Pizza",
+      "Diner"
+    ],
+    "cuisines": [
+      "Âu/Mỹ"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Eddie%27s+New+York+Deli+%26+Diner+408+Ph%E1%BA%A1m+Th%C3%A1i+B%C6%B0%E1%BB%9Dng"
+  },
+  {
+    "id": 91,
+    "name": "Pizza Whassup",
+    "branch": "Phú Nhuận",
+    "address": "221C Nguyễn Trọng Tuyển",
+    "district": "Phú Nhuận",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Pizza",
+      "Fast food"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.foody.vn/ho-chi-minh/pizza-whassup-phu-nhuan"
+  },
+  {
+    "id": 92,
+    "name": "Phở Gà Bảo Khánh",
+    "branch": "3 Tháng 2",
+    "address": "136 Đường 3 Tháng 2",
+    "district": "Quận 10",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Phở gà"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Ph%E1%BB%9F+G%C3%A0+B%E1%BA%A3o+Kh%C3%A1nh+136+%C4%90%C6%B0%E1%BB%9Dng+3+Th%C3%A1ng+2"
+  },
+  {
+    "id": 93,
+    "name": "Phở Gà Bảo Khánh",
+    "branch": "Trần Hưng Đạo",
+    "address": "164Bis Trần Hưng Đạo",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Phở gà"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Ph%E1%BB%9F+G%C3%A0+B%E1%BA%A3o+Kh%C3%A1nh+164Bis+Tr%E1%BA%A7n+H%C6%B0ng+%C4%90%E1%BA%A1o"
+  },
+  {
+    "id": 94,
+    "name": "Phở Miến Gà Kỳ Đồng",
+    "branch": "Kỳ Đồng",
+    "address": "14/5Bis Kỳ Đồng",
+    "district": "Quận 3",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Phở",
+      "Miến gà"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://guide.michelin.com/us/en/ho-chi-minh/ho-chi-minh_2978179/restaurant/pho-mien-ga-ky-%C4%91ong"
+  },
+  {
+    "id": 95,
+    "name": "Phở Anh",
+    "branch": "Kỳ Đồng",
+    "address": "8 Kỳ Đồng",
+    "district": "Quận 3",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Phở"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Ph%E1%BB%9F+Anh+8+K%E1%BB%B3+%C4%90%E1%BB%93ng"
+  },
+  {
+    "id": 96,
+    "name": "SUKIYA",
+    "branch": "AEON Bình Tân",
+    "address": "Tầng 3 AEON Bình Tân, Đường số 17A",
+    "district": "Bình Tân",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 97,
+    "name": "SUKIYA",
+    "branch": "Crescent Mall",
+    "address": "Tầng 5 Crescent Mall, 101 Tôn Dật Tiên",
+    "district": "Quận 7",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 98,
+    "name": "SUKIYA",
+    "branch": "Lý Thái Tổ",
+    "address": "366 Lý Thái Tổ",
+    "district": "Quận 10",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 99,
+    "name": "SUKIYA",
+    "branch": "Pasteur",
+    "address": "224C Pasteur",
+    "district": "Quận 3",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 100,
+    "name": "SUKIYA",
+    "branch": "Kênh Tân Hóa",
+    "address": "237/36 Trịnh Đình Trọng",
+    "district": "Tân Phú",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 101,
+    "name": "SUKIYA",
+    "branch": "Vincom Lê Văn Việt",
+    "address": "Tầng 4 Vincom Lê Văn Việt, 50 Lê Văn Việt",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 102,
+    "name": "SUKIYA",
+    "branch": "Giga Mall",
+    "address": "B1 Giga Mall, 240-242 Phạm Văn Đồng",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 103,
+    "name": "SUKIYA",
+    "branch": "Tạ Quang Bửu",
+    "address": "860 Tạ Quang Bửu",
+    "district": "Quận 8",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 104,
+    "name": "SUKIYA",
+    "branch": "Song Hành",
+    "address": "2 Song Hành, An Khánh",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 105,
+    "name": "SUKIYA",
+    "branch": "Phan Xích Long",
+    "address": "204 (137) Phan Xích Long",
+    "district": "Phú Nhuận",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 106,
+    "name": "SUKIYA",
+    "branch": "Vivo City",
+    "address": "Tầng 4 SC VivoCity, 1058 Nguyễn Văn Linh",
+    "district": "Quận 7",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 107,
+    "name": "SUKIYA",
+    "branch": "Bàu Cát",
+    "address": "118 Bàu Cát",
+    "district": "Tân Bình",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 108,
+    "name": "SUKIYA",
+    "branch": "Lê Văn Quới",
+    "address": "262 Lê Văn Quới",
+    "district": "Bình Tân",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 109,
+    "name": "SUKIYA",
+    "branch": "Lotte Mart Gò Vấp",
+    "address": "Tầng 1 Lotte Mart Gò Vấp, 18 Phan Văn Trị",
+    "district": "Gò Vấp",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 110,
+    "name": "SUKIYA",
+    "branch": "Vincom Mega Mall Grand Park",
+    "address": "L4-04, Vincom Mega Mall Grand Park, 88 Phước Thiện",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 111,
+    "name": "SUKIYA",
+    "branch": "Lê Văn Sỹ",
+    "address": "236K Lê Văn Sỹ",
+    "district": "Tân Bình",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 112,
+    "name": "SUKIYA",
+    "branch": "Nguyễn Ảnh Thủ",
+    "address": "8A Nguyễn Ảnh Thủ",
+    "district": "Quận 12",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 113,
+    "name": "SUKIYA",
+    "branch": "Nguyễn Gia Trí",
+    "address": "124 Nguyễn Gia Trí",
+    "district": "Bình Thạnh",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 114,
+    "name": "SUKIYA",
+    "branch": "Phan Văn Trị",
+    "address": "455-457 Phan Văn Trị",
+    "district": "Gò Vấp",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 115,
+    "name": "SUKIYA",
+    "branch": "Đỗ Xuân Hợp",
+    "address": "379 Đỗ Xuân Hợp",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 116,
+    "name": "SUKIYA",
+    "branch": "Lê Thánh Tôn",
+    "address": "10B Thái Văn Lung",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm bò",
+      "Đồ nước"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://www.sukiya.com.vn/store/"
+  },
+  {
+    "id": 117,
+    "name": "Mì Cay Sasin",
+    "branch": "Nguyễn Sơn",
+    "address": "338 Nguyễn Sơn",
+    "district": "Tân Phú",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Mì cay"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=M%C3%AC+Cay+Sasin+338+Nguy%E1%BB%85n+S%C6%A1n"
+  },
+  {
+    "id": 118,
+    "name": "Mì Cay Sasin",
+    "branch": "Tô Hiến Thành",
+    "address": "251 Tô Hiến Thành",
+    "district": "Quận 10",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Mì cay"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=M%C3%AC+Cay+Sasin+251+T%C3%B4+Hi%E1%BA%BFn+Th%C3%A0nh"
+  },
+  {
+    "id": 119,
+    "name": "Dookki",
+    "branch": "Bình Thạnh",
+    "address": "139-141 Nguyễn Gia Trí",
+    "district": "Bình Thạnh",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Lẩu",
+      "Buffet",
+      "Tokbokki"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://dookkivietnam.vn/"
+  },
+  {
+    "id": 120,
+    "name": "Dookki",
+    "branch": "Lotte Mart Cộng Hòa",
+    "address": "Tầng 2 Lotte Mart Cộng Hòa",
+    "district": "Tân Bình",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Lẩu",
+      "Buffet",
+      "Tokbokki"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://dookkivietnam.vn/"
+  },
+  {
+    "id": 121,
+    "name": "Dookki",
+    "branch": "Vạn Hạnh Mall",
+    "address": "Tầng 6 Vạn Hạnh Mall",
+    "district": "Quận 10",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Lẩu",
+      "Buffet",
+      "Tokbokki"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://dookkivietnam.vn/"
+  },
+  {
+    "id": 122,
+    "name": "Dookki",
+    "branch": "Vincom Thủ Đức",
+    "address": "Tầng 4 Vincom Thủ Đức, 216 Võ Văn Ngân",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Lẩu",
+      "Buffet",
+      "Tokbokki"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://dookkivietnam.vn/"
+  },
+  {
+    "id": 123,
+    "name": "Dookki",
+    "branch": "Vincom Thảo Điền",
+    "address": "Tầng 5 Vincom Thảo Điền, 161 Xa Lộ Hà Nội",
+    "district": "Thủ Đức",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Lẩu",
+      "Buffet",
+      "Tokbokki"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://dookkivietnam.vn/"
+  },
+  {
+    "id": 124,
+    "name": "Dookki",
+    "branch": "Vincom Gò Vấp",
+    "address": "Tầng 4 Vincom Gò Vấp, 12 Phan Văn Trị",
+    "district": "Gò Vấp",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Lẩu",
+      "Buffet",
+      "Tokbokki"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://dookkivietnam.vn/"
+  },
+  {
+    "id": 125,
+    "name": "Dookki",
+    "branch": "Nowzone",
+    "address": "Tầng 4 Nowzone, 235 Nguyễn Văn Cừ",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Lẩu",
+      "Buffet",
+      "Tokbokki"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://dookkivietnam.vn/"
+  },
+  {
+    "id": 126,
+    "name": "Dookki",
+    "branch": "Satra Phạm Hùng",
+    "address": "Lầu 3 Satra Phạm Hùng, C6/27 Phạm Hùng",
+    "district": "Bình Chánh",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Lẩu",
+      "Buffet",
+      "Tokbokki"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://dookkivietnam.vn/"
+  },
+  {
+    "id": 127,
+    "name": "Dookki",
+    "branch": "SC VivoCity",
+    "address": "Tầng 3 SC VivoCity, 1058 Nguyễn Văn Linh",
+    "district": "Quận 7",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Lẩu",
+      "Buffet",
+      "Tokbokki"
+    ],
+    "cuisines": [
+      "Hàn Quốc"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "",
+    "source": "https://dookkivietnam.vn/"
+  },
+  {
+    "id": 128,
+    "name": "Pepper Lunch",
+    "branch": "Saigon Centre",
+    "address": "Saigon Centre, 65 Lê Lợi",
+    "district": "Quận 1",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm",
+      "Steak"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Pepper+Lunch+Saigon+Centre%2C+65+L%C3%AA+L%E1%BB%A3i"
+  },
+  {
+    "id": 129,
+    "name": "Pepper Lunch",
+    "branch": "AEON Bình Tân",
+    "address": "Tầng 2 AEON Mall Bình Tân, 1 Đường Số 17A",
+    "district": "Bình Tân",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm",
+      "Steak"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Pepper+Lunch+T%E1%BA%A7ng+2+AEON+Mall+B%C3%ACnh+T%C3%A2n%2C+1+%C4%90%C6%B0%E1%BB%9Dng+S%E1%BB%91+17A"
+  },
+  {
+    "id": 130,
+    "name": "Pepper Lunch",
+    "branch": "AEON Tân Phú",
+    "address": "AEON Mall Tân Phú, 30 Tân Thắng",
+    "district": "Tân Phú",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm",
+      "Steak"
+    ],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh - chưa chắc đủ chi nhánh",
+    "note": "",
+    "source": "https://www.google.com/maps/search/?api=1&query=Pepper+Lunch+AEON+Mall+T%C3%A2n+Ph%C3%BA%2C+30+T%C3%A2n+Th%E1%BA%AFng"
+  },
+  {
+    "id": 131,
+    "name": "Bún Bò Bờ Kè Hoàng Sa",
+    "branch": "Hoàng Sa",
+    "address": "725 Hoàng Sa",
+    "district": "Quận 3",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Bún bò"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Bạn đã xác nhận đúng quán.",
+    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%BAn+B%C3%B2+B%E1%BB%9D+K%C3%A8+Ho%C3%A0ng+Sa+725+Ho%C3%A0ng+Sa%2C+Qu%E1%BA%ADn+3"
+  },
+  {
+    "id": 132,
+    "name": "Cơm Tấm Đêm Bờ Kè",
+    "branch": "Trường Sa",
+    "address": "244-246 Trường Sa",
+    "district": "Bình Thạnh",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Cơm tấm"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh",
+    "note": "Bạn đã xác nhận đúng quán 'cơm tấm bờ kè'.",
+    "source": "https://www.google.com/maps/search/?api=1&query=C%C6%A1m+T%E1%BA%A5m+%C4%90%C3%AAm+B%E1%BB%9D+K%C3%A8+244-246+Tr%C6%B0%E1%BB%9Dng+Sa%2C+B%C3%ACnh+Th%E1%BA%A1nh"
+  },
+  {
+    "id": 133,
+    "name": "pastrypost_tphcm",
+    "branch": "Phùng Văn Cung",
+    "address": "26 Phùng Văn Cung",
+    "district": "Phú Nhuận",
+    "mainGroup": "Bánh & tráng miệng",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [
+      "Bánh ngọt",
+      "Pastry"
+    ],
+    "drinks": [],
+    "status": "Đã xác minh theo bạn",
+    "note": "Giữ nguyên địa chỉ bạn đã cung cấp.",
+    "source": "https://www.google.com/maps/search/?api=1&query=pastrypost_tphcm+26+Ph%C3%B9ng+V%C4%83n+Cung%2C+Ph%C3%BA+Nhu%E1%BA%ADn"
+  },
+  {
+    "id": 134,
+    "name": "De Frites",
+    "branch": "Âu Cơ",
+    "address": "Đường Âu Cơ",
+    "district": "Tân Phú",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Ăn vặt",
+      "Khoai tây chiên"
+    ],
+    "cuisines": [
+      "Âu/Mỹ"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh theo bạn",
+    "note": "Giữ địa chỉ ở mức đường Âu Cơ theo yêu cầu.",
+    "source": "https://www.google.com/maps/search/?api=1&query=De+Frites+%C3%82u+C%C6%A1%2C+T%C3%A2n+Ph%C3%BA"
+  },
+  {
+    "id": 135,
+    "name": "Bún Bò Huế Hạnh",
+    "branch": "Bành Văn Trân",
+    "address": "135 Bành Văn Trân, P. Tân Sơn Nhất",
+    "district": "Tân Bình",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Bún bò"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh theo bạn",
+    "note": "Bạn xác nhận địa chỉ 135 Bành Văn Trân, phường Tân Sơn Nhất.",
+    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%BAn+B%C3%B2+Hu%E1%BA%BF+H%E1%BA%A1nh+135+B%C3%A0nh+V%C4%83n+Tr%C3%A2n%2C+T%C3%A2n+S%C6%A1n+Nh%E1%BA%A5t%2C+TP.HCM"
+  },
+  {
+    "id": 136,
+    "name": "Trà sữa Monguxiu",
+    "branch": "Vĩnh Viễn",
+    "address": "60/6 Vĩnh Viễn, P. Vườn Lài",
+    "district": "Quận 10",
+    "mainGroup": "Đồ uống",
+    "foodTypes": [],
+    "cuisines": [],
+    "desserts": [],
+    "drinks": [
+      "Trà sữa"
+    ],
+    "status": "Đã xác minh theo bạn",
+    "note": "Bạn đã trực tiếp kiểm tra địa chỉ này.",
+    "source": "https://www.google.com/maps/search/?api=1&query=Tr%C3%A0+s%E1%BB%AFa+Monguxiu+60%2F6+V%C4%A9nh+Vi%E1%BB%85n%2C+TP.HCM"
+  },
+  {
+    "id": 137,
+    "name": "Mochi Sweets",
+    "branch": "Takashimaya / Saigon Centre",
+    "address": "Saigon Centre, 65 Lê Lợi",
+    "district": "Quận 1",
+    "mainGroup": "Bánh & tráng miệng",
+    "foodTypes": [],
+    "cuisines": [
+      "Nhật Bản"
+    ],
+    "desserts": [
+      "Mochi",
+      "Tráng miệng"
+    ],
+    "drinks": [],
+    "status": "Đã xác minh theo bạn",
+    "note": "Quầy mochi bạn nhắc tới ở Takashimaya.",
+    "source": "https://www.google.com/maps/search/?api=1&query=Mochi+Sweets+Takashimaya+Saigon+Centre"
+  },
+  {
+    "id": 138,
+    "name": "Bún bò nhà con Ngân",
+    "branch": "Hoàng Sa",
+    "address": "997 Hoàng Sa",
+    "district": "Quận 3",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ nước",
+      "Bún bò"
+    ],
+    "cuisines": [
+      "Việt Nam"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh theo bạn",
+    "note": "Bạn xác nhận đúng vị trí. Google Maps hiện có thể hiển thị tên 'Bún bò O Huyền'.",
+    "source": "https://www.google.com/maps/search/?api=1&query=B%C3%BAn+b%C3%B2+997+Ho%C3%A0ng+Sa%2C+Qu%E1%BA%ADn+3"
+  },
+  {
+    "id": 139,
+    "name": "Tiệm Mỳ Ý 1998",
+    "branch": "Trần Bình Trọng",
+    "address": "58 Trần Bình Trọng",
+    "district": "Quận 5",
+    "mainGroup": "Đồ ăn",
+    "foodTypes": [
+      "Đồ khô",
+      "Mì Ý",
+      "Pasta"
+    ],
+    "cuisines": [
+      "Âu/Mỹ"
+    ],
+    "desserts": [],
+    "drinks": [],
+    "status": "Đã xác minh theo bạn",
+    "note": "Tên bạn gửi: Tiệm Mì Mý 1998; bạn xác nhận kết quả 58 Trần Bình Trọng.",
+    "source": "https://www.google.com/maps/search/?api=1&query=Ti%E1%BB%87m+M%E1%BB%B3+%C3%9D+1998+58+Tr%E1%BA%A7n+B%C3%ACnh+Tr%E1%BB%8Dng%2C+TP.HCM"
+  }
+]

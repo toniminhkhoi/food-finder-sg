@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff6b35" />
+  <title>Quản lý dữ liệu — Ăn Đâu Đây?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./admin.css" />
+</head>
+<body class="admin-body">
+  <header class="admin-topbar">
+    <div class="container admin-nav">
+      <a class="brand" href="./index.html"><span class="brand-mark">Ă</span><span><strong>Ăn Đâu Đây?</strong><small>Data Manager</small></span></a>
+      <a class="back-link" href="./index.html">← Về trang chính</a>
+    </div>
+  </header>
+
+  <main class="container admin-main">
+    <section class="admin-hero">
+      <div>
+        <span class="kicker">QUẢN LÝ DATA</span>
+        <h1>Thêm quán mới<br><em>không cần sửa code.</em></h1>
+        <p>Bản quản lý này cho phép thêm/sửa/xóa quán ngay trong trình duyệt và xuất file JSON. Khi dùng Google Sheet làm nguồn dữ liệu, bạn chỉ cần thêm một dòng mới vào Sheet.</p>
+      </div>
+      <div class="admin-count"><strong id="adminCount">0</strong><span>địa điểm đang có</span></div>
+    </section>
+
+    <div class="admin-notice">
+      <b>Hai cách cập nhật:</b>
+      <span><strong>1.</strong> Dễ nhất cho web online: dùng Google Sheet → web tự đọc dữ liệu mới.</span>
+      <span><strong>2.</strong> Không dùng Google Sheet: chỉnh tại đây → Export JSON → thay file <code>data/restaurants.json</code> trên hosting.</span>
+    </div>
+
+    <div class="admin-grid">
+      <section class="admin-panel form-panel">
+        <div class="panel-head"><div><span>FORM</span><h2 id="formTitle">Thêm quán mới</h2></div><button id="resetFormBtn" type="button">Làm mới</button></div>
+        <form id="restaurantForm" class="restaurant-form">
+          <input type="hidden" id="editId" />
+          <div class="field full"><label>Tên quán *</label><input id="fName" required placeholder="Ví dụ: Hanuri" /></div>
+          <div class="field"><label>Chi nhánh</label><input id="fBranch" placeholder="Nguyễn Đình Chiểu" /></div>
+          <div class="field"><label>Quận / khu vực *</label><input id="fDistrict" required list="districtList" placeholder="Quận 3" /><datalist id="districtList"></datalist></div>
+          <div class="field full"><label>Địa chỉ *</label><input id="fAddress" required placeholder="284A Nguyễn Đình Chiểu" /></div>
+          <div class="field"><label>Nhóm chính</label><select id="fMainGroup"><option>Đồ ăn</option><option>Đồ uống</option><option>Bánh & tráng miệng</option></select></div>
+          <div class="field"><label>Ẩm thực</label><input id="fCuisine" placeholder="Hàn Quốc; Nhật Bản" /></div>
+          <div class="field full"><label>Loại món</label><input id="fFoodTypes" placeholder="Đồ khô; Ăn vặt; Gà rán" /><small>Phân cách nhiều tag bằng dấu chấm phẩy ;</small></div>
+          <div class="field"><label>Bánh / tráng miệng</label><input id="fDesserts" placeholder="Bánh ngọt; Kem" /></div>
+          <div class="field"><label>Đồ uống</label><input id="fDrinks" placeholder="Trà sữa; Cafe" /></div>
+          <div class="field full"><label>Ghi chú</label><textarea id="fNote" rows="3" placeholder="Món nổi bật, lưu ý..."></textarea></div>
+          <div class="field full"><label>Nguồn / link</label><input id="fSource" type="url" placeholder="https://..." /></div>
+          <div class="form-actions"><button class="save-btn" type="submit">＋ Lưu quán</button><button class="cancel-edit hidden" id="cancelEditBtn" type="button">Hủy sửa</button></div>
+        </form>
+      </section>
+
+      <aside class="admin-panel tools-panel">
+        <div class="panel-head"><div><span>TOOLS</span><h2>Cập nhật & backup</h2></div></div>
+        <div class="tool-block">
+          <h3>Google Sheet — khuyên dùng</h3>
+          <p>Upload file Excel dataset lên Google Sheets, chọn <b>File → Share → Publish to web</b>, xuất sheet dữ liệu dạng CSV, rồi dán URL vào <code>config.js</code>.</p>
+          <div class="code-box">dataSource: "google-sheet"<br>googleSheetCsvUrl: "URL_CSV_CỦA_BẠN"</div>
+        </div>
+        <div class="tool-block">
+          <h3>Backup JSON</h3>
+          <p>Export dữ liệu hiện tại hoặc import file JSON đã chỉnh.</p>
+          <div class="tool-actions"><button id="exportJsonBtn" type="button">↓ Export JSON</button><label class="file-btn">↑ Import JSON<input id="importJsonInput" type="file" accept="application/json,.json" hidden></label></div>
+        </div>
+        <div class="tool-block">
+          <h3>Dữ liệu trên máy này</h3>
+          <p>Thay đổi trong trang quản lý được lưu bằng Local Storage để bạn xem thử ngay trên trang chính.</p>
+          <button class="danger-lite" id="clearLocalBtn" type="button">Xóa bản chỉnh local</button>
+        </div>
+      </aside>
+    </div>
+
+    <section class="admin-panel table-panel">
+      <div class="panel-head table-head">
+        <div><span>DATABASE</span><h2>Danh sách quán</h2></div>
+        <input id="adminSearch" type="search" placeholder="Tìm tên quán, địa chỉ..." />
+      </div>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Tên quán</th><th>Khu vực</th><th>Địa chỉ</th><th>Tags</th><th></th></tr></thead>
+          <tbody id="adminTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <div id="adminToast" class="toast"></div>
+  <script src="./config.js"></script>
+  <script src="./admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tìm quán ăn, quán nước và nhà hàng ở TP.HCM theo quận, món ăn và phong cách ẩm thực." />
+  <meta name="theme-color" content="#ff6b35" />
+  <title>Ăn Đâu Đây? — Food Finder Sài Gòn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Ăn Đâu Đây?">
+        <span class="brand-mark">Ă</span>
+        <span>
+          <strong>Ăn Đâu Đây?</strong>
+          <small>Food Finder Sài Gòn</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Điều hướng chính">
+        <a href="#discover">Khám phá</a>
+        <a href="#favorites">Yêu thích</a>
+        <a href="#how-it-works">Cách dùng</a>
+        <a class="admin-link" href="./admin.html">Quản lý data</a>
+      </nav>
+      <button class="nav-chat-btn" id="navChatBtn" type="button">✦ Hỏi bot</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-orb hero-orb-one"></div>
+      <div class="hero-orb hero-orb-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> TP.HCM • FOOD & DRINK FINDER</div>
+          <h1>Không biết ăn gì?<br><em>Để web chọn giùm.</em></h1>
+          <p class="hero-lead">Lọc theo quận, loại món, ẩm thực hoặc hỏi chatbot bằng ngôn ngữ tự nhiên. Danh sách hiện có <strong id="heroCount">0</strong> địa điểm.</p>
+
+          <div class="hero-search">
+            <div class="hero-search-icon">⌕</div>
+            <input id="heroSearchInput" type="search" autocomplete="off" placeholder="Ví dụ: ramen Bình Thạnh, trà sữa Quận 10..." />
+            <button id="heroSearchBtn" type="button">Tìm ngay</button>
+          </div>
+
+          <div class="hero-actions">
+            <button class="primary-action" id="randomBtn" type="button">🎲 Chọn ngẫu nhiên</button>
+            <button class="secondary-action" id="heroChatBtn" type="button">💬 Hỏi chatbot</button>
+          </div>
+
+          <div class="mini-stats" aria-label="Thống kê nhanh">
+            <div><strong id="districtStat">0</strong><span>khu vực</span></div>
+            <div><strong id="cuisineStat">0</strong><span>phong cách</span></div>
+            <div><strong id="favoriteStat">0</strong><span>đã yêu thích</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="food-card fc-one"><span>🍜</span><b>Đồ nước</b><small>Phở · Ramen · Udon</small></div>
+          <div class="food-card fc-two"><span>🍗</span><b>Đồ khô</b><small>Gà · Cơm · Pizza</small></div>
+          <div class="food-card fc-three"><span>🧋</span><b>Đồ uống</b><small>Trà sữa · Cafe · Matcha</small></div>
+          <div class="hero-plate">
+            <div class="plate-inner">
+              <span class="plate-noodle">🍲</span>
+              <div class="plate-copy"><strong>139+</strong><small>địa điểm đã gom</small></div>
+            </div>
+          </div>
+          <div class="sparkle sp-one">✦</div>
+          <div class="sparkle sp-two">✷</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="discover-section" id="discover">
+      <div class="container section-heading">
+        <div>
+          <span class="kicker">KHÁM PHÁ</span>
+          <h2>Tìm đúng mood hôm nay</h2>
+        </div>
+        <p>Tick nhiều lựa chọn trong cùng nhóm để tìm theo kiểu “hoặc”; khác nhóm sẽ kết hợp theo kiểu “và”.</p>
+      </div>
+
+      <div class="container discover-layout">
+        <aside class="filter-card" id="filterPanel">
+          <div class="filter-title-row">
+            <div><span class="filter-caption">BỘ LỌC</span><h3>Tinh chỉnh kết quả</h3></div>
+            <button id="clearFilters" class="clear-btn" type="button">Xóa</button>
+          </div>
+
+          <div class="side-search">
+            <span>⌕</span>
+            <input id="searchInput" type="search" placeholder="Tìm tên quán, món..." />
+          </div>
+
+          <div class="filter-group">
+            <button class="filter-group-head" type="button" data-collapse="districtFilters"><span>📍 Khu vực</span><b>−</b></button>
+            <div class="filter-options compact" id="districtFilters"></div>
+          </div>
+
+          <div class="filter-group">
+            <button class="filter-group-head" type="button" data-collapse="foodTypeFilters"><span>🍽️ Loại món</span><b>−</b></button>
+            <div class="filter-options" id="foodTypeFilters"></div>
+          </div>
+
+          <div class="filter-group">
+            <button class="filter-group-head" type="button" data-collapse="cuisineFilters"><span>🌏 Ẩm thực</span><b>−</b></button>
+            <div class="filter-options" id="cuisineFilters"></div>
+          </div>
+
+          <div class="filter-group">
+            <button class="filter-group-head" type="button" data-collapse="dessertFilters"><span>🍰 Bánh & tráng miệng</span><b>−</b></button>
+            <div class="filter-options" id="dessertFilters"></div>
+          </div>
+
+          <div class="filter-group">
+            <button class="filter-group-head" type="button" data-collapse="drinkFilters"><span>🧋 Đồ uống</span><b>−</b></button>
+            <div class="filter-options" id="drinkFilters"></div>
+          </div>
+        </aside>
+
+        <section class="results-column">
+          <div class="results-toolbar">
+            <div>
+              <span class="result-label">KẾT QUẢ</span>
+              <h3><strong id="resultCount">0</strong> địa điểm phù hợp</h3>
+            </div>
+            <div class="toolbar-actions">
+              <button id="mobileFilterBtn" class="mobile-filter-btn" type="button">☷ Bộ lọc</button>
+              <select id="sortSelect" aria-label="Sắp xếp">
+                <option value="name">Tên A → Z</option>
+                <option value="district">Theo khu vực</option>
+                <option value="favorites">Yêu thích trước</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="activeFilters" class="active-filters"></div>
+          <div id="restaurantGrid" class="restaurant-grid"></div>
+
+          <div id="emptyState" class="empty-state hidden">
+            <div class="empty-emoji">🥢</div>
+            <h3>Chưa có quán nào khớp</h3>
+            <p>Thử bỏ bớt một bộ lọc hoặc hỏi chatbot để tìm cách khác.</p>
+            <button type="button" id="emptyClearBtn">Xóa bộ lọc</button>
+          </div>
+
+          <div class="load-more-wrap">
+            <button id="loadMoreBtn" class="load-more" type="button">Xem thêm</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="favorite-section" id="favorites">
+      <div class="container favorite-banner">
+        <div>
+          <span class="kicker light">YÊU THÍCH</span>
+          <h2>Lưu lại những chỗ muốn đi</h2>
+          <p>Bấm trái tim trên từng quán. Danh sách yêu thích được lưu ngay trên thiết bị của bạn.</p>
+        </div>
+        <button id="showFavoritesBtn" type="button">♡ Xem quán đã lưu</button>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading center">
+          <div><span class="kicker">CÁCH DÙNG</span><h2>3 cách tìm món nhanh</h2></div>
+        </div>
+        <div class="how-grid">
+          <article><span>01</span><div class="how-icon">☑</div><h3>Tick bộ lọc</h3><p>Chọn quận, món, quốc gia hoặc đồ uống rồi xem kết quả ngay.</p></article>
+          <article><span>02</span><div class="how-icon">✦</div><h3>Chat với trợ lý</h3><p>Gõ “đồ Hàn Bình Thạnh” hoặc “random một quán ăn vặt”.</p></article>
+          <article><span>03</span><div class="how-icon">↗</div><h3>Mở bản đồ</h3><p>Mỗi card có nút mở nguồn hoặc tìm địa chỉ trên Google Maps.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="brand footer-brand"><span class="brand-mark">Ă</span><span><strong>Ăn Đâu Đây?</strong><small>Made for những ngày không biết ăn gì.</small></span></div>
+      <p>Dữ liệu được tổng hợp thủ công. Hãy kiểm tra lại giờ mở cửa và trạng thái quán trước khi đi.</p>
+      <a href="./admin.html">＋ Cập nhật quán mới</a>
+    </div>
+  </footer>
+
+  <button id="chatFab" class="chat-fab" type="button" aria-label="Mở chatbot"><span>✦</span><b>Hỏi ăn gì</b></button>
+
+  <section id="chatWidget" class="chat-widget" aria-label="Chatbot tìm quán" aria-hidden="true">
+    <header class="chat-header">
+      <div class="bot-avatar">✦</div>
+      <div><strong>Măm Măm Bot</strong><small><i></i> đang online</small></div>
+      <button id="closeChatBtn" type="button" aria-label="Đóng chatbot">×</button>
+    </header>
+    <div id="chatMessages" class="chat-messages" aria-live="polite"></div>
+    <div class="chat-suggestions" id="chatSuggestions">
+      <button type="button">Đồ Hàn ở Bình Thạnh</button>
+      <button type="button">Random một quán</button>
+      <button type="button">Trà sữa Quận 10</button>
+    </div>
+    <form id="chatForm" class="chat-form">
+      <input id="chatInput" type="text" autocomplete="off" placeholder="Bạn muốn ăn gì?" />
+      <button type="submit" aria-label="Gửi">➜</button>
+    </form>
+  </section>
+
+  <div id="filterBackdrop" class="filter-backdrop"></div>
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
