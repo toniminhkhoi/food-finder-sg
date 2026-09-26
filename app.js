@@ -257,16 +257,188 @@
     return brand.mainGroups[0] || "";
   }
 
+  const CARD_IMAGE_LIBRARY = {
+    drinks: [
+      "https://images.pexels.com/photos/35137082/pexels-photo-35137082.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/33237556/pexels-photo-33237556.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/5946638/pexels-photo-5946638.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    coffee: [
+      "https://images.pexels.com/photos/2347304/pexels-photo-2347304.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/18695774/pexels-photo-18695774.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    noodles: [
+      "https://images.pexels.com/photos/4153908/pexels-photo-4153908.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/6646022/pexels-photo-6646022.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/16547243/pexels-photo-16547243.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    rice: [
+      "https://images.pexels.com/photos/723198/pexels-photo-723198.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/5638732/pexels-photo-5638732.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    korean: [
+      "https://images.pexels.com/photos/5785545/pexels-photo-5785545.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/8288072/pexels-photo-8288072.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/28977930/pexels-photo-28977930.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    japanese: [
+      "https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/884600/pexels-photo-884600.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    pizza: [
+      "https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/4109084/pexels-photo-4109084.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    chicken: [
+      "https://images.pexels.com/photos/1860202/pexels-photo-1860202.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/14686445/pexels-photo-14686445.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/34628054/pexels-photo-34628054.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    bakery: [
+      "https://images.pexels.com/photos/30359495/pexels-photo-30359495.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/27904611/pexels-photo-27904611.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    dessert: [
+      "https://images.pexels.com/photos/3850349/pexels-photo-3850349.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ],
+    savory: [
+      "https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    ]
+  };
+
+  const BRAND_LOGO_DOMAINS = [
+    [/starbucks/, "starbucks.com"],
+    [/highlands/, "highlandscoffee.com.vn"],
+    [/phuc\s*long/, "phuclong.com.vn"],
+    [/koi/, "koithe.com"],
+    [/mixue/, "mixue.com"],
+    [/(marukame|marugame)/, "marugameudon.com"],
+    [/sukiya/, "sukiya.jp"],
+    [/popeyes/, "popeyes.com"],
+    [/texas\s*chicken/, "texaschicken.com"],
+    [/bhc/, "bhcchicken.com"],
+    [/pepper\s*lunch/, "pepperlunch.com.sg"],
+    [/gogi/, "go-gi.com.vn"],
+    [/dooki/, "dookki.co.kr"],
+    [/seoul/, "visitseoul.net"],
+    [/baoz/, "baozdimsum.com"],
+    [/isushi/, "goldengate.vn"],
+    [/pho\s*24/, "pho24.com.vn"]
+  ];
+
+  function hashString(value = "") {
+    let hash = 0;
+    for (let i = 0; i < value.length; i++) hash = ((hash << 5) - hash) + value.charCodeAt(i);
+    return Math.abs(hash);
+  }
+
+  function pickFromList(list, seed) {
+    return list?.length ? list[seed % list.length] : "";
+  }
+
+  function brandMonogram(brand) {
+    const words = String(brand.name || "").trim().split(/\s+/).filter(Boolean);
+    if (!words.length) return "Ă";
+    if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
+    return (words[0][0] + words[1][0]).toUpperCase();
+  }
+
+  function logoForBrand(brand) {
+    const target = normalize(`${brand.brandId || ""} ${brand.name || ""}`);
+    const match = BRAND_LOGO_DOMAINS.find(([rx]) => rx.test(target));
+    return match ? `https://logo.clearbit.com/${match[1]}` : "";
+  }
+
+  function imageForBrand(brand, family) {
+    const target = normalize(`${brand.brandId || ""} ${brand.name || ""} ${brand.foodTypes.join(" ")} ${brand.cuisines.join(" ")} ${brand.desserts.join(" ")} ${brand.drinks.join(" ")}`);
+    const choose = (key) => pickFromList(CARD_IMAGE_LIBRARY[key], hashString(`${brand.brandId}|${brand.name}|${key}`));
+
+    if (/\b(koi|mixue|starbucks|highlands|phuc\s*long|monguxiu|milk|tra sua|matcha)\b/.test(target)) return choose("drinks");
+    if (/\b(cafe|ca phe|am.caphee|caphe|coffee)\b/.test(target)) return choose("coffee");
+    if (/\b(gogi|hanuri|kokoria|busan|chivago|dooki|seoul|korean|han quoc)\b/.test(target)) return choose("korean");
+    if (/\b(marukame|marugame|ramen|udon|sukiya|sushi|isushi|konomi|renge|yabai)\b/.test(target)) return choose("japanese");
+    if (/\b(pizza|ovenmaru|popeyes|texas chicken|bhc|eddies|cutlet|whassup)\b/.test(target)) return /\bpizza\b/.test(target) ? choose("pizza") : choose("chicken");
+    if (/\b(banh ngot|canele|pastry|mochi|kem|dessert|butterman|lo nho|pastrypost)\b/.test(target)) return /\b(kem|mochi)\b/.test(target) ? choose("dessert") : choose("bakery");
+    if (/\b(pho|bun bo|banh canh|bun thit nuong|mien ga|mi cay|mi )\b/.test(target)) return choose("noodles");
+    if (/\b(com|com tam|banh cuon|dimsum|baoz|frites|hachi|hai dau)\b/.test(target)) return choose("rice");
+    if (/\b(lau|nuong|hai san|oc)\b/.test(target)) return choose("korean");
+    return choose(family || "savory");
+  }
+
   function brandVisual(brand) {
-    const tags = normalize([mainGroupForBrand(brand), ...brand.foodTypes, ...brand.cuisines, ...brand.desserts, ...brand.drinks].join(" "));
-    if (/(tra sua|cafe|ca phe|matcha|tra|nuoc ep|sinh to)/.test(tags)) return { icon: "🧋", tone: "blue", label: "đồ uống" };
-    if (/(ramen|udon|pho|bun|mi cay|do nuoc|banh canh)/.test(tags)) return { icon: "🍜", tone: "coral", label: "món nước" };
-    if (/(sushi|nhat ban)/.test(tags)) return { icon: "🍣", tone: "lilac", label: "món Nhật" };
-    if (/(ga ran|ga |an vat|fast food)/.test(tags)) return { icon: "🍗", tone: "yellow", label: "ăn vui" };
-    if (/(lau|nuong|hai san|oc)/.test(tags)) return { icon: "🍲", tone: "green", label: "đi nhóm" };
-    if (/(banh|kem|trang mieng)/.test(tags)) return { icon: "🍰", tone: "lilac", label: "ngọt ngào" };
-    if (/(pizza|au my|burger)/.test(tags)) return { icon: "🍕", tone: "yellow", label: "đồ Tây" };
-    return { icon: "🍽️", tone: "coral", label: mainGroupForBrand(brand) || "food pick" };
+    const joined = normalize([
+      brand.name,
+      mainGroupForBrand(brand),
+      ...brand.foodTypes,
+      ...brand.cuisines,
+      ...brand.desserts,
+      ...brand.drinks
+    ].join(" "));
+
+    const hasDrink = brand.drinks.length || /\b(tra sua|ca phe|cafe|matcha|tra|nuoc ep|sinh to|milk|latte)\b/.test(joined);
+    const hasCoffee = /\b(cafe|ca phe|espresso|latte|americano|cold brew|coffee)\b/.test(joined);
+    const hasKorean = /\b(han quoc|tokbokki|korean|kimchi|gogi|bbq)\b/.test(joined);
+    const hasJapanese = /\b(nhat ban|ramen|udon|sushi|sashimi|marukame)\b/.test(joined);
+    const hasSoupNoodle = /\b(do nuoc|pho|bun bo|bun|mi cay|mi|ramen|udon|banh canh|mien ga|pho ga)\b/.test(joined);
+    const hasGrillHotpot = /\b(lau|nuong|bbq|grill|hai san|oc|bulgogi)\b/.test(joined);
+    const hasFastfood = /\b(ga ran|fast food|fried chicken|pizza|burger|popeyes|texas chicken|bhc)\b/.test(joined);
+    const hasSavoryRice = /\b(com|com tam|banh cuon|banh bot loc|bun thit nuong|dimsum|bao|cutlet)\b/.test(joined);
+    const hasDessert = brand.desserts.length || /\b(banh ngot|croissant|canele|cookie|tiramisu|mousse|kem|ice cream|dessert|tra mieng|pastry)\b/.test(joined);
+
+    let family = "savory";
+    let tone = "sage";
+    let label = mainGroupForBrand(brand) || "gợi ý hôm nay";
+
+    if (hasDrink && !brand.foodTypes.length && !hasSavoryRice && !hasSoupNoodle) {
+      family = hasCoffee ? "coffee" : "drinks";
+      tone = "blue";
+      label = hasCoffee ? "cà phê · đồ uống" : "đồ uống";
+    } else if (hasKorean) {
+      family = "korean";
+      tone = "terracotta";
+      label = hasGrillHotpot ? "đồ Hàn · nướng" : "đồ Hàn";
+    } else if (hasJapanese) {
+      family = hasSoupNoodle ? "noodles" : "japanese";
+      tone = "lilac";
+      label = hasSoupNoodle ? "đồ Nhật · mì" : "đồ Nhật";
+    } else if (hasGrillHotpot) {
+      family = "korean";
+      tone = "green";
+      label = /\blau\b/.test(joined) ? "lẩu · đi nhóm" : "nướng · ăn nhóm";
+    } else if (hasFastfood) {
+      family = /\b(pizza|burger)\b/.test(joined) ? "pizza" : "chicken";
+      tone = "gold";
+      label = /\b(pizza|burger)\b/.test(joined) ? "đồ Tây" : "ăn vặt · gà rán";
+    } else if (hasDessert && !hasSavoryRice && !hasSoupNoodle) {
+      family = /\b(kem|ice cream|mochi)\b/.test(joined) ? "dessert" : "bakery";
+      tone = "lilac";
+      label = "bánh · tráng miệng";
+    } else if (hasSoupNoodle) {
+      family = "noodles";
+      tone = "terracotta";
+      label = "món nước";
+    } else if (hasDrink && !hasSavoryRice) {
+      family = hasCoffee ? "coffee" : "drinks";
+      tone = "blue";
+      label = hasCoffee ? "cà phê" : "đồ uống";
+    } else if (hasSavoryRice) {
+      family = "rice";
+      tone = "sage";
+      label = "đồ ăn mặn";
+    }
+
+    const image = imageForBrand(brand, family);
+    const logo = logoForBrand(brand);
+    return { tone, label, image, logo, monogram: brandMonogram(brand) };
   }
 
   function brandCardHtml(brand) {
@@ -276,12 +448,24 @@
     const single = brand.branches[0] || allBranches[0];
     const districtLabel = isMulti ? `${brand.branches.length} chi nhánh phù hợp` : (single?.district || "");
     const visual = brandVisual(brand);
-    const visualDistrict = isMulti ? `${allBranches.length} địa điểm` : (single?.district || "TP.HCM");
+    const visualDistrict = isMulti ? `${brand.branches.length} chi nhánh phù hợp` : (single?.district || "TP.HCM");
 
     return `
       <article class="restaurant-card brand-card" data-brand="${escapeHtml(brand.brandId)}">
         <div class="card-visual ${visual.tone}">
-          <span class="card-food-icon">${visual.icon}</span>
+          ${visual.image ? `<img class="card-cover-image" loading="lazy" src="${escapeHtml(visual.image)}" alt="${escapeHtml(brand.name)}">` : ""}
+          <div class="card-visual-scrim"></div>
+         ${visual.logo ? `
+  <div class="card-brand-badge logo">
+    <img
+      loading="lazy"
+      src="${escapeHtml(visual.logo)}"
+      alt=""
+      aria-hidden="true"
+      onerror="this.closest('.card-brand-badge')?.remove()"
+    >
+  </div>
+` : ""}
           <div class="card-visual-meta">
             <span>${escapeHtml(visual.label)}</span>
             <span>${escapeHtml(visualDistrict)}</span>
@@ -295,13 +479,13 @@
                 ${mainGroupForBrand(brand) ? `<span class="main-tag">${escapeHtml(mainGroupForBrand(brand))}</span>` : ""}
               </div>
               <h4>${escapeHtml(brand.name)}</h4>
-              ${isMulti ? `<p class="branch-name">${allBranches.length} chi nhánh tại TP.HCM</p>` : (single?.branch ? `<p class="branch-name">Chi nhánh ${escapeHtml(single.branch)}</p>` : "")}
+              ${isMulti ? `<p class="branch-name">${allBranches.length} chi nhánh trên toàn TP.HCM</p>` : (single?.branch ? `<p class="branch-name">Chi nhánh ${escapeHtml(single.branch)}</p>` : "")}
             </div>
             <button class="favorite-btn ${fav ? "active" : ""}" type="button" data-favorite-brand="${escapeHtml(brand.brandId)}" aria-label="Yêu thích">${fav ? "♥" : "♡"}</button>
           </div>
 
           ${isMulti
-            ? `<p class="branch-summary">Có nhiều địa điểm để chọn. Mở danh sách chi nhánh gần bạn nhất.</p>`
+            ? `<p class="branch-summary">Thương hiệu này có nhiều chi nhánh. Bấm để mở danh sách đầy đủ và chọn điểm gần bạn nhất.</p>`
             : `<p class="card-address"><span>●</span>${escapeHtml(single?.address || "Đang cập nhật địa chỉ")}</p>`}
 
           <div class="card-tags">${brandTags(brand).map(tag => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
@@ -445,7 +629,7 @@
     "do thai":"Thái Lan", "mon thai":"Thái Lan", "tra sua":"Trà sữa", "cafe":"Cafe", "ca phe":"Cafe",
     "ramen":"Ramen", "udon":"Udon", "sushi":"Sushi", "pizza":"Pizza", "lau":"Lẩu", "nuong":"Đồ nướng",
     "an vat":"Ăn vặt", "ga ran":"Gà rán", "hai san":"Hải sản", "bun bo":"Bún bò", "com tam":"Cơm tấm", "mi cay":"Mì cay",
-    "banh":"Bánh ngọt", "kem":"Kem"
+    "banh ngot":"Bánh ngọt", "kem":"Kem"
   };
 
   function containsPhrase(text, phrase) { return (` ${text} `).includes(` ${phrase} `); }

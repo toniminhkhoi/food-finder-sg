@@ -4,126 +4,144 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Tìm quán ăn, quán nước và nhà hàng ở TP.HCM theo quận, món ăn và phong cách ẩm thực." />
-  <meta name="theme-color" content="#ff6846" />
+  <meta name="theme-color" content="#16362f" />
   <title>Ăn Đâu Đây? — Food Finder Sài Gòn</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="./style.css?v=5.0" />
+  <link rel="stylesheet" href="./style.css?v=8.0" />
 </head>
 <body>
-  <div class="noise"></div>
-
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="Ăn Đâu Đây?">
         <span class="brand-mark">Ă</span>
         <span>
           <strong>Ăn Đâu Đây?</strong>
-          <small>Food Finder Sài Gòn</small>
+          <small>Saigon food guide</small>
         </span>
       </a>
 
       <nav class="nav-links" aria-label="Điều hướng chính">
         <a href="#discover">Khám phá</a>
-        <a href="#moods">Theo mood</a>
+        <a href="#moods">Gợi ý nhanh</a>
         <a href="#favorites">Yêu thích</a>
         <a href="#how-it-works">Cách dùng</a>
         <a class="admin-link" href="./admin.html">Quản lý data</a>
       </nav>
 
-      <button class="nav-chat-btn" id="navChatBtn" type="button"><span>✦</span> Hỏi Măm Măm</button>
+      <button class="nav-chat-btn" id="navChatBtn" type="button">
+        <span>✦</span> Hỏi Măm Măm (Măm Măm đang bị ngu, đừng hỏi)
+      </button>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-glow hero-glow-a"></div>
-      <div class="hero-glow hero-glow-b"></div>
-
-      <div class="container hero-grid">
+      <div class="container hero-shell">
         <div class="hero-copy">
-          <div class="eyebrow"><span></span> TP.HCM • FOOD DISCOVERY</div>
-          <h1>Ăn gì <em>hôm nay?</em><br><span>Để Măm Măm chọn.</span></h1>
-          <p class="hero-lead">Tìm quán theo khu vực, món ăn, phong cách hoặc đơn giản là nói với Măm Măm bạn đang thèm gì. Hiện có <strong id="heroCount">0</strong> thương hiệu được gom từ nhiều chi nhánh TP.HCM.</p>
+          <div class="eyebrow">LOCAL FOOD GUIDE · TP.HCM</div>
+          <h1>Hôm nay<br><em>ăn ở đâu?</em></h1>
+          <p class="hero-lead">Một nơi để lọc, lưu và tìm quán theo đúng mood của bạn. Hiện có <strong id="heroCount">0</strong> thương hiệu được gom từ nhiều chi nhánh tại TP.HCM. (HÌNH ẢNH CHỈ MANG TÍNH CHẤT MINH HỌA. CÓ GÌ SAI SÓT VUI LÒNG BỎ QUA)</p>
           <p id="dataStatus" role="status" hidden></p>
 
           <div class="hero-search-wrap">
             <div class="hero-search">
-              <div class="hero-search-icon">⌕</div>
-              <input id="heroSearchInput" type="search" autocomplete="off" placeholder="Thử: ramen Tân Bình, đồ Hàn Bình Thạnh..." />
-              <button id="heroSearchBtn" type="button">Tìm ngay <span>→</span></button>
+              <span class="search-symbol">⌕</span>
+              <input id="heroSearchInput" type="search" autocomplete="off" placeholder="Ramen Tân Bình, trà sữa Quận 10..." />
+              <button id="heroSearchBtn" type="button">Tìm quán</button>
             </div>
             <div class="quick-searches" aria-label="Gợi ý tìm nhanh">
-              <button type="button" data-quick-search="Ăn vặt">🔥 Ăn vặt</button>
-              <button type="button" data-quick-search="Đồ nước">🍜 Đồ nước</button>
-              <button type="button" data-quick-search="Đồ nướng">🥩 Đồ nướng</button>
-              <button type="button" data-quick-search="Trà sữa">🧋 Trà sữa</button>
-              <button type="button" data-quick-search="Cafe">☕ Cafe</button>
+              <button type="button" data-quick-search="Ăn vặt">Ăn vặt</button>
+              <button type="button" data-quick-search="Đồ nước">Đồ nước</button>
+              <button type="button" data-quick-search="Đồ nướng">Đồ nướng</button>
+              <button type="button" data-quick-search="Trà sữa">Trà sữa</button>
+              <button type="button" data-quick-search="Cafe">Cafe</button>
             </div>
           </div>
 
           <div class="hero-actions">
-            <button class="primary-action" id="randomBtn" type="button"><span>🎲</span> Chọn ngẫu nhiên</button>
-            <button class="secondary-action" id="heroChatBtn" type="button"><span>✦</span> Hỏi Măm Măm Bot</button>
-          </div>
-
-          <div class="mini-stats" aria-label="Thống kê nhanh">
-            <div><strong id="districtStat">0</strong><span>khu vực</span></div>
-            <div><strong id="cuisineStat">0</strong><span>phong cách</span></div>
-            <div><strong id="favoriteStat">0</strong><span>đã yêu thích</span></div>
+            <button class="primary-action" id="randomBtn" type="button">Chọn ngẫu nhiên</button>
+            <button class="secondary-action" id="heroChatBtn" type="button">✦ Hỏi Măm Măm</button>
           </div>
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
-          <div class="visual-shell">
-            <div class="visual-badge">MĂM MĂM PICKS</div>
-            <div class="visual-card visual-main">
-              <div class="visual-main-top">
-                <span class="visual-emoji">🍜</span>
-                <span class="visual-pill">đang hot</span>
+        <div class="hero-showcase" aria-hidden="true">
+          <article class="showcase-feature">
+            <img src="https://images.pexels.com/photos/5785545/pexels-photo-5785545.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Korean BBQ platter" />
+            <div class="showcase-scrim"></div>
+            <div class="showcase-copy">
+              <span class="showcase-kicker">Local picks</span>
+              <strong>Quán ăn Local</strong>
+              <p>Từ cơm sườn, phở, bún bò đến trà sữa, cafe và đồ Hàn... đến các món chiên rán dầu mỡ và phô mai</p>
+            </div>
+          </article>
+
+          <div class="showcase-mini-grid">
+            <article class="showcase-mini-card">
+              <img src="https://images.pexels.com/photos/4153908/pexels-photo-4153908.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Vietnamese noodle soup" />
+              <div class="showcase-mini-copy">
+                <span>Món nước</span>
+                <b>Phở · Bún bò · Bánh canh</b>
+                <small>Quán Việt dễ chọn cho mọi ngày.</small>
               </div>
-              <div>
-                <small>Hôm nay thử</small>
-                <strong>Ramen • Udon • Phở</strong>
-                <p>Đồ nước cho một ngày cần gì đó ấm bụng.</p>
+            </article>
+
+            <article class="showcase-mini-card">
+              <img src="https://images.pexels.com/photos/35137082/pexels-photo-35137082.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Bubble tea" />
+              <div class="showcase-mini-copy">
+                <span>Đồ uống</span>
+                <b>Trà sữa · Matcha · Cafe</b>
+                <small>KOI Thé · Mixue · Highlands · Phúc Long.</small>
               </div>
+            </article>
+          </div>
+
+          <div class="showcase-brand-row">
+            <span class="showcase-brand-label">Thương hiệu nổi bật</span>
+            <div class="showcase-brand-chips">
+              <div class="showcase-brand-chip"><img src="https://thumb.wikimedia.org/wikipedia/vi/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1280px-Starbucks_Corporation_Logo_2011.svg.png?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Starbucks logo" /><b>Starbucks</b></div>
+              <div class="showcase-brand-chip"><img src="https://thumb.wikimedia.org/wikipedia/vi/thumb/3/32/Logo_Ph%C3%BAc_Long.svg/960px-Logo_Ph%C3%BAc_Long.svg.png?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail alt="Phúc Long logo" /><b>Phúc Long</b></div>
+              <div class="showcase-brand-chip"><img src="https://cdn.haitrieu.com/wp-content/uploads/2022/03/highlands-coffee-red-logo.png" alt="Highlands logo" /><b>Highlands</b></div>
+              <div class="showcase-brand-chip"><img src="https://vcdn1-kinhdoanh.vnecdn.net/2023/07/05/354413646-179485114820680-1747-9953-7239-1688547132.jpg?w=1020&h=0&q=100&dpr=2&fit=crop&s=fjIg1iF7sBy8AHRT6PZ0sw" alt="KOI Thé logo" /><b>KOI Thé</b></div>
+              <div class="showcase-brand-chip"><img src="https://aeonmall-review-rikkei.cdn.vccloud.vn/public/wp/22/tenants/xgM3gkzgHo6zxvwRRLD5tqJJo7FLQKq9S5xfIj4Y.png" alt="Marugame Udon logo" /><b>Marukame</b></div>
+              <div class="showcase-brand-chip"><img src="https://media.loveitopcdn.com/3807/logo-popeyes-compressed.jpg" alt="Popeyes logo" /><b>Popeyes</b></div>
             </div>
-            <div class="visual-card visual-side one">
-              <span>🧋</span>
-              <div><small>Chill một chút</small><b>Trà sữa & Cafe</b></div>
-            </div>
-            <div class="visual-card visual-side two">
-              <span>🍗</span>
-              <div><small>Ăn cho đã</small><b>Gà rán & Ăn vặt</b></div>
-            </div>
-            <div class="visual-card visual-side three">
-              <span>🍣</span>
-              <div><small>Đổi vị</small><b>Nhật • Hàn • Thái</b></div>
-            </div>
-            <div class="visual-count"><strong id="plateCount">0+</strong><span>quán/thương hiệu</span></div>
-            <div class="visual-sparkle s1">✦</div>
-            <div class="visual-sparkle s2">✷</div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="mood-section" id="moods">
-      <div class="container mood-wrap">
-        <div class="mood-heading">
-          <span class="kicker">CHỌN THEO MOOD</span>
-          <h2>Không cần nghĩ nhiều.</h2>
-          <p>Chọn đúng cảm giác lúc này, web lọc giúp bạn.</p>
+      <div class="container">
+        <div class="section-heading compact-heading">
+          <div>
+            <span class="kicker">GỢI Ý NHANH</span>
+            <h2>Chọn theo cảm giác.</h2>
+          </div>
+          <p>Không cần nghĩ tên quán. Chọn một kiểu ăn uống rồi xem ngay các gợi ý phù hợp.</p>
         </div>
+
         <div class="mood-grid">
-          <button type="button" class="mood-card coral" data-quick-search="Ăn vặt"><span>🔥</span><b>Ăn vui miệng</b><small>Ăn vặt • Gà rán</small></button>
-          <button type="button" class="mood-card green" data-quick-search="Lẩu"><span>🍲</span><b>Đi nhóm đông</b><small>Lẩu • Đồ nướng</small></button>
-          <button type="button" class="mood-card yellow" data-quick-search="Cafe"><span>☕</span><b>Ngồi chill</b><small>Cafe • Bánh</small></button>
-          <button type="button" class="mood-card lilac" data-quick-search="Nhật Bản"><span>🍣</span><b>Đổi vị</b><small>Nhật • Ramen • Sushi</small></button>
-          <button type="button" class="mood-card blue" data-quick-search="Trà sữa"><span>🧋</span><b>Uống gì đó</b><small>Trà sữa • Matcha</small></button>
-          <button type="button" class="mood-card rose" data-quick-search="Hàn Quốc"><span>🍗</span><b>Thèm đồ Hàn</b><small>Gà • Tokbokki • Mì</small></button>
+          <button class="mood-card mood-1" type="button" data-quick-search="Ăn vặt">
+            <span class="mood-tag">Ăn vặt</span><b>Ăn vui miệng</b><small>Gà rán · snack · ăn nhẹ</small>
+          </button>
+          <button class="mood-card mood-2" type="button" data-quick-search="Lẩu">
+            <span class="mood-tag">Đi nhóm</span><b>Lẩu & nướng</b><small>BBQ · lẩu · gọi nhiều món</small>
+          </button>
+          <button class="mood-card mood-3" type="button" data-quick-search="Cafe">
+            <span class="mood-tag">Thư giãn</span><b>Cafe ngồi chill</b><small>Cafe · bánh · ngồi lâu</small>
+          </button>
+          <button class="mood-card mood-4" type="button" data-quick-search="Nhật Bản">
+            <span class="mood-tag">Đổi vị</span><b>Vibe Nhật Bản</b><small>Ramen · Udon · Sushi</small>
+          </button>
+          <button class="mood-card mood-5" type="button" data-quick-search="Trà sữa">
+            <span class="mood-tag">Uống gì đó</span><b>Trà sữa & matcha</b><small>MẶP</small>
+          </button>
+          <button class="mood-card mood-6" type="button" data-quick-search="Hàn Quốc">
+            <span class="mood-tag">Hàn Quốc</span><b>Thèm đồ Hàn</b><small>Gà · tokbokki · mì · BBQ</small>
+          </button>
         </div>
       </div>
     </section>
@@ -132,7 +150,7 @@
       <div class="container section-heading">
         <div>
           <span class="kicker">KHÁM PHÁ</span>
-          <h2>Tìm đúng quán, đúng mood.</h2>
+          <h2>Tìm quán theo cách của bạn.</h2>
         </div>
         <p>Chọn nhiều mục trong cùng nhóm để mở rộng kết quả; kết hợp nhiều nhóm để tìm chính xác hơn.</p>
       </div>
@@ -150,27 +168,23 @@
           </div>
 
           <div class="filter-group">
-            <button class="filter-group-head" type="button" data-collapse="districtFilters"><span>📍 Khu vực</span><b>−</b></button>
+            <button class="filter-group-head" type="button" data-collapse="districtFilters"><span>Khu vực</span><b>−</b></button>
             <div class="filter-options compact" id="districtFilters"></div>
           </div>
-
           <div class="filter-group">
-            <button class="filter-group-head" type="button" data-collapse="foodTypeFilters"><span>🍽️ Loại món</span><b>−</b></button>
+            <button class="filter-group-head" type="button" data-collapse="foodTypeFilters"><span>Loại món</span><b>−</b></button>
             <div class="filter-options" id="foodTypeFilters"></div>
           </div>
-
           <div class="filter-group">
-            <button class="filter-group-head" type="button" data-collapse="cuisineFilters"><span>🌏 Ẩm thực</span><b>−</b></button>
+            <button class="filter-group-head" type="button" data-collapse="cuisineFilters"><span>Ẩm thực</span><b>−</b></button>
             <div class="filter-options" id="cuisineFilters"></div>
           </div>
-
           <div class="filter-group">
-            <button class="filter-group-head" type="button" data-collapse="dessertFilters"><span>🍰 Bánh & tráng miệng</span><b>−</b></button>
+            <button class="filter-group-head" type="button" data-collapse="dessertFilters"><span>Bánh & tráng miệng</span><b>−</b></button>
             <div class="filter-options" id="dessertFilters"></div>
           </div>
-
           <div class="filter-group">
-            <button class="filter-group-head" type="button" data-collapse="drinkFilters"><span>🧋 Đồ uống</span><b>−</b></button>
+            <button class="filter-group-head" type="button" data-collapse="drinkFilters"><span>Đồ uống</span><b>−</b></button>
             <div class="filter-options" id="drinkFilters"></div>
           </div>
         </aside>
@@ -182,7 +196,7 @@
               <h3><strong id="resultCount">0</strong> quán phù hợp</h3>
             </div>
             <div class="toolbar-actions">
-              <button id="mobileFilterBtn" class="mobile-filter-btn" type="button">☷ Bộ lọc</button>
+              <button id="mobileFilterBtn" class="mobile-filter-btn" type="button">Bộ lọc</button>
               <select id="sortSelect" aria-label="Sắp xếp">
                 <option value="name">Tên A → Z</option>
                 <option value="district">Theo khu vực</option>
@@ -195,14 +209,14 @@
           <div id="restaurantGrid" class="restaurant-grid"></div>
 
           <div id="emptyState" class="empty-state hidden">
-            <div class="empty-emoji">🥢</div>
+            <div class="empty-mark">—</div>
             <h3>Chưa có quán nào khớp</h3>
             <p>Thử bỏ bớt một bộ lọc hoặc hỏi Măm Măm để tìm cách khác.</p>
             <button type="button" id="emptyClearBtn">Xóa bộ lọc</button>
           </div>
 
           <div class="load-more-wrap">
-            <button id="loadMoreBtn" class="load-more" type="button">Xem thêm quán</button>
+            <button id="loadMoreBtn" class="load-more" type="button">Xem thêm</button>
           </div>
         </section>
       </div>
@@ -210,25 +224,24 @@
 
     <section class="favorite-section" id="favorites">
       <div class="container favorite-banner">
-        <div class="favorite-copy">
-          <span class="kicker light">BỘ SƯU TẬP CỦA BẠN</span>
-          <h2>Thấy ngon thì lưu lại.</h2>
-          <p>Bấm trái tim ở bất kỳ quán nào để tạo danh sách “để bữa nào đi”. Dữ liệu yêu thích được lưu ngay trên thiết bị của bạn.</p>
+        <div>
+          <span class="kicker light">YÊU THÍCH</span>
+          <h2>Một danh sách riêng cho những chỗ bạn muốn thử.</h2>
+          <p>Bấm trái tim trên từng quán. Danh sách được lưu ngay trên thiết bị của bạn.</p>
         </div>
-        <div class="favorite-art" aria-hidden="true"><span>♡</span><i>🍜</i><i>🧋</i><i>🍗</i></div>
-        <button id="showFavoritesBtn" type="button">♡ Xem quán đã lưu</button>
+        <button id="showFavoritesBtn" type="button">Xem quán đã lưu</button>
       </div>
     </section>
 
     <section class="how-section" id="how-it-works">
       <div class="container">
         <div class="section-heading center">
-          <div><span class="kicker">NHANH & DỄ</span><h2>3 cách tìm món trong vài giây.</h2></div>
+          <div><span class="kicker">CÁCH DÙNG</span><h2>Ba bước là đủ.</h2></div>
         </div>
         <div class="how-grid">
-          <article><span>01</span><div class="how-icon">☑</div><h3>Lọc theo sở thích</h3><p>Chọn quận, loại món, ẩm thực hoặc đồ uống để thu hẹp đúng nhu cầu.</p></article>
-          <article><span>02</span><div class="how-icon">✦</div><h3>Hỏi Măm Măm</h3><p>Gõ “đồ Hàn Bình Thạnh”, “trà sữa Quận 10” hoặc “random một quán”.</p></article>
-          <article><span>03</span><div class="how-icon">↗</div><h3>Đi thẳng tới quán</h3><p>Mở danh sách chi nhánh và Google Maps ngay từ card kết quả.</p></article>
+          <article><span>01</span><h3>Chọn tiêu chí</h3><p>Lọc theo quận, loại món, quốc gia hoặc đồ uống.</p></article>
+          <article><span>02</span><h3>Hỏi Măm Măm</h3><p>Gõ câu tự nhiên như “đồ Hàn Bình Thạnh” hoặc “random một quán”.</p></article>
+          <article><span>03</span><h3>Mở bản đồ</h3><p>Chọn chi nhánh phù hợp và đi thẳng tới Google Maps.</p></article>
         </div>
       </div>
     </section>
@@ -236,9 +249,9 @@
 
   <footer class="footer">
     <div class="container footer-grid">
-      <div class="brand footer-brand"><span class="brand-mark">Ă</span><span><strong>Ăn Đâu Đây?</strong><small>Made for những ngày không biết ăn gì.</small></span></div>
+      <div class="brand footer-brand"><span class="brand-mark">Ă</span><span><strong>Ăn Đâu Đây?</strong><small>Saigon food guide</small></span></div>
       <p>Dữ liệu được tổng hợp thủ công. Hãy kiểm tra lại giờ mở cửa và trạng thái quán trước khi đi.</p>
-      <a href="./admin.html">＋ Cập nhật quán mới</a>
+      <a href="./admin.html">Cập nhật quán mới →</a>
     </div>
   </footer>
 
@@ -246,7 +259,7 @@
 
   <section id="chatWidget" class="chat-widget" aria-label="Chatbot tìm quán" aria-hidden="true">
     <header class="chat-header">
-      <div class="bot-avatar">✦</div>
+      <div class="bot-avatar">M</div>
       <div><strong>Măm Măm Bot</strong><small><i></i> đang online</small></div>
       <button id="closeChatBtn" type="button" aria-label="Đóng chatbot">×</button>
     </header>
@@ -257,8 +270,8 @@
       <button type="button">Trà sữa Quận 10</button>
     </div>
     <form id="chatForm" class="chat-form">
-      <input id="chatInput" type="text" autocomplete="off" placeholder="Bạn đang thèm gì?" />
-      <button type="submit" aria-label="Gửi">➜</button>
+      <input id="chatInput" type="text" autocomplete="off" placeholder="Bạn muốn ăn gì?" />
+      <button type="submit" aria-label="Gửi">→</button>
     </form>
   </section>
 
@@ -279,7 +292,8 @@
   <div id="filterBackdrop" class="filter-backdrop"></div>
   <div id="toast" class="toast" role="status"></div>
 
-  <script src="./config.js?v=5.0"></script>
-  <script src="./app.js?v=5.0"></script>
+  <span id="favoriteStat" hidden>0</span>
+  <script src="./config.js?v=8.0"></script>
+  <script src="./app.js?v=8.0"></script>
 </body>
 </html>
