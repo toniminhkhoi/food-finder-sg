@@ -100,17 +100,40 @@
     });
   }
 
-  async function loadData() {
+  function setDataStatus(message = "") {
+    const status = $("dataStatus");
+    if (status) {
+      status.textContent = message;
+      status.hidden = !message;
+    }
+  }
+
+  function parseRows(payload) {
+    if (payload?.ok === false) throw new Error(payload.error || "Cloud API báo lỗi.");
+    const rows = Array.isArray(payload) ? payload : payload?.data;
+    if (!Array.isArray(rows)) throw new Error("Dữ liệu quán không hợp lệ.");
+    return rows.filter(row => row && typeof row === "object").map(normalizeRestaurant).filter(x => x.name);
+  }
+
+  async function loadData(allowFallback = true) {
+    let cloudFailed = false;
     if (CONFIG.dataSource === "api" && CONFIG.apiUrl) {
-      const payload = await loadJsonp(CONFIG.apiUrl);
-      const rows = Array.isArray(payload) ? payload : payload.data;
-      if (!Array.isArray(rows)) throw new Error("API trả về dữ liệu không hợp lệ.");
-      return rows.map(normalizeRestaurant).filter(x => x.name);
+      try {
+        const rows = parseRows(await loadJsonp(CONFIG.apiUrl));
+        setDataStatus();
+        return rows;
+      } catch (error) {
+        if (!allowFallback) throw error;
+        cloudFailed = true;
+        console.warn("Không tải được cloud, dùng dữ liệu dự phòng:", error);
+      }
     }
 
     const response = await fetch(CONFIG.localDataUrl || "./data/restaurants.json", { cache: "no-store" });
-    if (!response.ok) throw new Error("Không tải được data quán.");
-    return (await response.json()).map(normalizeRestaurant).filter(x => x.name);
+    if (!response.ok) throw new Error("Không tải được dữ liệu quán dự phòng.");
+    const rows = parseRows(await response.json());
+    setDataStatus(cloudFailed ? "Đang hiển thị dữ liệu dự phòng. Quán mới thêm có thể chưa xuất hiện; web sẽ tự thử kết nối lại." : "");
+    return rows;
   }
 
   function groupRows(rows) {
@@ -497,9 +520,9 @@
   async function refreshCloudData(silent = true) {
     if (CONFIG.dataSource !== "api" || !CONFIG.apiUrl) return;
     try {
-      const fresh = await loadData();
-      const oldFingerprint = JSON.stringify(state.restaurants.map(r => [r.id, r.name, r.branch, r.address]));
-      const newFingerprint = JSON.stringify(fresh.map(r => [r.id, r.name, r.branch, r.address]));
+      const fresh = await loadData(false);
+      const oldFingerprint = JSON.stringify(state.restaurants);
+      const newFingerprint = JSON.stringify(fresh);
       if (oldFingerprint !== newFingerprint) {
         state.restaurants = fresh;
         state.brands = groupRows(fresh);
