@@ -58,15 +58,21 @@ button { color: inherit; }
 }
 .brand { display: inline-flex; align-items: center; gap: 10px; min-width: max-content; }
 .brand-mark {
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  overflow: hidden;
   display: grid;
   place-items: center;
-  border-radius: 13px;
-  color: #fff8ed;
-  background: var(--ink);
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-size: 1.15rem;
+  background: transparent;
+  transform: translateY(-6px);
+}
+
+
+.brand-mark img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
 }
 .brand strong { display: block; color: var(--ink); font-size: .9rem; line-height: 1.15; }
 .brand small { display: block; margin-top: 3px; color: #8b857d; font-size: .6rem; }
@@ -390,7 +396,20 @@ button { color: inherit; }
 .chat-widget { position: fixed; right: 22px; bottom: 22px; z-index: 80; width: min(400px,calc(100vw - 28px)); height: min(640px,calc(100vh - 38px)); display: flex; flex-direction: column; overflow: hidden; border: 1px solid #d8d0c3; border-radius: 24px; background: #fffdf8; box-shadow: 0 28px 90px rgba(36,46,41,.25); transform: translateY(20px) scale(.97); opacity: 0; pointer-events: none; transition: .2s ease; }
 .chat-widget.open { transform: translateY(0) scale(1); opacity: 1; pointer-events: auto; }
 .chat-header { display: grid; grid-template-columns: 42px 1fr auto; align-items: center; gap: 10px; padding: 15px; color: #fff; background: var(--ink); }
-.bot-avatar { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 13px; color: var(--ink); background: #e5d8c0; font-family: "Be Vietnam Pro", sans-serif; font-size: 1.1rem; }
+.bot-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  overflow: hidden;
+  flex: 0 0 46px;
+  background: transparent;
+}
+
+.bot-avatar img {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+}
 .chat-header strong { display: block; font-size: .78rem; }
 .chat-header small { display: flex; align-items: center; gap: 5px; margin-top: 3px; color: #a8b6af; font-size: .58rem; }
 .chat-header small i { width: 6px; height: 6px; border-radius: 50%; background: #70b48a; }
@@ -1054,4 +1073,35 @@ body { font-size: 16px; }
   .chat-fab b {
     display: none;
   }
+}
+.hero-title-line {
+  display: block;
+}
+
+.hero-title-accent {
+  margin-top: 0.12em;
+}
+.nav-chat-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-chat-text {
+  flex: 1;
+}
+
+.nav-chat-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 40%;
+  flex-shrink: 0;
+}
+.nav-wrap {
+  min-height: 96px;
+  height: 96px;
+  padding-top: 0;
+  padding-bottom: 0;
+  align-items: center;
 }

@@ -624,17 +624,66 @@
     showToast.timer = setTimeout(() => els.toast.classList.remove("show"), 1900);
   }
 
-  function randomBrand(pool = state.filteredBrands.length ? state.filteredBrands : groupRows(state.restaurants)) {
-    if (!pool.length) return null;
-    return pool[Math.floor(Math.random() * pool.length)];
+let lastRandomBrandId = null;
+
+function getRandomPool() {
+  // Lấy lại pool từ database dựa trên các filter hiện tại,
+  // không dùng state.filteredBrands vì random trước đó
+  // có thể chỉ đang hiển thị 1 quán.
+  const rows = state.restaurants.filter(rowMatchesFilters);
+
+  let brands = groupRows(rows);
+
+  if (state.favoritesOnly) {
+    brands = brands.filter(brand =>
+      state.favorites.has(brand.brandId)
+    );
   }
 
-  function randomAction() {
-    const brand = randomBrand();
-    if (!brand) return;
-    showToast(`🎲 Hôm nay thử ${brand.name} nhé!`);
-    setSearch(brand.name);
+  return brands;
+}
+
+function randomAction() {
+  const pool = getRandomPool();
+
+  if (!pool.length) {
+    showToast("Không có quán phù hợp để random");
+    return;
   }
+
+  // Nếu có trên 1 quán thì bỏ quán vừa random ra khỏi lượt kế tiếp
+  const candidates =
+    pool.length > 1
+      ? pool.filter(
+          brand => brand.brandId !== lastRandomBrandId
+        )
+      : pool;
+
+  const brand =
+    candidates[
+      Math.floor(Math.random() * candidates.length)
+    ];
+
+  if (!brand) return;
+
+  lastRandomBrandId = brand.brandId;
+
+  // Chỉ hiển thị quán vừa random,
+  // KHÔNG setSearch tên quán nữa
+  state.filteredBrands = [brand];
+  state.visibleCount = 12;
+
+  renderRestaurants();
+
+  showToast(`🎲 Hôm nay thử ${brand.name} nhé!`);
+
+  document
+    .querySelector("#discover")
+    ?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+}
 
   // CHATBOT ---------------------------------------------------------
   const districtAliases = {
@@ -739,7 +788,7 @@
     els.chatFab.style.opacity = "0";
     els.chatFab.style.pointerEvents = "none";
     if (!els.chatMessages.children.length) {
-      addMessage(`Chào bạn! Mình là Măm Măm Bot ✦ Mình đang đọc ${groupRows(state.restaurants).length} quán/thương hiệu (${state.restaurants.length} địa điểm). Bạn muốn ăn/uống gì hôm nay?`);
+      addMessage(`Chào bạn! Mình là Heo Heo Bot ✦ Mình đang đọc ${groupRows(state.restaurants).length} quán/thương hiệu (${state.restaurants.length} địa điểm). Bạn muốn ăn/uống gì hôm nay?`);
     }
     setTimeout(() => els.chatInput.focus(), 120);
   }

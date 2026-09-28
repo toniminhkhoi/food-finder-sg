@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Tìm quán ăn, quán nước và nhà hàng ở TP.HCM theo quận, món ăn và phong cách ẩm thực." />
   <meta name="theme-color" content="#16362f" />
-  <title>Ăn Đâu Đây? — Food Finder Sài Gòn</title>
+  <title>Heo Heo ăn gì? — Food Finder Sài Gòn</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
@@ -15,10 +15,12 @@
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Ăn Đâu Đây?">
-        <span class="brand-mark">Ă</span>
+      <a class="brand" href="#top" aria-label="Heo Heo ăn gì?">
+        <span class="brand-mark">
+  <img src="./assets/logo.png" alt="Heo Heo ăn gì?">
+</span>
         <span>
-          <strong>Ăn Đâu Đây?</strong>
+          <strong>Heo Heo ăn gì?</strong>
           <small>Saigon food guide</small>
         </span>
       </a>
@@ -31,9 +33,19 @@
         <a class="admin-link" href="./admin.html">Quản lý data</a>
       </nav>
 
-      <button class="nav-chat-btn" id="navChatBtn" type="button">
-        <span>✦</span> Hỏi Măm Măm (Măm Măm đang bị ngu, đừng hỏi)
-      </button>
+<button class="nav-chat-btn" id="navChatBtn" type="button">
+  <span>✦</span>
+
+  <span class="nav-chat-text">
+    Hỏi Heo Heo (Uyên Heo đang bị ngu, đừng hỏi)
+  </span>
+
+  <img
+    class="nav-chat-image"
+    src="./assets/imlang.png"
+    alt="Heo Heo"
+  >
+</button>
     </div>
   </header>
 
@@ -42,7 +54,10 @@
       <div class="container hero-shell">
         <div class="hero-copy">
           <div class="eyebrow">LOCAL FOOD GUIDE · TP.HCM</div>
-          <h1>cục dàng<br><em>ăn gì?</em></h1>
+          <h1>
+            <span class="hero-title-line">cục dàng</span>
+            <em class="hero-title-line hero-title-accent">ăn gì?</em>
+          </h1>
           <p class="hero-lead">Một nơi để tìm chỗ ăn theo mood của cục dàng. Hiện có <strong id="heroCount">0</strong> thương hiệu được gom từ nhiều chi nhánh tại TP.HCM. (HÌNH ẢNH CHỈ MANG TÍNH CHẤT MINH HỌA.)</p>
           <p id="dataStatus" role="status" hidden></p>
 
@@ -63,7 +78,7 @@
 
           <div class="hero-actions">
             <button class="primary-action" id="randomBtn" type="button">Chọn ngẫu nhiên</button>
-            <button class="secondary-action" id="heroChatBtn" type="button">✦ Hỏi Măm Măm</button>
+            <button class="secondary-action" id="heroChatBtn" type="button">✦ Hỏi Heo Heo</button>
           </div>
         </div>
 
@@ -211,7 +226,7 @@
           <div id="emptyState" class="empty-state hidden">
             <div class="empty-mark">—</div>
             <h3>Chưa có quán nào khớp</h3>
-            <p>Thử bỏ bớt một bộ lọc hoặc hỏi Măm Măm để tìm cách khác.</p>
+            <p>Thử bỏ bớt một bộ lọc hoặc hỏi Heo Heo để tìm cách khác.</p>
             <button type="button" id="emptyClearBtn">Xóa bộ lọc</button>
           </div>
 
@@ -240,7 +255,7 @@
         </div>
         <div class="how-grid">
           <article><span>01</span><h3>Chọn tiêu chí</h3><p>Lọc theo quận, loại món, quốc gia hoặc đồ uống.</p></article>
-          <article><span>02</span><h3>Hỏi Măm Măm</h3><p>Gõ câu tự nhiên như “đồ Hàn Bình Thạnh” hoặc “random một quán”.</p></article>
+          <article><span>02</span><h3>Hỏi Heo Heo</h3><p>Gõ câu tự nhiên như “đồ Hàn Bình Thạnh” hoặc “random một quán”.</p></article>
           <article><span>03</span><h3>Mở bản đồ</h3><p>Chọn chi nhánh phù hợp và đi thẳng tới Google Maps.</p></article>
         </div>
       </div>
@@ -249,18 +264,20 @@
 
   <footer class="footer">
     <div class="container footer-grid">
-      <div class="brand footer-brand"><span class="brand-mark">Ă</span><span><strong>Ăn Đâu Đây?</strong><small>Saigon food guide</small></span></div>
+      <div class="brand footer-brand"><span class="brand-mark">Ă</span><span><strong>Heo Heo ăn gì?</strong><small>Saigon food guide</small></span></div>
       <p>Dữ liệu được tổng hợp thủ công. Hãy kiểm tra lại giờ mở cửa và trạng thái quán trước khi đi.</p>
       <a href="./admin.html">Cập nhật quán mới →</a>
     </div>
   </footer>
 
-  <button id="chatFab" class="chat-fab" type="button" aria-label="Mở chatbot"><span>✦</span><b>Hỏi Măm Măm</b></button>
+  <button id="chatFab" class="chat-fab" type="button" aria-label="Mở chatbot"><span>✦</span><b>Hỏi Heo Heo</b></button>
 
   <section id="chatWidget" class="chat-widget" aria-label="Chatbot tìm quán" aria-hidden="true">
     <header class="chat-header">
-      <div class="bot-avatar">M</div>
-      <div><strong>Măm Măm Bot</strong><small><i></i> đang online</small></div>
+      <div class="bot-avatar">
+  <img src="./assets/bot-avatar.png" alt="Heo Heo Bot">
+</div>
+      <div><strong>Heo Heo Bot</strong><small><i></i> đang online</small></div>
       <button id="closeChatBtn" type="button" aria-label="Đóng chatbot">×</button>
     </header>
     <div id="chatMessages" class="chat-messages" aria-live="polite"></div>
