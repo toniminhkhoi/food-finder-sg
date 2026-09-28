@@ -388,6 +388,8 @@
     const hasCoffee = /\b(cafe|ca phe|espresso|latte|americano|cold brew|coffee)\b/.test(joined);
     const hasKorean = /\b(han quoc|tokbokki|korean|kimchi|gogi|bbq)\b/.test(joined);
     const hasJapanese = /\b(nhat ban|ramen|udon|sushi|sashimi|marukame)\b/.test(joined);
+    const hasItalianPasta =
+  /\b(mi y|pasta|spaghetti|italian|y)\b/.test(joined);
     const hasSoupNoodle = /\b(do nuoc|pho|bun bo|bun|mi cay|mi|ramen|udon|banh canh|mien ga|pho ga)\b/.test(joined);
     const hasGrillHotpot = /\b(lau|nuong|bbq|grill|hai san|oc|bulgogi)\b/.test(joined);
     const hasFastfood = /\b(ga ran|fast food|fried chicken|pizza|burger|popeyes|texas chicken|bhc)\b/.test(joined);
@@ -422,6 +424,10 @@
       family = /\b(kem|ice cream|mochi)\b/.test(joined) ? "dessert" : "bakery";
       tone = "lilac";
       label = "bánh · tráng miệng";
+      } else if (hasItalianPasta) {
+  family = "savory";
+  tone = "gold";
+  label = "Mì Ý · Pasta";
     } else if (hasSoupNoodle) {
       family = "noodles";
       tone = "terracotta";
